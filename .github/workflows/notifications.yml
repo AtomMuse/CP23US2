@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - develop  
+      - develop
 
 jobs:
   notify:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16  # ระบุ Node.js เวอร์ชัน 16 ที่นี่
 
       - name: Notify Discord
         run: |
