@@ -11,14 +11,15 @@
 	},
 	"devDependencies": {
 		"@nuxt/devtools": "latest",
+		"@nuxt/image": "^1.0.0",
 		"@nuxtjs/tailwindcss": "^6.8.0",
 		"nuxt": "^3.7.3"
 	},
 	"dependencies": {
-		"animate.css": "^4.1.1",
 		"@headlessui/vue": "^1.7.13",
 		"@heroicons/vue": "^2.0.18",
 		"@vue-hero-icons/outline": "^1.7.2",
-		"@vue-hero-icons/solid": "^1.7.2"
+		"@vue-hero-icons/solid": "^1.7.2",
+		"animate.css": "^4.1.1"
 	}
 }
