@@ -10,7 +10,7 @@
 			:backgroundImg="sectionInfo.background"
 			:title="sectionInfo.title"
 		/>
-		<TextWithBorder
+		<TextWithBorderSection
 			v-if="sectionInfo.contentType === 'title and text with border devider'"
 			:text="sectionInfo.text"
 			:title="sectionInfo.title"
