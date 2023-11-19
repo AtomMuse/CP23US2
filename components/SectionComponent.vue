@@ -34,7 +34,7 @@
 				v-if="sectionInfo.leftCol.contentType === 'image with description'"
 				class="col-span-6 grid grid-cols-6 gap-6"
 			>
-				<ImageWithDes
+				<ImageWithDesContent
 					:image="sectionInfo.leftCol.image"
 					:description="sectionInfo.leftCol.imageDescription"
 					class="col-start-2 col-span-4"
@@ -67,7 +67,7 @@
 				v-if="sectionInfo.rightCol.contentType === 'image with description'"
 				class="col-span-6 grid grid-cols-6 gap-6"
 			>
-				<ImageWithDes
+				<ImageWithDesContent
 					:image="sectionInfo.rightCol.image"
 					:description="sectionInfo.rightCol.imageDescription"
 					class="col-start-2 col-span-4"
