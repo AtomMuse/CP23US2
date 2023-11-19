@@ -10,7 +10,7 @@
 			/>
 		</div>
 
-		<SectionComponent
+		<BlogSections
 			v-for="(section, index) in exhibition.exhibitiontionSections"
 			:key="index"
 			:sectionInfo="section"
