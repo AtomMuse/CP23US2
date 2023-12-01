@@ -12,7 +12,8 @@ const props = defineProps({
 		<div
 			v-for="(image, index) in images"
 			:key="index"
-			:class="`w-[348px] h-[400px] rounded-2xl content-none bg-[url('images/mockup/${image}')] bg-center bg-cover`"
+			class="w-[348px] h-[400px] rounded-2xl content-none bg-center bg-cover"
+			:style="`background-image:url(/_nuxt/assets/images/mockup/${image})`"
 		></div>
 	</div>
 </template>
