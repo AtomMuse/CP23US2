@@ -26,23 +26,23 @@
 		<!-- 2col start -->
 		<div
 			v-if="sectionInfo.sectionType === '2col'"
-			class="w-full grid grid-cols-12 gap-6 py-12"
+			class="w-full p-8 lg:grid lg:grid-cols-12 lg:py-12 gap-6 flex flex-col lg:flex-row"
 			:class="sectionInfo.background"
 		>
 			<!-- LeftCol -->
 			<div
 				v-if="sectionInfo.leftCol.contentType === 'image with description'"
-				class="col-span-6 grid grid-cols-6 gap-6"
+				class="lg:col-span-6 lg:grid lg:grid-cols-6 lg:gap-6"
 			>
 				<ImageWithDesContent
 					:image="sectionInfo.leftCol.image"
 					:description="sectionInfo.leftCol.imageDescription"
-					class="col-start-2 col-span-4"
+					class="lg:col-start-2 lg:col-span-4"
 				/>
 			</div>
 			<div
 				v-if="sectionInfo.leftCol.contentType === 'title and text'"
-				class="col-span-6 grid grid-cols-6 gap-5"
+				class="lg:col-span-6 lg:grid lg:grid-cols-6 lg:gap-5"
 			>
 				<TitleAndTextContent
 					:title="sectionInfo.leftCol.title"
@@ -55,22 +55,22 @@
 			<!-- RightCol Start -->
 			<div
 				v-if="sectionInfo.rightCol.contentType === 'title and text'"
-				class="col-span-6 grid grid-cols-6 gap-5"
+				class="lg:col-span-6 lg:grid lg:grid-cols-6 lg:gap-5"
 			>
 				<TitleAndTextContent
 					:title="sectionInfo.rightCol.title"
 					:text="sectionInfo.rightCol.text"
-					class="col-start-2 col-span-4"
+					class="lg:col-start-2 lg:col-span-4"
 				/>
 			</div>
 			<div
 				v-if="sectionInfo.rightCol.contentType === 'image with description'"
-				class="col-span-6 grid grid-cols-6 gap-6"
+				class="lg:col-span-6 lg:grid lg:grid-cols-6 lg:gap-6"
 			>
 				<ImageWithDesContent
 					:image="sectionInfo.rightCol.image"
 					:description="sectionInfo.rightCol.imageDescription"
-					class="col-start-2 col-span-4"
+					class="lg:col-start-2 lg:col-span-4"
 				/>
 			</div>
 			<!-- RightCol End -->
@@ -80,11 +80,11 @@
 		<!-- 3col start -->
 		<div
 			v-if="sectionInfo.sectionType === '3col'"
-			class="grid grid-cols-12 gap-6 py-12"
+			class="lg:grid lg:grid-cols-12 lg:gap-6 py-12"
 		>
 			<ImagesShowerSection
 				:images="sectionInfo.images"
-				class="col-span-10 col-start-2 flex justify-between"
+				class="lg:col-span-10 lg:col-start-2 flex justify-between"
 			/>
 		</div>
 		<!-- 3col end -->

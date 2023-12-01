@@ -1,12 +1,12 @@
 <template>
 	<div class="w-full h-full">
-		<div class="grid grid-cols-12 gap-5">
+		<div class="grid lg:grid-cols-12 lg:gap-5">
 			<BlogHeaderSection
 				:startDate="exhibition.startDate"
 				:endDate="exhibition.endDate"
 				:exhibitionName="exhibition.exhibitionName"
 				:exhibitionDescription="exhibition.exhibitionDescription"
-				class="col-start-3 col-span-8 py-16"
+				class="col-start-3 col-span-8 lg:py-16 p-8 lg:px-0"
 			/>
 		</div>
 

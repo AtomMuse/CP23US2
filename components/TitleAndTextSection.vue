@@ -18,11 +18,13 @@ const props = defineProps({
 <template>
 	<div>
 		<div
-			class="w-full flex items-center justify-center py-12 flex-col gap-5"
+			class="w-full flex items-center justify-center py-6 lg:py-12 flex-col gap-5"
 			:class="`${background}`"
 		>
 			<p class="text-3xl font-bold" v-if="title != null">{{ title }}</p>
-			<p class="px-40 text-center" v-if="text != null">{{ text }}</p>
+			<p class="px-8 lg:px-40 text-center" v-if="text != null">
+				{{ text }}
+			</p>
 		</div>
 	</div>
 </template>
