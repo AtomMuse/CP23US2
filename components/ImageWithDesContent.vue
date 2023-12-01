@@ -6,7 +6,7 @@ const props = defineProps({
 	},
 	description: {
 		type: String,
-		require: true
+		default: ''
 	}
 })
 </script>
@@ -15,7 +15,7 @@ const props = defineProps({
 	<div>
 		<div class="flex flex-col justify-center h-full">
 			<nuxt-img :src="`images/mockup/${image}`" />
-			<p class="text-center text-sm leading-5 mt-5">
+			<p class="text-center text-sm leading-5 mt-5" v-if="description != null">
 				{{ description }}
 			</p>
 		</div>
