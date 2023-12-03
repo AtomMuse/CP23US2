@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="py-5 lg:py-0 px-10">
+	<div class="py-5 px-10">
 		<div class="border border-zinc-400 lg:px-40 text-center lg:py-10">
 			<p v-if="title != ''" class="text-3xl font-bold mb-3">
 				{{ title }}
