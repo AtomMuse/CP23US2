@@ -615,6 +615,507 @@
 					"background": "bg-transparent"
 				}
 			]
+		},
+		{
+			"id": 6,
+			"exhibitionName": "แผ่นเสียงในสยาม",
+			"exhibitionDescription": "วิวัฒนาการแผ่นเสียงในประเทศไทย",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Acedemic"],
+			"exhibitionTags": ["music"],
+			"userId": {
+				"userId": 5,
+				"firstName": "National",
+				"lastName": "Library"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "กระบอกเสียง การบันทึกเสียงยุคแรก",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image48.jpg",
+						"imageDescription": "กระบอกเสียงเอดิสัน (EDISON CYLINDER)"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การบันทึกเสียงช่วงเริ่มแรก เป็นการบันทึกเสียงลงบนกระบอกเสียงทรงกลมยาว โดย โทมัส อัลวา เอดิสัน (Thomas Alva Edison) ผู้ค้นพบความสำเร็จในการบันทึกเสียง เมื่อ พ.ศ. 2420 เรียกเครื่องบันทึกเสียงนี้ว่า “กระบอกเสียงเอดิสัน” (EDISON CYLINDER)"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "      กระบอกเสียงนี้มีลักษณะเป็นทรงกระบอก บนผิวด้านนอกฉาบไว้ด้วยขี้ผึ้งแข็ง เวลาบันทึกเสียงใช้วิธีไขลานให้ท่อทรงกระบอกหมุนไป แล้วผู้ขับร้องจะร้องเพลงกรอกลงไปทางลำโพง เสียงที่เข้าทางลำโพงจะไปสั่นที่เข็ม ซึ่งจะขูดลงไปบนขี้ผึ้งบนรูปทรงกระบอกให้เกิดเป็นร่องเสียงขึ้น เริ่มต้นตั้งแต่ส่วนหัวของกระบอกไปจบลงที่ปลายอีกข้าง เป็นอันเสร็จการบันทึก เมื่อจะนำมาเปิดฟังก็นำกระบอกเสียงนั้นมาหมุนด้วยเครื่องไขลานเช่นเดียวกัน แล้วใช้เข็มขูดลงไปบนร่องที่ได้บันทึกไว้ เสียงเพลงก็จะออกมาทางลำโพงเดียวกับที่เคยใช้บันทึกเสียง"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image49.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "จากทรงกระบอกสู่แผ่นแบนราบ จุดเริ่มต้นของแผ่นเสียง",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image50.jpg",
+						"imageDescription": "อีมิล เบอร์ไลเนอร์ (Emile Berliner) 'บิดาแห่งแผ่นเสียง'"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2430 อีมิล เบอร์ไลเนอร์ (Emile Berliner) นักประดิษฐ์ชาวเยอรมัน ได้ทดลองทำการบันทึกเสียงลงบนวัสดุแบนราบแทนวัสดุทรงกระบอก ซึ่งสะดวกกว่าและบันทึกเสียงได้ยาวกว่า โดยเริ่มแรกใช้วิธีบันทึกเสียงจากกลางแผ่นให้เข็มขูดเป็นร่องออกมาสู่ขอบแผ่นช้าๆ เพลงจึงมาจบที่ขอบแผ่นเสียง เรียกแผ่นรุ่นแรกนี้ว่า “แผ่นเสียงร่องกลับทางของเบอร์ไลเนอร์”"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ต่อมา พ.ศ. 2434 เบอร์ไลเนอร์ ได้พัฒนาคุณภาพการผลิตแผ่นเสียงให้ดีขึ้น โดยใช้วัสดุนิกเกิลผสมกับทองแดง ตีเป็นแผ่นบาง หุ้มด้วยชแล็คสูตรผสม ซึ่งให้เสียงที่มีชีวิตชีวามากขึ้น เรียกแผ่นเสียงชนิดนี้ว่า “แผ่นเสียงครั่ง” จากการคิดค้นการบันทึกเสียงลงแผ่นเสียงนี้ เบอร์ไลเนอร์จึงได้รับการยกย่องว่าเป็น “บิดาแห่งแผ่นเสียง”",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "การบันทึกเสียงยุคแรกในสยาม",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "กระบอกเสียงเข้ามาสู่ประเทศไทยในสมัยรัชกาลที่ 5 จากหลักฐานที่นาย ต.เง็กชวน บันทึกไว้ว่าได้เห็นและฟังเพลงจากกระบอกเสียง เมื่อ พ.ศ. 2437 โดยมีผู้นำเข้ามาเปิดในงานโกนจุก ณ ตำบลบ้านใหม่ อำเภอเมือง จังหวัดฉะเชิงเทรา นอกจากหลักฐานการบันทึกเสียงในไทยแล้ว ยังปรากฏหลักฐานการบันทึกเสียงวงดนตรีไทยของคณะนายบุศย์ มหินทร์ ลงกระบอกเสียง ณ ประเทศเยอรมนี เมื่อ พ.ศ. 2443 ต่อมาจึงเริ่มมีการบันทึกเสียงลงแผ่นเสียงครั้งแรก ณ วังบ้านหม้อ ซึ่งเป็นที่ตั้งของกรมมหรสพหลวงในสมัยรัชกาลที่ 5 ในระยะแรก เป็นการบันทึกเสียงลงบนกระบอกเสียงแล้วนำไปอัดลงแผ่นเสียงครั่งที่ต่างประเทศ และนำกลับเข้ามาจำหน่ายที่สยาม แผ่นเสียงครั่งที่นำเข้ามาจำหน่ายตราแรกในสยาม คือ ตราอรหันต์ ตราที่สองคือ ตราปาเต๊ะ"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image51.jpg",
+						"imageDescription": "คณะนายบุศย์ มหินทร์ บันทึกเสียงเพลงสรรเสริญพระบารมีครั้งแรกที่ประเทศเยอรมนี เมื่อ พ.ศ 2443"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ปลายรัชกาลที่ 6 มีการผลิตแผ่นเสียงโดยคนไทย มี 4 ตรา ได้แก่ ตรากระต่าย ตรากรอบพักตร์สีทอง ตราเศรณี และตราศรีกรุง หลังการเปลี่ยนแปลงการปกครอง พ.ศ. 2475 แผ่นเสียงเพลงไทยสากลเกิดขึ้นแทนที่แผ่นเสียงเพลงไทยเดิม มีบริษัทและห้างแผ่นเสียงของคนไทยเกิดขึ้นจำนวนมากและได้รับความนิยมอย่างแพร่หลาย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image52.png",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image53.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image54.png",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image55.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล และรายงานการวิจัยเรื่อง การบันทึกเสียงเพลงไทย : กรณีศึกษาแผ่นเสียงร่องกลับทาง โดย ศันสนีย์ จะสุวรรณ์)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงปาเต๊ะเพลงไทย",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "พ.ศ. 2451 บริษัทปาเต๊ะ (Pathé) ซึ่งเป็นบริษัทผลิตแผ่นเสียงจากฝรั่งเศส ส่งวิศวกรมาบันทึกเสียงลงกระบอกเสียง และนำกลับไปผลิตเป็นแผ่นเสียงร่องกลับทางที่ประเทศฝรั่งเศสและเบลเยียม ลักษณะพิเศษของแผ่นเสียงร่องกลับทางจะเล่นจากด้านในสู่ด้านนอก หน้าตราระบุชื่อเพลงและนักร้องโดยใช้กรดกัดแล้วปาดสี แผ่นเสียงเพลงไทยของปาเต๊ะจะใช้ลาเบลที่ปาดด้วยสีเหลืองโดยเฉพาะ เรียกแผ่นเสียงนี้ว่า “แผ่นเสียงชนิดแข็งเข็มเพ็ชร” เพราะต้องใช้เข็มเพชรหัวมนเล่นโดยเฉพาะเท่านั้น",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image56.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image57.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "หลังสงครามโลกครั้งที่ 2 บริษัทปาเต๊ะตั้งโรงงานสำหรับผลิตแผ่นเสียงเพลงไทยที่เซี่ยงไฮ้ ประเทศจีน โดยใช้ไก่แดงเป็นตราสัญลักษณ์ การผลิตใช้กระดาษระบุตราแทนการกัดด้วยกรด และเปลี่ยนรูปแบบการเล่นจากด้านนอกสู่ด้านในเหมือนแผ่นเสียงปัจจุบัน นักร้องที่มีชื่อเสียงของแผ่นเสียงเพลงไทยปาเต๊ะ อาทิ หม่อมเจริญ หม่อมมาลัย ส่วนใหญ่เป็นการบันทึกเสียงเพลงพื้นบ้าน เช่น เพลงเป๋ (เพลงฉ่อย) เพลงแหล่ เพลงตับ และเพลงเบ็ดเตล็ด",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "หม่อมส้มจีนนักร้องหญิงไทยคนแรกที่บันทึกเสียง",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "หม่อมส้มจีน เกิดในปลายรัชกาลที่ 4 เป็นภรรยาของพระยาราชานุประพันธ์ (สุดใจ บุนนาค) และเป็นศิษย์ของพระยาประสานดุริยศัพท์ (แปลก ประสานศัพท์) เป็นนักร้องหญิงที่มีเสียงเล็กแหลมร้องเพลงได้ชัดถ้อยชัดคำ และมีลีลาการเอื้อนที่ละเอียดลออหมดจด มีชื่อเสียงในเรื่องการร้องเพลงสามชั้น",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image58.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "หม่อมส้มจีน เป็นนักร้องหญิงไทยคนแรกที่ได้บันทึกเสียงลงกระบอกเสียงเอดิสันและได้บันทึกเสียงลงแผ่นเสียงหลายตรา เช่น ตราอรหันต์ ตราโอเดียน และแผ่นเสียงผู้มีบรรดาศักดิ์ แผ่นเสียงของหม่อมส้มจีนระยะแรกมักพิมพ์ชื่อผิดโดยพิมพ์ว่า “หม่อมซ่มจีน” ซึ่งที่ถูกแล้วต้องเป็น “หม่อมส้มจีน” หม่อมส้มจีนเป็นนักร้องสตรีบรรดาศักดิ์คนแรกและคนเดียวของสยามที่แผ่นเสียงมีลายสลักชื่อของเจ้าตัวปรากฏเป็นหลักฐาน"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "จากแผ่นเสียงครั่งสู่แผ่นเสียงไวนิล",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2473 มีการพัฒนาเทคโนโลยีการบันทึกเสียง ด้วยระบบสเตอริโอ (Stereo) ซึ่งให้คุณภาพเสียงที่ดีกว่าแผ่นเสียงครั่ง สามารถเล่นได้ที่ความเร็วต่ำ 33 รอบต่อนาที (33 RPM) ซึ่งเดิมแผ่นเสียงครั่งเล่นด้วยความเร็ว 78 รอบต่อนาที (78 RPM) แผ่นเสียงที่พัฒนาขึ้นนี้ผลิตจากวัสดุโพลิเมอร์สังเคราะห์เรียกว่า “ไวนิล” (Vinyl) จึงเป็นที่มาของการเรียกชื่อแผนเสียงนี้ว่า “แผ่นไวนิล”"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image59.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image60.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2492 บริษัท RCA Victor พัฒนาแผ่นเสียงไวนิลขนาด 7 นิ้ว เล่นด้วยความเร็ว 48 (48 RPM) รอบต่อนาที เรียกว่า “แผ่นซิงเกิล” (Single) บันทึกเสียงไว้ 1-2 เพลง ปกติแผ่นเสียงไวนิลจะถูกผลิตออกมาเป็นสีดำ แต่ในปัจจุบันมีการผลิตแผ่นเสียงพิเศษจำนวนมากมีสีสันสวยงาม และมีการผลิตแผ่นเสียงขนาดพิเศษ ซึ่งแตกต่าง ไปจากแผ่นเสียงขนาด 7 นิ้ว 10 นิ้ว และ 12 นิ้ว ส่วนมากจัดทำขึ้นในวาระโอกาสพิเศษ"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงสำคัญของชาติ",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "การบันทึกเสียงเพลงสำคัญของชาติครั้งแรก เป็นการบันทึกเสียงเพลงสรรเสริญพระบารมี เมื่อ พ.ศ. 2443 บรรเลงโดยวงดนตรีไทยของคณะนายบุศย์ มหินทร์ ที่ประเทศเยอรมนี บันทึกเสียงลงบนกระบอกเสียงของเอดิสัน ต่อมา พ.ศ. 2450 มีการบันทึกเสียงโดยการขับร้องประกอบครั้งแรกโดย แม่ปุ่ม และแม่แป้น ในแผ่นเสียงปาเต๊ะร่องกลับทาง",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "สำหรับเพลงชาติเริ่มใช้แทนเพลงสรรเสริญพระบารมีตั้งแต่พ.ศ. 2475 บันทึกเสียงครั้งแรกเมื่อ พ.ศ. 2477 หลังจากประกาศใช้เพลงชาติฉบับเต็มอย่างเป็นทางการ โดยบันทึกเสียงลงแผ่นเสียงครั่งตราโอเดียน บรรเลงโดยเครื่องสายฝรั่งวงใหญ่ทหารเรือ หน้า 1 เป็นคำร้องของขุนวิจิตรมาตรา และหน้า 2 คำร้องของนายฉันท์ ขำวิไล",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": " ปัจจุบันเพลงสำคัญของชาติที่รัฐบาลไทยจัดให้มีความสำคัญในระดับชาติ มีจำนวน 8 เพลง ได้แก่ เพลงชาติ เพลงสรรเสริญพระบารมี เพลงมหาชัย เพลงมหาฤกษ์ เพลงสดุดีมหาราชา เพลงภูมิแผ่นดินนวมินทร์มหาราชา เพลงสดุดีจอมราชา และเพลงสดุดีพระแม่ไทย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงพระราชนิพนธ์ในรัชกาลที่ 9",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การบันทึกเสียงเพลงพระราชนิพนธ์ครั้งแรก มีขึ้นเมื่อ พ.ศ. 2492 โดยบริษัทแผ่นเสียงนำไทยบันทึกเสียงลงแผ่นเสียงครั่งตราสุนัข (HIS MASTER’S VOICE) หน้าสีขาวพิเศษ ตัวหนังสือสีทอง แผ่นเสียงเพลงพระราชนิพนธ์ชุดแรกนี้มี 2 แผ่น ประกอบด้วย เพลงสายฝน ใกล้รุ่ง ชะตาชีวิต และยามเย็น ขับร้องโดยศิลปินที่มีชื่อเสียงและบรรเลงโดยวงดนตรีสากลกรมโฆษณาการ ต่อมาบริษัทแผ่นเสียงอื่นๆ ได้ขอพระบรมราชานุญาตบันทึกเสียงเพลงพระราชนิพนธ์ลงแผ่นเสียงอีกหลายแห่ง เพลงพระราชนิพนธ์ได้รับการบันทึกเสียงลงแผ่นเสียงมาอย่างยาวนาน มีการเรียบเรียงใหม่ และถ่ายทอดผ่านดนตรีหลากหลายรูปแบบ ทำให้มีความเป็นสากล และร่วมสมัยมากยิ่งขึ้น"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image61.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image62.jpg", "image63.jpg", "image64.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'เพลงพระราชนิพนธ์พระบาทสมเด็จพระเจ้าอยู่หัวรัชกาลที่ 9'(ตอนที่ 1))",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงไทยของกรมศิลปากร",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image65.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "กรมศิลปากรจัดทำแผ่นเสียงเพลงไทย โดยมีวัตถุประสงค์เพื่ออนุรักษ์เผยแพร่ศิลปวัฒนธรรมด้านดนตรีและนาฏศิลป์ของไทย ผ่านการบันทึกเสียงเพลงไทยแบบฉบับลงบนแผ่นเสียง มีทั้งเพลงร้อง เพลงเดี่ยว เพลงระบำสำหรับใช้ประกอบการฟ้อนรำ และเพลงรำวงบรรเลงและขับร้องโดยศิลปินภายใต้วงดุริยางค์ไทยและวงดุริยางค์ สากลของกรมศิลปากร แผ่นเสียงเพลงไทยชุดแรกจัดทำขึ้นและเริ่มจำหน่ายเมื่อ พ.ศ. 2501"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ในระยะแรกเป็นการบันทึกเสียงลงบนแผ่นเสียงครั่ง ขนาด 10 นิ้ว มีทั้งหมด 3 ชุด จำนวน 30 แผ่น ได้รับความนิยมจากประชาชนเป็นอย่างมาก ต่อมาใน พ.ศ. 2505 จึงได้จัดทำแผ่นเสียงไวนิล ลองเพลย์ ขนาด 12 นิ้ว ซึ่งสามารถบันทึกเสียงได้มากกว่าแผ่นเสียงครั่ง แผ่นเสียงเพลงไทยนี้มีสมุดอธิบายเพลงพร้อมบทร้องทั้งภาษาไทยและภาษาอังกฤษประกอบทุกชุด",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image66.jpg", "image67.jpg", "image68.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image69.jpg", "image70.jpg", "image71.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'สมุดอธิบายเพลงแผ่นเสียงลองเพลย์ของกรมศิลปากร ชุดที่ 4')",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพื่อการศึกษา",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image72.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "แผ่นเสียงเป็นสื่อเพื่อการเรียนรู้อย่างหนึ่งโดยกระทรวงศึกษาธิการได้จัดทำขึ้นเผยแพร่เพื่อใช้ประกอบบทเรียนและเสริมหลักสูตรในรายวิชาต่างๆ เช่น แผ่นเสียงการอ่านทำนองเสนาะสำหรับใช้ประกอบแบบเรียนวรรณคดีและภาษาไทย แผ่นเสียงสำหรับบทเรียนภาษาอังกฤษ แผ่นเสียงเพลงเด็ก แผ่นเสียงเพลงสำหรับฝึกหัดการเต้นตามจังหวะ เพื่อใช้เสริมหลักสูตรวิชาดนตรีและนาฏศิลป์ เป็นต้น"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "สำหรับเพลงเด็กที่ใช้ประกอบการเรียนการสอนซึ่งเป็นที่รู้จักกันอย่างแพร่หลาย คือ เพลงช้าง แต่งโดย คุณหญิงชิ้น ศิลปบรรเลงใช้ทำนองเพลงไทย คือ เพลงพม่าเขว เป็นเพลงร้องสำหรับเด็กที่เผยแพร่ผ่านรายการวิทยุโรงเรียน ซึ่งเป็นบทเรียนในหลักสูตรของกระทรวงศึกษาธิการ เพลงช้างนี้ได้รับการยกย่องและคัดเลือกให้เป็นเพลงประเทศภาคพื้นเอเชีย โดยศูนย์วัฒนธรรมแห่งเอเชียเพื่อสหประชาชาติ ยูเนสโก (ACCU:Asian Cultural Centre forUNESCO)"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image73.jpg",
+						"imageDescription": "คุณหญิงชิ้น ศิลปบรรเลง ผู้ประพันธ์เพลง 'ช้าง'"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'หนูรู้จักช้างหรือเปล่า หนูรู้จักชิ้นหรือเปล่า' โดย อานันท์ นาคคง (วารสารวัฒนธรรมออนไลน์))",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "รางวัลแผ่นเสียงทองคำ",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "รางวัลแผ่นเสียงทองคำพระราชทาน นับเป็นรางวัลอันเป็นเกียรติยศสูงสุดของศิลปินเพลง โดยศิลปินผู้ผ่านการคัดเลือกจะได้เข้าเฝ้า เพื่อรับพระราชทานรางวัลแผ่นเสียงทองคำจากพระบาทสมเด็จพระเจ้าอยู่หัว รัชกาลที่ 9 รางวัลนี้มีที่มาจากการจัดรายการอันดับเพลงไทยสากลยอดนิยมประจำสัปดาห์ของสถานีวิทยุกองพลที่ 1 รักษาพระองค์ เพื่อสนับสนุนและส่งเสริมให้วงการเพลงไทยเกิดความตื่นตัวในการสร้างสรรค์ผลงานให้ดียิ่งขึ้น”",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "งานมอบรางวัลแผ่นเสียงทองคำพระราชทาน จัดขึ้นครั้งแรกเมื่อวันที่ 30 พฤษภาคม พ.ศ. 2507 เพลงที่ได้รับการคัดเลือกเป็นเพลงไทยสากลประเภทลูกกรุงและลูกทุ่ง รางวัลมีทั้งด้านคำร้อง ทำนอง การเรียบเรียงเสียงประสาน เพลงที่ได้รับความนิยม และศิลปินยอดเยี่ยมชาย-หญิง โดยมีผู้ทรงคุณวุฒิในวงการเพลงเป็นคณะกรรมการตัดสิน"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image74.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก ห้องสมุดดนตรีออนไลน์ TK Music Library)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงคุณค่าทางใจและความสุนทรีย์ที่จับต้องได้",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ปัจจุบันความก้าวหน้าทางด้านเทคโนโลยีทำให้ผู้ฟังสามารถฟังเพลงได้อย่างสะดวก รวดเร็ว ผ่านการฟังเพลงในรูปแบบสตรีมมิ่งบนออนไลน์และการดาวน์โหลดไฟล์ อย่างไรก็ตามแผ่นเสียงเริ่มกลับมาได้รับความนิยมอีกครั้ง โดยพบว่าใน พ.ศ. 2563 มียอดผลิตมากกว่าแผ่นซีดีเป็นครั้งแรกในรอบ 35 ปี นับเป็นปรากฏการณ์สำคัญที่หลายคนตั้งคำถามว่า ทำไมแผ่นเสียงจึงกลับมาเป็นที่นิยมในโลกยุคดิจิทัล",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การกลับมาได้รับความนิยมของแผ่นเสียงไวนิลในปัจจุบัน โดยเฉพาะในหมู่นักฟังเพลงชาวไทย อาจเกิดจากหลายสาเหตุด้วยกัน ทั้งคุณค่าในด้านของศิลปวัตถุทางด้านดนตรี และสุนทรียภาพทางดนตรีจากแผ่นเสียง การฟังเพลงจากเครื่องเล่นแผ่นเสียงทำให้หวนคิดถึงบรรยากาศในอดีต จากเสน่ห์ของเสียงที่ถูกสรรสร้าง ตั้งแต่ กระบวนการบันทึกเสียงลงบนแผ่นเสียงด้วยระบบอนาล็อกที่ให้เสียงเป็นธรรมชาติ นุ่มนวล คมชัด และมีรายละเอียดของเสียงที่ต่างจากไฟล์เสียงดิจิทัล"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "นอกจากนี้การออกแบบปกแผ่นเสียงยังเป็นงานศิลปะที่สวยงาม แฝงด้วยความหมายและสะท้อนเรื่องราวของศิลปินที่น่าสนใจ ทั้งนี้การเก็บสะสมแผ่นเสียงยังเป็นการแสดงออกถึงการสะสมวัตถุทางด้านดนตรีที่จับต้องได้ของนักดนตรี หรือนักสะสมและเป็นงานอดิเรกที่เก็บเรื่องราวความรู้เกี่ยวกับดนตรี จนเมื่อเวลาผ่านไปก็กลายเป็นความรู้ทางคลังประวัติศาสตร์ของวงการเพลงได้ในตัวเอง"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image75.jpg", "image76.jpg", "image77.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image78.jpg", "image79.jpg", "image80.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image81.jpg", "image82.jpg", "image83.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image84.jpg", "image85.jpg", "image86.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'ทำไมแผ่นเสียงถึงเป็นไอเทมขายดีในยุคดิจิทัล' และ 'ทำไมเครื่องเล่นแผ่นเสียงจึงกลับมาเป็นที่นิยมอีกครั้งในยุคดิจิตอล?'",
+					"background": "bg-transparent"
+				}
+			]
 		}
 	]
 }
