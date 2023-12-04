@@ -1,17 +1,5 @@
 <script setup>
-import { ref } from 'vue';
-
-// Your data properties
-const someData = ref('Some initial data');
-
-// Your methods
-const handleButtonClick = () => {
-  console.log('Button clicked!');
-  // Add your logic here
-};
-
-// If you need to expose some methods or data to the template
-const exposed = defineProps(['propName1', 'propName2']);</script>
+</script>
 
 <template>
 	<div class="flex top-0 left-0 w-full shadow bg-white flex items-center justify-between gap-5 pl-14 pr-12 max-md:flex-wrap max-md:px-5" style="font-family: 'Inter', sans-serif;">
@@ -19,12 +7,19 @@ const exposed = defineProps(['propName1', 'propName2']);</script>
 		<span class="text-gray-900">ATOM</span><span class="text-orange-400">MUSE</span>
 	  </div>
 	  <div class="self-stretch flex items-start justify-between gap-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center leading-5 whitespace-nowrap p-3">
+		
 		<div class="text-gray-900 text-center text-sm font-medium leading-5 self-center my-auto">
-		  Home
+			<NuxtLink to="/sutee">
+				Home
+			</NuxtLink>
 		</div>
+		
 		<div class="text-gray-900 text-center text-sm font-medium leading-5 self-center my-auto">
-		  Exhibitions
+			<NuxtLink to="/d-day/">
+				Exhibitions
+			</NuxtLink>
 		</div>
+
 		<div class="items-stretch border border-[color:var(--gray-300,#D1D5DB)] shadow-sm bg-white self-center flex gap-2 my-auto pl-3.5 pr-20 py-2.5 rounded-md border-solid max-md:pr-5">
 		  <img
 			loading="lazy"
