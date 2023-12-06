@@ -25,7 +25,7 @@ checkVerticalCardsStep(1)
 
 <template>
 	<div class="w-full h-full">
-		<BaseHeader img="/assets/imgs/header-image.png" />
+		<BaseHeader img="/imgs/header-image.png" />
 		<div class="p-8 lg:p-12">
 			<div class="flex justify-between border-b-2">
 				<SectionTitle title="Exhibitions" class="mb-7" />

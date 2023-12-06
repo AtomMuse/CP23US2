@@ -10,8 +10,8 @@ const props = defineProps({
 <template>
 	<div>
 		<div
-			class="w-full h-72 content-none bg-center bg-cover"
-			:style="`background-image:url(/_nuxt/assets/images/mockup/${image})`"
+			class="w-full bg-center bg-cover h-72 content-none"
+			:style="`background-image:url(/images/mockup/${image})`"
 		></div>
 	</div>
 </template>

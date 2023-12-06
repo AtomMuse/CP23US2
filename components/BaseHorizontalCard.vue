@@ -37,7 +37,7 @@ getPreviewText()
 		<div class="w-full md:w-48 md:flex-none">
 			<img
 				loading="lazy"
-				:srcSet="`/_nuxt/assets/images/mockup/${img}`"
+				:srcSet="`/images/mockup/${img}`"
 				class="aspect-[1.6] object-cover w-full h-auto md:h-full rounded-m md:rounded-3xl"
 				alt="Exhibition"
 			/>
@@ -45,11 +45,11 @@ getPreviewText()
 
 		<div class="flex lg:gap-12">
 			<div class="flex flex-col gap-2 text-darkBlue">
-				<p class="font-bold text-base">{{ title }}</p>
-				<p class="font-medium text-sm leading-5">{{ previewText }}</p>
-				<p class="text-gray-400 text-sm mt-2">{{ date }}</p>
+				<p class="text-base font-bold">{{ title }}</p>
+				<p class="text-sm font-medium leading-5">{{ previewText }}</p>
+				<p class="mt-2 text-sm text-gray-400">{{ date }}</p>
 			</div>
-			<ArrowLongRightIcon class="w-20 invisible lg:visible" />
+			<ArrowLongRightIcon class="invisible w-20 lg:visible" />
 		</div>
 
 		<!-- <div class="flex flex-col justify-between leading-normal">

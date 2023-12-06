@@ -14,11 +14,11 @@ const props = defineProps({
 <template>
 	<div>
 		<div
-			class="w-full h-52 bg-center bg-cover"
-			:style="`background-image:url(/_nuxt/assets/images/mockup/${backgroundImg})`"
+			class="w-full bg-center bg-cover h-52"
+			:style="`background-image:url(/images/mockup/${backgroundImg})`"
 		>
 			<p
-				class="text-3xl text-white font-bold text-center w-full h-full items-center flex justify-center bg-zinc-950 bg-opacity-50 w-full"
+				class="flex items-center justify-center w-full h-full text-3xl font-bold text-center text-white bg-opacity-50 bg-zinc-950"
 			>
 				{{ title }}
 			</p>

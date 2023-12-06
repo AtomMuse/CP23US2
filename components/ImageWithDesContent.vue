@@ -13,9 +13,9 @@ const props = defineProps({
 
 <template>
 	<div>
-		<div class="flex flex-col justify-center h-full items-center">
-			<img :src="`/_nuxt/assets/images/mockup/${image}`" class="w-10/12" />
-			<p class="text-center text-sm leading-5 mt-5" v-if="description != null">
+		<div class="flex flex-col items-center justify-center h-full">
+			<img :src="`/images/mockup/${image}`" class="w-10/12" />
+			<p class="mt-5 text-sm leading-5 text-center" v-if="description != null">
 				{{ description }}
 			</p>
 		</div>
