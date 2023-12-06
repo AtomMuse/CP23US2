@@ -4,6 +4,7 @@
 			"id": 1,
 			"exhibitionName": "Hung Liu: Making History",
 			"exhibitionDescription": "Adapting motifs and symbols from Chinese visual and cultural traditions, as wel as antique photographs of Chinese society by Western observers, Liu transformed documentary-style photography into paonterly, personal reflections on canvas and paper.",
+			"thumbnailImg": "image.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
@@ -166,6 +167,7 @@
 			"id": 2,
 			"exhibitionName": "Object Lessons",
 			"exhibitionDescription": "Objects often made by women, such as utilitarian or decorative pottery and baskets, have historically been marginalized within the canon of art history. Works on display here attest to the history of women as makers of objects that simultaneously preserve traditions and push boundaries in materials including clay, reeds, and silver.",
+			"thumbnailImg": "image17.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
@@ -260,6 +262,7 @@
 			"id": 3,
 			"exhibitionName": "The Book as Art: Accordion Adaptations",
 			"exhibitionDescription": "Inspired by the 1,000+ collection of artists’ books at the National Museum of Women in the Arts, this series of online exhibitions, organized by book format, introduces the boundless range of mediums, techniques, and topics artists explore to transform and reinvent books as we know them.",
+			"thumbnailImg": "image23.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
@@ -391,6 +394,7 @@
 			"id": 4,
 			"exhibitionName": "คน ข้าว นา ควาย ในวัฒนธรรมเอเชียตะวันออกเฉียงใต้",
 			"exhibitionDescription": "มนุษย์รู้จักปลูกข้าวตั้งแต่เมื่อไร มีศาสตร์หลายสาขาที่ใช้ ‘ข้าว’ เป็นวัตถุในการศึกษาสังคมมนุษย์ เพราะวิวัฒนาการ ของการเพาะปลูกข้าวสะท้อนให้เห็นถึงความสัมพันธ์ของมนุษย์กับสิ่งแวดล้อม และ ความสัมพันธ์ระหว่างมนุษย์ด้วยกันเองในช่วงที่มีการเปลี่ยนผ่านทางสังคมจากการหาของป่าล่าสัตว์มาเป็นสังคมเกษตรกรรม หลักฐานทางโบราณคดีบ่งบอกว่ามนุษย์ใน ลุ่มแม่น้ำแยงซีนำข้าวมาเป็นอาหารเมื่อกว่าหมื่นปีที่แล้ว และเริ่มเพาะปลูกข้าวเมื่อ ประมาณ 6,000 ปีที่แล้ว ก่อนที่จะแพร่กระจายไปยังภูมิภาคต่างๆจนมีการเพาะปลูก อย่างแพร่หลายในปัจจุบันการวิเคราะห์ทางวิทยาศาสตร์เชิงโบราณคดีเผยให้เห็นถึง ความซับซ้อนของกระบวนการกลายมาเป็น ‘พันธุ์พืชปลูก’ ของข้าว",
+			"thumbnailImg": "image32.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
@@ -518,6 +522,7 @@
 			"id": 5,
 			"exhibitionName": "Unplugged Coding คืออะไร - แนะนำสื่อการสอนโค้ดดิ้ง (Coding)",
 			"exhibitionDescription": "Coding คือ การเขียนคำสั่งให้คอมพิวเตอร์ทำงานด้วยภาษาหรือโค้ด หลายคนอาจเข้าใจว่าการเรียน Coding จำเป็นต้องใช้อุปกรณ์ เช่น คอมพิวเตอร์หรือแท็บเล็ต แต่วันนี้ Twinkl (ทวิงเคิล) จะพามาทำความรู้จักกับ Unplugged Coding หรือการเรียนโค้ดดิ้งแบบไม่ง้อคอมพิวเตอร์กัน",
+			"thumbnailImg": "image42.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
@@ -620,6 +625,1130 @@
 			"id": 6,
 			"exhibitionName": "แผ่นเสียงในสยาม",
 			"exhibitionDescription": "วิวัฒนาการแผ่นเสียงในประเทศไทย",
+			"thumbnailImg": "image48.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Acedemic"],
+			"exhibitionTags": ["music"],
+			"userId": {
+				"userId": 5,
+				"firstName": "National",
+				"lastName": "Library"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "กระบอกเสียง การบันทึกเสียงยุคแรก",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image48.jpg",
+						"imageDescription": "กระบอกเสียงเอดิสัน (EDISON CYLINDER)"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การบันทึกเสียงช่วงเริ่มแรก เป็นการบันทึกเสียงลงบนกระบอกเสียงทรงกลมยาว โดย โทมัส อัลวา เอดิสัน (Thomas Alva Edison) ผู้ค้นพบความสำเร็จในการบันทึกเสียง เมื่อ พ.ศ. 2420 เรียกเครื่องบันทึกเสียงนี้ว่า “กระบอกเสียงเอดิสัน” (EDISON CYLINDER)"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "      กระบอกเสียงนี้มีลักษณะเป็นทรงกระบอก บนผิวด้านนอกฉาบไว้ด้วยขี้ผึ้งแข็ง เวลาบันทึกเสียงใช้วิธีไขลานให้ท่อทรงกระบอกหมุนไป แล้วผู้ขับร้องจะร้องเพลงกรอกลงไปทางลำโพง เสียงที่เข้าทางลำโพงจะไปสั่นที่เข็ม ซึ่งจะขูดลงไปบนขี้ผึ้งบนรูปทรงกระบอกให้เกิดเป็นร่องเสียงขึ้น เริ่มต้นตั้งแต่ส่วนหัวของกระบอกไปจบลงที่ปลายอีกข้าง เป็นอันเสร็จการบันทึก เมื่อจะนำมาเปิดฟังก็นำกระบอกเสียงนั้นมาหมุนด้วยเครื่องไขลานเช่นเดียวกัน แล้วใช้เข็มขูดลงไปบนร่องที่ได้บันทึกไว้ เสียงเพลงก็จะออกมาทางลำโพงเดียวกับที่เคยใช้บันทึกเสียง"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image49.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "จากทรงกระบอกสู่แผ่นแบนราบ จุดเริ่มต้นของแผ่นเสียง",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image50.jpg",
+						"imageDescription": "อีมิล เบอร์ไลเนอร์ (Emile Berliner) 'บิดาแห่งแผ่นเสียง'"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2430 อีมิล เบอร์ไลเนอร์ (Emile Berliner) นักประดิษฐ์ชาวเยอรมัน ได้ทดลองทำการบันทึกเสียงลงบนวัสดุแบนราบแทนวัสดุทรงกระบอก ซึ่งสะดวกกว่าและบันทึกเสียงได้ยาวกว่า โดยเริ่มแรกใช้วิธีบันทึกเสียงจากกลางแผ่นให้เข็มขูดเป็นร่องออกมาสู่ขอบแผ่นช้าๆ เพลงจึงมาจบที่ขอบแผ่นเสียง เรียกแผ่นรุ่นแรกนี้ว่า “แผ่นเสียงร่องกลับทางของเบอร์ไลเนอร์”"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ต่อมา พ.ศ. 2434 เบอร์ไลเนอร์ ได้พัฒนาคุณภาพการผลิตแผ่นเสียงให้ดีขึ้น โดยใช้วัสดุนิกเกิลผสมกับทองแดง ตีเป็นแผ่นบาง หุ้มด้วยชแล็คสูตรผสม ซึ่งให้เสียงที่มีชีวิตชีวามากขึ้น เรียกแผ่นเสียงชนิดนี้ว่า “แผ่นเสียงครั่ง” จากการคิดค้นการบันทึกเสียงลงแผ่นเสียงนี้ เบอร์ไลเนอร์จึงได้รับการยกย่องว่าเป็น “บิดาแห่งแผ่นเสียง”",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "การบันทึกเสียงยุคแรกในสยาม",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "กระบอกเสียงเข้ามาสู่ประเทศไทยในสมัยรัชกาลที่ 5 จากหลักฐานที่นาย ต.เง็กชวน บันทึกไว้ว่าได้เห็นและฟังเพลงจากกระบอกเสียง เมื่อ พ.ศ. 2437 โดยมีผู้นำเข้ามาเปิดในงานโกนจุก ณ ตำบลบ้านใหม่ อำเภอเมือง จังหวัดฉะเชิงเทรา นอกจากหลักฐานการบันทึกเสียงในไทยแล้ว ยังปรากฏหลักฐานการบันทึกเสียงวงดนตรีไทยของคณะนายบุศย์ มหินทร์ ลงกระบอกเสียง ณ ประเทศเยอรมนี เมื่อ พ.ศ. 2443 ต่อมาจึงเริ่มมีการบันทึกเสียงลงแผ่นเสียงครั้งแรก ณ วังบ้านหม้อ ซึ่งเป็นที่ตั้งของกรมมหรสพหลวงในสมัยรัชกาลที่ 5 ในระยะแรก เป็นการบันทึกเสียงลงบนกระบอกเสียงแล้วนำไปอัดลงแผ่นเสียงครั่งที่ต่างประเทศ และนำกลับเข้ามาจำหน่ายที่สยาม แผ่นเสียงครั่งที่นำเข้ามาจำหน่ายตราแรกในสยาม คือ ตราอรหันต์ ตราที่สองคือ ตราปาเต๊ะ"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image51.jpg",
+						"imageDescription": "คณะนายบุศย์ มหินทร์ บันทึกเสียงเพลงสรรเสริญพระบารมีครั้งแรกที่ประเทศเยอรมนี เมื่อ พ.ศ 2443"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ปลายรัชกาลที่ 6 มีการผลิตแผ่นเสียงโดยคนไทย มี 4 ตรา ได้แก่ ตรากระต่าย ตรากรอบพักตร์สีทอง ตราเศรณี และตราศรีกรุง หลังการเปลี่ยนแปลงการปกครอง พ.ศ. 2475 แผ่นเสียงเพลงไทยสากลเกิดขึ้นแทนที่แผ่นเสียงเพลงไทยเดิม มีบริษัทและห้างแผ่นเสียงของคนไทยเกิดขึ้นจำนวนมากและได้รับความนิยมอย่างแพร่หลาย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image52.png",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image53.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image54.png",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image55.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล และรายงานการวิจัยเรื่อง การบันทึกเสียงเพลงไทย : กรณีศึกษาแผ่นเสียงร่องกลับทาง โดย ศันสนีย์ จะสุวรรณ์)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงปาเต๊ะเพลงไทย",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "พ.ศ. 2451 บริษัทปาเต๊ะ (Pathé) ซึ่งเป็นบริษัทผลิตแผ่นเสียงจากฝรั่งเศส ส่งวิศวกรมาบันทึกเสียงลงกระบอกเสียง และนำกลับไปผลิตเป็นแผ่นเสียงร่องกลับทางที่ประเทศฝรั่งเศสและเบลเยียม ลักษณะพิเศษของแผ่นเสียงร่องกลับทางจะเล่นจากด้านในสู่ด้านนอก หน้าตราระบุชื่อเพลงและนักร้องโดยใช้กรดกัดแล้วปาดสี แผ่นเสียงเพลงไทยของปาเต๊ะจะใช้ลาเบลที่ปาดด้วยสีเหลืองโดยเฉพาะ เรียกแผ่นเสียงนี้ว่า “แผ่นเสียงชนิดแข็งเข็มเพ็ชร” เพราะต้องใช้เข็มเพชรหัวมนเล่นโดยเฉพาะเท่านั้น",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image56.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image57.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "หลังสงครามโลกครั้งที่ 2 บริษัทปาเต๊ะตั้งโรงงานสำหรับผลิตแผ่นเสียงเพลงไทยที่เซี่ยงไฮ้ ประเทศจีน โดยใช้ไก่แดงเป็นตราสัญลักษณ์ การผลิตใช้กระดาษระบุตราแทนการกัดด้วยกรด และเปลี่ยนรูปแบบการเล่นจากด้านนอกสู่ด้านในเหมือนแผ่นเสียงปัจจุบัน นักร้องที่มีชื่อเสียงของแผ่นเสียงเพลงไทยปาเต๊ะ อาทิ หม่อมเจริญ หม่อมมาลัย ส่วนใหญ่เป็นการบันทึกเสียงเพลงพื้นบ้าน เช่น เพลงเป๋ (เพลงฉ่อย) เพลงแหล่ เพลงตับ และเพลงเบ็ดเตล็ด",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "หม่อมส้มจีนนักร้องหญิงไทยคนแรกที่บันทึกเสียง",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "หม่อมส้มจีน เกิดในปลายรัชกาลที่ 4 เป็นภรรยาของพระยาราชานุประพันธ์ (สุดใจ บุนนาค) และเป็นศิษย์ของพระยาประสานดุริยศัพท์ (แปลก ประสานศัพท์) เป็นนักร้องหญิงที่มีเสียงเล็กแหลมร้องเพลงได้ชัดถ้อยชัดคำ และมีลีลาการเอื้อนที่ละเอียดลออหมดจด มีชื่อเสียงในเรื่องการร้องเพลงสามชั้น",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image58.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "หม่อมส้มจีน เป็นนักร้องหญิงไทยคนแรกที่ได้บันทึกเสียงลงกระบอกเสียงเอดิสันและได้บันทึกเสียงลงแผ่นเสียงหลายตรา เช่น ตราอรหันต์ ตราโอเดียน และแผ่นเสียงผู้มีบรรดาศักดิ์ แผ่นเสียงของหม่อมส้มจีนระยะแรกมักพิมพ์ชื่อผิดโดยพิมพ์ว่า “หม่อมซ่มจีน” ซึ่งที่ถูกแล้วต้องเป็น “หม่อมส้มจีน” หม่อมส้มจีนเป็นนักร้องสตรีบรรดาศักดิ์คนแรกและคนเดียวของสยามที่แผ่นเสียงมีลายสลักชื่อของเจ้าตัวปรากฏเป็นหลักฐาน"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "จากแผ่นเสียงครั่งสู่แผ่นเสียงไวนิล",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2473 มีการพัฒนาเทคโนโลยีการบันทึกเสียง ด้วยระบบสเตอริโอ (Stereo) ซึ่งให้คุณภาพเสียงที่ดีกว่าแผ่นเสียงครั่ง สามารถเล่นได้ที่ความเร็วต่ำ 33 รอบต่อนาที (33 RPM) ซึ่งเดิมแผ่นเสียงครั่งเล่นด้วยความเร็ว 78 รอบต่อนาที (78 RPM) แผ่นเสียงที่พัฒนาขึ้นนี้ผลิตจากวัสดุโพลิเมอร์สังเคราะห์เรียกว่า “ไวนิล” (Vinyl) จึงเป็นที่มาของการเรียกชื่อแผนเสียงนี้ว่า “แผ่นไวนิล”"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image59.png",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image60.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "พ.ศ. 2492 บริษัท RCA Victor พัฒนาแผ่นเสียงไวนิลขนาด 7 นิ้ว เล่นด้วยความเร็ว 48 (48 RPM) รอบต่อนาที เรียกว่า “แผ่นซิงเกิล” (Single) บันทึกเสียงไว้ 1-2 เพลง ปกติแผ่นเสียงไวนิลจะถูกผลิตออกมาเป็นสีดำ แต่ในปัจจุบันมีการผลิตแผ่นเสียงพิเศษจำนวนมากมีสีสันสวยงาม และมีการผลิตแผ่นเสียงขนาดพิเศษ ซึ่งแตกต่าง ไปจากแผ่นเสียงขนาด 7 นิ้ว 10 นิ้ว และ 12 นิ้ว ส่วนมากจัดทำขึ้นในวาระโอกาสพิเศษ"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงสำคัญของชาติ",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "การบันทึกเสียงเพลงสำคัญของชาติครั้งแรก เป็นการบันทึกเสียงเพลงสรรเสริญพระบารมี เมื่อ พ.ศ. 2443 บรรเลงโดยวงดนตรีไทยของคณะนายบุศย์ มหินทร์ ที่ประเทศเยอรมนี บันทึกเสียงลงบนกระบอกเสียงของเอดิสัน ต่อมา พ.ศ. 2450 มีการบันทึกเสียงโดยการขับร้องประกอบครั้งแรกโดย แม่ปุ่ม และแม่แป้น ในแผ่นเสียงปาเต๊ะร่องกลับทาง",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "สำหรับเพลงชาติเริ่มใช้แทนเพลงสรรเสริญพระบารมีตั้งแต่พ.ศ. 2475 บันทึกเสียงครั้งแรกเมื่อ พ.ศ. 2477 หลังจากประกาศใช้เพลงชาติฉบับเต็มอย่างเป็นทางการ โดยบันทึกเสียงลงแผ่นเสียงครั่งตราโอเดียน บรรเลงโดยเครื่องสายฝรั่งวงใหญ่ทหารเรือ หน้า 1 เป็นคำร้องของขุนวิจิตรมาตรา และหน้า 2 คำร้องของนายฉันท์ ขำวิไล",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": " ปัจจุบันเพลงสำคัญของชาติที่รัฐบาลไทยจัดให้มีความสำคัญในระดับชาติ มีจำนวน 8 เพลง ได้แก่ เพลงชาติ เพลงสรรเสริญพระบารมี เพลงมหาชัย เพลงมหาฤกษ์ เพลงสดุดีมหาราชา เพลงภูมิแผ่นดินนวมินทร์มหาราชา เพลงสดุดีจอมราชา และเพลงสดุดีพระแม่ไทย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จากหนังสือ เครื่องเสียงโบราณ ตำนานแห่งศาสตร์และศิลป์ โดย พฤฒิพล ประชุมผล)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงพระราชนิพนธ์ในรัชกาลที่ 9",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การบันทึกเสียงเพลงพระราชนิพนธ์ครั้งแรก มีขึ้นเมื่อ พ.ศ. 2492 โดยบริษัทแผ่นเสียงนำไทยบันทึกเสียงลงแผ่นเสียงครั่งตราสุนัข (HIS MASTER’S VOICE) หน้าสีขาวพิเศษ ตัวหนังสือสีทอง แผ่นเสียงเพลงพระราชนิพนธ์ชุดแรกนี้มี 2 แผ่น ประกอบด้วย เพลงสายฝน ใกล้รุ่ง ชะตาชีวิต และยามเย็น ขับร้องโดยศิลปินที่มีชื่อเสียงและบรรเลงโดยวงดนตรีสากลกรมโฆษณาการ ต่อมาบริษัทแผ่นเสียงอื่นๆ ได้ขอพระบรมราชานุญาตบันทึกเสียงเพลงพระราชนิพนธ์ลงแผ่นเสียงอีกหลายแห่ง เพลงพระราชนิพนธ์ได้รับการบันทึกเสียงลงแผ่นเสียงมาอย่างยาวนาน มีการเรียบเรียงใหม่ และถ่ายทอดผ่านดนตรีหลากหลายรูปแบบ ทำให้มีความเป็นสากล และร่วมสมัยมากยิ่งขึ้น"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image61.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image62.jpg", "image63.jpg", "image64.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'เพลงพระราชนิพนธ์พระบาทสมเด็จพระเจ้าอยู่หัวรัชกาลที่ 9'(ตอนที่ 1))",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพลงไทยของกรมศิลปากร",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image65.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "กรมศิลปากรจัดทำแผ่นเสียงเพลงไทย โดยมีวัตถุประสงค์เพื่ออนุรักษ์เผยแพร่ศิลปวัฒนธรรมด้านดนตรีและนาฏศิลป์ของไทย ผ่านการบันทึกเสียงเพลงไทยแบบฉบับลงบนแผ่นเสียง มีทั้งเพลงร้อง เพลงเดี่ยว เพลงระบำสำหรับใช้ประกอบการฟ้อนรำ และเพลงรำวงบรรเลงและขับร้องโดยศิลปินภายใต้วงดุริยางค์ไทยและวงดุริยางค์ สากลของกรมศิลปากร แผ่นเสียงเพลงไทยชุดแรกจัดทำขึ้นและเริ่มจำหน่ายเมื่อ พ.ศ. 2501"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ในระยะแรกเป็นการบันทึกเสียงลงบนแผ่นเสียงครั่ง ขนาด 10 นิ้ว มีทั้งหมด 3 ชุด จำนวน 30 แผ่น ได้รับความนิยมจากประชาชนเป็นอย่างมาก ต่อมาใน พ.ศ. 2505 จึงได้จัดทำแผ่นเสียงไวนิล ลองเพลย์ ขนาด 12 นิ้ว ซึ่งสามารถบันทึกเสียงได้มากกว่าแผ่นเสียงครั่ง แผ่นเสียงเพลงไทยนี้มีสมุดอธิบายเพลงพร้อมบทร้องทั้งภาษาไทยและภาษาอังกฤษประกอบทุกชุด",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image66.jpg", "image67.jpg", "image68.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image69.jpg", "image70.jpg", "image71.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'สมุดอธิบายเพลงแผ่นเสียงลองเพลย์ของกรมศิลปากร ชุดที่ 4')",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงเพื่อการศึกษา",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image72.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "แผ่นเสียงเป็นสื่อเพื่อการเรียนรู้อย่างหนึ่งโดยกระทรวงศึกษาธิการได้จัดทำขึ้นเผยแพร่เพื่อใช้ประกอบบทเรียนและเสริมหลักสูตรในรายวิชาต่างๆ เช่น แผ่นเสียงการอ่านทำนองเสนาะสำหรับใช้ประกอบแบบเรียนวรรณคดีและภาษาไทย แผ่นเสียงสำหรับบทเรียนภาษาอังกฤษ แผ่นเสียงเพลงเด็ก แผ่นเสียงเพลงสำหรับฝึกหัดการเต้นตามจังหวะ เพื่อใช้เสริมหลักสูตรวิชาดนตรีและนาฏศิลป์ เป็นต้น"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "สำหรับเพลงเด็กที่ใช้ประกอบการเรียนการสอนซึ่งเป็นที่รู้จักกันอย่างแพร่หลาย คือ เพลงช้าง แต่งโดย คุณหญิงชิ้น ศิลปบรรเลงใช้ทำนองเพลงไทย คือ เพลงพม่าเขว เป็นเพลงร้องสำหรับเด็กที่เผยแพร่ผ่านรายการวิทยุโรงเรียน ซึ่งเป็นบทเรียนในหลักสูตรของกระทรวงศึกษาธิการ เพลงช้างนี้ได้รับการยกย่องและคัดเลือกให้เป็นเพลงประเทศภาคพื้นเอเชีย โดยศูนย์วัฒนธรรมแห่งเอเชียเพื่อสหประชาชาติ ยูเนสโก (ACCU:Asian Cultural Centre forUNESCO)"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image73.jpg",
+						"imageDescription": "คุณหญิงชิ้น ศิลปบรรเลง ผู้ประพันธ์เพลง 'ช้าง'"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'หนูรู้จักช้างหรือเปล่า หนูรู้จักชิ้นหรือเปล่า' โดย อานันท์ นาคคง (วารสารวัฒนธรรมออนไลน์))",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "รางวัลแผ่นเสียงทองคำ",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "รางวัลแผ่นเสียงทองคำพระราชทาน นับเป็นรางวัลอันเป็นเกียรติยศสูงสุดของศิลปินเพลง โดยศิลปินผู้ผ่านการคัดเลือกจะได้เข้าเฝ้า เพื่อรับพระราชทานรางวัลแผ่นเสียงทองคำจากพระบาทสมเด็จพระเจ้าอยู่หัว รัชกาลที่ 9 รางวัลนี้มีที่มาจากการจัดรายการอันดับเพลงไทยสากลยอดนิยมประจำสัปดาห์ของสถานีวิทยุกองพลที่ 1 รักษาพระองค์ เพื่อสนับสนุนและส่งเสริมให้วงการเพลงไทยเกิดความตื่นตัวในการสร้างสรรค์ผลงานให้ดียิ่งขึ้น”",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "งานมอบรางวัลแผ่นเสียงทองคำพระราชทาน จัดขึ้นครั้งแรกเมื่อวันที่ 30 พฤษภาคม พ.ศ. 2507 เพลงที่ได้รับการคัดเลือกเป็นเพลงไทยสากลประเภทลูกกรุงและลูกทุ่ง รางวัลมีทั้งด้านคำร้อง ทำนอง การเรียบเรียงเสียงประสาน เพลงที่ได้รับความนิยม และศิลปินยอดเยี่ยมชาย-หญิง โดยมีผู้ทรงคุณวุฒิในวงการเพลงเป็นคณะกรรมการตัดสิน"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image74.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก ห้องสมุดดนตรีออนไลน์ TK Music Library)",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "แผ่นเสียงคุณค่าทางใจและความสุนทรีย์ที่จับต้องได้",
+					"text": null,
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "ปัจจุบันความก้าวหน้าทางด้านเทคโนโลยีทำให้ผู้ฟังสามารถฟังเพลงได้อย่างสะดวก รวดเร็ว ผ่านการฟังเพลงในรูปแบบสตรีมมิ่งบนออนไลน์และการดาวน์โหลดไฟล์ อย่างไรก็ตามแผ่นเสียงเริ่มกลับมาได้รับความนิยมอีกครั้ง โดยพบว่าใน พ.ศ. 2563 มียอดผลิตมากกว่าแผ่นซีดีเป็นครั้งแรกในรอบ 35 ปี นับเป็นปรากฏการณ์สำคัญที่หลายคนตั้งคำถามว่า ทำไมแผ่นเสียงจึงกลับมาเป็นที่นิยมในโลกยุคดิจิทัล",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "การกลับมาได้รับความนิยมของแผ่นเสียงไวนิลในปัจจุบัน โดยเฉพาะในหมู่นักฟังเพลงชาวไทย อาจเกิดจากหลายสาเหตุด้วยกัน ทั้งคุณค่าในด้านของศิลปวัตถุทางด้านดนตรี และสุนทรียภาพทางดนตรีจากแผ่นเสียง การฟังเพลงจากเครื่องเล่นแผ่นเสียงทำให้หวนคิดถึงบรรยากาศในอดีต จากเสน่ห์ของเสียงที่ถูกสรรสร้าง ตั้งแต่ กระบวนการบันทึกเสียงลงบนแผ่นเสียงด้วยระบบอนาล็อกที่ให้เสียงเป็นธรรมชาติ นุ่มนวล คมชัด และมีรายละเอียดของเสียงที่ต่างจากไฟล์เสียงดิจิทัล"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "นอกจากนี้การออกแบบปกแผ่นเสียงยังเป็นงานศิลปะที่สวยงาม แฝงด้วยความหมายและสะท้อนเรื่องราวของศิลปินที่น่าสนใจ ทั้งนี้การเก็บสะสมแผ่นเสียงยังเป็นการแสดงออกถึงการสะสมวัตถุทางด้านดนตรีที่จับต้องได้ของนักดนตรี หรือนักสะสมและเป็นงานอดิเรกที่เก็บเรื่องราวความรู้เกี่ยวกับดนตรี จนเมื่อเวลาผ่านไปก็กลายเป็นความรู้ทางคลังประวัติศาสตร์ของวงการเพลงได้ในตัวเอง"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image75.jpg", "image76.jpg", "image77.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image78.jpg", "image79.jpg", "image80.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image81.jpg", "image82.jpg", "image83.jpg"]
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image84.jpg", "image85.jpg", "image86.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "(จาก 'ทำไมแผ่นเสียงถึงเป็นไอเทมขายดีในยุคดิจิทัล' และ 'ทำไมเครื่องเล่นแผ่นเสียงจึงกลับมาเป็นที่นิยมอีกครั้งในยุคดิจิตอล?'",
+					"background": "bg-transparent"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"exhibitionName": "Hung Liu: Making History",
+			"exhibitionDescription": "Adapting motifs and symbols from Chinese visual and cultural traditions, as wel as antique photographs of Chinese society by Western observers, Liu transformed documentary-style photography into paonterly, personal reflections on canvas and paper.",
+			"thumbnailImg": "image.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Art"],
+			"exhibitionTags": ["woman art", "life"],
+			"userId": {
+				"userId": 1,
+				"firstName": "Somchai",
+				"lastName": "Jaidee"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "1col",
+					"contentType": "only background devider",
+					"background": "image.jpg"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image2.jpg",
+						"imageDescription": "Photograph of Hung Liu, ca. 1970 to 72; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Hung Liu (1948 to 2021)",
+						"text": "Coming of age during Mao Zedong’s Cultural Revolution, Hung Liu (1948 to 2021) was profoundly affected by the plights         of the poor and oppressed. Photography played a critical role in the artist’s life and career, from candid shots that she took of villagers in the countryside to the 19th-century portraits of women that became source imagery for her works. She was even inspired by Dorothea Lange’s images of the American Dust Bowl. Liu’s own poetic imagery stirs a collective memory of her country while re-centering the narrative on the most vulnerable in society."
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "background with title devider",
+					"background": "image3.jpg",
+					"title": "Portraits of Women"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "Liu’s art has always focused on the human condition, particularly that of women under male-dominated regimes. Her archives of source materials include photographic portraits of empresses, mistresses, laborers, and migrant women. Many of these photographs were hidden in the Beijing Film Studio during the Cultural Revolution. Liu took snapshots of the photographs to bring the images back to the United States, where she had moved in 1984 to continue her art training."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image4.jpg",
+						"imageDescription": "Unidentified photographer, Group of women, ca. 1900; Artist’s photograph of archival image, Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image5.jpg", "image6.jpg", "image7.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": null,
+					"text": "For many of her portrayals of sex workers and courtesans, Liu worked from photographs of Chinese women posed in Western costumes and on stage sets that were dated around 1900. She discovered these photographs on a return visit to China in the 1990s. The attire, props, and backdrops indicate that the archival photographs were intended for Western and upper-class Chinese clientele, while Japanese captions on some of the photographs suggest that they were also meant for Japanese tourists in China."
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "Anonymous Faces",
+					"text": null,
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image8.jpg",
+						"imageDescription": "Unidentified photographer, Woman seated on prop balustrade (inspiration for Shui-Water), ca. 1900; Artist’s photograph of archival image, Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image9.jpg",
+						"imageDescription": "Hung Liu, Shui-Water, 2012; Color aquatint etching with gold leaf on paper, 47 x 36 in.; National Museum of Women in the Arts, Gift of Steven Scott, Baltimore, in memory of the artist and in honor of the thirty-fifth anniversary of the National Museum of Women in the Arts; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York; Photo by Lee Stalsworth"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": null,
+					"text": "Shui Water is adapted from a historical photograph of a woman sitting on a railing and surrounded by flowerpots. Liu isolates the figure, placing her in front of a backdrop that evokes Chinese landscape paintings. Her body, layered under streaks of brown earth, may refer to the exploitation endured by working-class women.",
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "background with title devider",
+					"background": "image10.jpg",
+					"title": "People of the Cultural Revolution"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image11.jpg",
+						"imageDescription": "Photograph of Hung Liu, ca. 1970 to 72; Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "In 1968, Liu was one of ten million urban youths sent to re-education camps in the countryside during Mao Zedong’s Cultural Revolution. She toiled in rice and wheat fields in Dadu Lianghe, a village approximately 50 miles outside of Beijing. She bonded with the other villagers and photographed them using a friend’s Karl Zeiss camera, despite restrictions on the use of the medium by the Chinese government."
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "A Closer Look: Bird Imagery",
+						"text": "Liu frequently includes birds in her works with various cultural connotations. Cranes were signs of good luck, serenity, and blessings while Mandarin ducks were considered symbols of love and devotion. Images of sparrows allude to Mao Zedong’s infamous 1958 Four Pests Campaign, which aimed to eradicate mosquitoes, flies, rats, and sparrows. One of the first actions of China’s Great Leap Forward, Chairman Mao’s plan for national economic reconstruction, the campaign led to ecological disasters and mass starvation."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image12.jpg",
+						"imageDescription": "Hung Liu, Corn Carrier (detail), 1999; Oil on canvas, 80 x 70 in.; National Museum of Women in the Arts, Promised gift of Patti and Jerry Sowalsky; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image13.jpg",
+						"imageDescription": "Hung Liu, Corn Carrier (detail), 1999; Oil on canvas, 80 x 70 in.; National Museum of Women in the Arts, Promised gift of Patti and Jerry Sowalsky; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "A Closer Look: Religious Symbols",
+						"text": "Other religious motifs in Liu’s compositions include Bodhisattva figures, lotus blossoms, as well as the recurrent use of circles, which refers to the Zen Buddhist philosophy of wholeness, emptiness, and the cycles of life. Liu incorporates these symbols as a way to accompany, guide, and protect the men, women, and children in her works."
+					},
+					"background": "bg-gray-300"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with bg devider",
+					"title": "Village Photographs",
+					"text": null,
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image14.jpg", "image15.jpg", "image16.jpg"]
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": "Special Thanks",
+					"text": "This online resource was developed in collaboration with Dorothy Moss and the Hung Liu Estate."
+				}
+			]
+		},
+		{
+			"id": 8,
+			"exhibitionName": "Object Lessons",
+			"exhibitionDescription": "Objects often made by women, such as utilitarian or decorative pottery and baskets, have historically been marginalized within the canon of art history. Works on display here attest to the history of women as makers of objects that simultaneously preserve traditions and push boundaries in materials including clay, reeds, and silver.",
+			"thumbnailImg": "image17.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Art"],
+			"exhibitionTags": ["object"],
+			"userId": {
+				"userId": 2,
+				"firstName": "Somsri",
+				"lastName": "Maka"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "1col",
+					"contentType": "background with title devider",
+					"background": "image17.jpg",
+					"title": "A Closer Look"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image18.jpg",
+						"imageDescription": "Daisy Makeig-Jones (for Wedgwood), Vase, ca. 1929 to 31; Bone china with underglaze, luster, and gilding, 9 x 5 in. diameter; National Museum of Women in the Arts, Gift of Arthur M. Eckstein and Jeannie Rutenburg; Photo by Lee Stalsworth"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Daisy Makeig-Jones",
+						"text": "b. 1881, Wath-upon-Dearn, England; d. 1945, Doncaster, England Vase, ca. 1929 to 31 Bone china with underglaze, luster, and gilding Gift of Arthur M. Eckstein and Jeannie Rutenburg Makeig-Jones was employed by the Wedgwood pottery company for more than twenty years. During that time, she designed whimsical scenes that combined the influences of contemporary fairy tale illustration, Asian art, and Art Nouveau. This work is part of the Fairyland Lusterware line, featuring iridescent glazes, which Makeig-Jones produced for Wedgwood beginning in the 1920s."
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "Jiha Moon",
+						"text": "b. 1973, Daegu, South Korea Leia, 2013 Ceramic with glaze Gift of the Georgia Committee of NMWA Moon playfully combines elements of contemporary American culture with those from Korean tradition. Here, the peaches appended to the main body of the pot symbolize longevity and happiness in Korean culture; they evoke the hairstyle of the Star Wars character named in the work’s title."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image19.jpg",
+						"imageDescription": "Jiha Moon, Leia, 2013; Ceramic and glaze, 13 x 8 x 8 in.; National Museum of Women in the Arts, Gift of the Georgia Committee of the National Museum of Women in the Arts; © Jiha Moon"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image20.jpg",
+						"imageDescription": "Francine Alex, Doubleweave basket, 2004; Swamp cane with aniline dyes; National Museum of Women in the Arts, Gift of the Mississippi State Committee of National Museum of Women in the Arts"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Francine Alex",
+						"text": "b. 1950, unknown; d. 2014, Conehatta, Mississippi Doubleweave basket, 2004 Swamp cane with aniline dyes Gift of the Mississippi State Committee of NMWA Alex carried on her Choctaw people’s traditions for making baskets, historically created by women. Made from reed, or cane, that grows on riverbanks throughout the Southeast, these baskets were once created for utilitarian purposes such as storing food. Today, these baskets are prized by collectors for their aesthetic qualities."
+					},
+					"background": "bg-fuchsia-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "Alice Burrows",
+						"text": "Active 1801 to ca. 1819, London Regency teapot, 1816 Silver Silver collection assembled by Nancy Valentine, purchased with funds donated by Mr. and Mrs. Oliver R. Grace and family In 1801, Burrows registered as a silversmith in London after the death of her husband, George. It was relatively common at the time for widows to take over the family business upon the death of a husband. Burrows had her own maker’s mark, making it possible to identify works that she produced."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image21.jpg",
+						"imageDescription": "Alice Burrows, Regency teapot, 1816; Silver, 6 1/4 x 7 x 11 in.; National Museum of Women in the Arts, Silver collection assembled by Nancy Valentine, purchased with funds donated by Mr. and Mrs. Oliver R. Grace and family"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image22.jpg",
+						"imageDescription": "Jami Porter Lara, LDS-MHB-WVBR-0118CE-12, 2018; Pit-fired foraged clay, 12 x 10 1/2 x 3 3/4 in.; National Museum of Women in the Arts, Museum purchase: Members' Acquisition Fund"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Jami Porter Lara",
+						"text": "b. 1969, Spokane, Washington LDS-MHB-WVBR-0118CE-12, 2018 Blackware Museum purchase: Members’ Acquisition Fund Using methods honed by Pueblo artists such as Maria Martinez, Porter Lara creates strikingly modern shapes referencing the ubiquitous plastic water bottle. Through this melding of traditional artistic practice and contemporary popular culture, Porter Lara asks us to consider where, or when, the dividing line between the two exists."
+					},
+					"background": "bg-fuchsia-400"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"exhibitionName": "The Book as Art: Accordion Adaptations",
+			"exhibitionDescription": "Inspired by the 1,000+ collection of artists’ books at the National Museum of Women in the Arts, this series of online exhibitions, organized by book format, introduces the boundless range of mediums, techniques, and topics artists explore to transform and reinvent books as we know them.",
+			"thumbnailImg": "image23.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Art"],
+			"exhibitionTags": ["book"],
+			"userId": {
+				"userId": 3,
+				"firstName": "Somying",
+				"lastName": "Jairak"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "One of the most basic folding mechanisms, the stretchy, zig-zag accordion lends itself to myriad adaptations. Carousel, tunnel, and flag books all incorporate accordion folds to add complexity and movement."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image23.jpg",
+						"imageDescription": "Carol Schwartzott, Kimono/Kosode , 2002; Letterpress on hand-dyed paper, Chiyogami paper, mat board, basswood dowels, 6 x 10 1/2 x 2 1/2 in.; National Museum of Women in the Arts, Purchased with funds provided by the Library Fellows of the National Museum of Women in the Arts; © Carol Schwartzott"
+					},
+					"background": "bg-indigo-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image24.jpg",
+						"imageDescription": "Carol Schwartzott, Kimono/Kosode , 2002; Letterpress on hand-dyed paper, Chiyogami paper, mat board, basswood dowels, 6 x 10 1/2 x 2 1/2 in.; National Museum of Women in the Arts, Purchased with funds provided by the Library Fellows of the National Museum of Women in the Arts; © Carol Schwartzott"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "Carousel books like Kimono/Kosode  by Carol Schwartzott (b. 1945) unfold like an accordion and form a circle when fully open, resembling their amusement park namesake. Here the overlap of die-cut windows and decorative-paper panels evokes the layers of traditional Japanese dress."
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "When closed, tunnel books such as Tunnel Map  by Carol June Barton (b. 1954) lie flat. We “read” them by stretching the book into three dimensions, motion made possible by the accordion-folded side panels. Extending Barton’s book reveals the tunnel, which offers a glimpse of a landscape by framing fragments of geographic forms that recede into space."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image25.jpg",
+						"imageDescription": "Carol June Barton, Tunnel  (from “Tunnel Map”), 1986; Watercolor, gouache, and colored pencil on paper, 13 x 7 7/8 in.; National Museum of Women in the Arts, Gift of the artist; © Carol June Barton"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image26.jpg",
+						"imageDescription": "Julie Chen, Octopus , 1992; Letterpress on paper, 10 3/4 x 13 1/2 in.; National Museum of Women in the Arts, Purchased with grant funds provided by the United States Department of Education; © Julie Chen"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "In Octopus , Julie Chen (b. 1963) creates imagery to complement text from a poem by Elizabeth McDevitt, which explores loss and the ways that language can divide rather than connect. The book’s tunnel structure features irregular, wave-like openings. Its increasingly shadowy, three-dimensional space evokes the undersea realm of the eponymous creature."
+					},
+					"background": "bg-purple-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "A flag book’s structure depends on the orientation of the “flag” pages to the accordion folds of the spine. Opening the book pulls the flags in opposite directions. "
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image27.jpg",
+						"imageDescription": "Susan Elizabeth King, Women and Cars , 1983; Offset printing on paper, 5 1/8 x 6 1/8 in.; National Museum of Women in the Arts, Gift of Trudi Jacobson; © Susan King"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image28.jpg",
+						"imageDescription": "Sande Wascher-James, How Long? , 1994; Liberty Lawn fabrics, color copies, metallic thread, text printed with Gocco, 5 x 9 1/2 in.; National Museum of Women in the Arts, Gift of the artist; © Sande Wascher-James"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "Sande Wascher-James (b. 1946) often employs techniques and materials associated with so-called “women’s work”—embroidery, quilting, and beading."
+					},
+					"background": "bg-transparent"
+				},
+
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "Women in Black  by Annie Alexander (b. 1943) honors the bravery of women she witnessed protesting the imminent Iraq War. The flag book reveals a line of standing figures when opened. The leading figure—Christ, riddled with bullet holes—evokes the violence of war, and the black-and-white palette conveys political extremes."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image29.jpg",
+						"imageDescription": "Annie Alexander, Women in Black , 2003; Cardboard, paper, Xerox, velvet, glass beads, 10 x 7 1/4 in. overall; National Museum of Women in the Arts, Gift of the artist; © Annie Alexander; Photo by Lee Stalsworth"
+					},
+					"background": "bg-indigo-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image30.jpg",
+						"imageDescription": "Sande Wascher-James, How Long? , 1994; Liberty Lawn fabrics, color copies, metallic thread, text printed with Gocco, 5 x 9 1/2 in.; National Museum of Women in the Arts, Gift of the artist; © Sande Wascher-James"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Credits",
+						"text": "This online exhibition series is created with gratitude to Curator Emerita Krystyna Wasserman, who assembled the museum’s rich collection of artists’ books during her 30-year career. The Book as Art: Artists’ Books from the National Museum of Women in the Arts Inspired to teach someone how to create an artist’s book or to make one yourself? Check out NMWA’s  Online exhibition team: Traci Christensen, Deborah L. Gaston, Adrienne L. Gayoso, Alicia Gregory, Ashley W. Harris, Mara Kurlandsky, Elizabeth Lynch, Adrienne Poon, and Emily Shaw. Photos by Lee Stalsworth unless otherwise noted."
+					},
+					"background": "bg-transparent"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"exhibitionName": "คน ข้าว นา ควาย ในวัฒนธรรมเอเชียตะวันออกเฉียงใต้",
+			"exhibitionDescription": "มนุษย์รู้จักปลูกข้าวตั้งแต่เมื่อไร มีศาสตร์หลายสาขาที่ใช้ ‘ข้าว’ เป็นวัตถุในการศึกษาสังคมมนุษย์ เพราะวิวัฒนาการ ของการเพาะปลูกข้าวสะท้อนให้เห็นถึงความสัมพันธ์ของมนุษย์กับสิ่งแวดล้อม และ ความสัมพันธ์ระหว่างมนุษย์ด้วยกันเองในช่วงที่มีการเปลี่ยนผ่านทางสังคมจากการหาของป่าล่าสัตว์มาเป็นสังคมเกษตรกรรม หลักฐานทางโบราณคดีบ่งบอกว่ามนุษย์ใน ลุ่มแม่น้ำแยงซีนำข้าวมาเป็นอาหารเมื่อกว่าหมื่นปีที่แล้ว และเริ่มเพาะปลูกข้าวเมื่อ ประมาณ 6,000 ปีที่แล้ว ก่อนที่จะแพร่กระจายไปยังภูมิภาคต่างๆจนมีการเพาะปลูก อย่างแพร่หลายในปัจจุบันการวิเคราะห์ทางวิทยาศาสตร์เชิงโบราณคดีเผยให้เห็นถึง ความซับซ้อนของกระบวนการกลายมาเป็น ‘พันธุ์พืชปลูก’ ของข้าว",
+			"thumbnailImg": "image32.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Acedemic"],
+			"exhibitionTags": ["culture"],
+			"userId": {
+				"userId": 3,
+				"firstName": "Somying",
+				"lastName": "Jairak"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "1col",
+					"contentType": "only background devider",
+					"background": "image32.jpg"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image31.jpg",
+						"imageDescription": "ภาพบน เปรียบเทียบลักษณะของฐานช่อดอกระหว่างข้าวป่า (ซ้าย) และข้าวปลูก (ขวา) ที่แตกต่างกัน เมล็ดข้าวป่าที่แก่เต็มที่แล้วจะหลุดออกจากรวงได้ง่ายกว่า เป็นลักษณะทางธรรมชาติที่เอื้อให้พืชมีการขยายพันธุ์ แต่ลักษณะนี้จะไม่พบในพันธุ์ข้าวปลูก ที่มาภาพ: Fuller et al. 2011: 46"
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "พัฒนาการทางสังคมกับการเพาะปลูก",
+						"text": " เมื่อหลังสิ้นสุดยุคน้ำแข็ง อุณหภูมิโลกเพิ่มสูงขึ้นและมีฝนตกชุก ส่งผลให้ภูทิทัศน์ และระบบนิเวศเปลี่ยนแปลงอย่างมาก มนุษย์ที่ยังชีพด้วยการหาของป่าล่าสัตว์ เรียนรู้ว่าพืชและสัตว์สามารถนำมาขยาย พันธุ์ได้ในสภาพแวดล้อมที่เหมาะสม นักโบราณคดีพยายามศึกษากระบวนทางธรรมชาติและกระบวนการทางวัฒนธรรมที่ข้าวกลายมาเป็นพืชปลูก โดยการวิเคราะห์ ทางวิทยาศาสตร์ เช่น การศึกษาพันธุกรรมข้าว เรณูวิทยาที่ศึกษาสัณฐานของข้าวและพืชที่เกี่ยวข้อง และการวิเคราะห์ DNA ข้าว ซึ่งจะทำให้เห็นวิวัฒนาการของการเพาะ- ปลูกข้าวที่นำมาอธิบายความสัมพันธ์ของคนในแต่ละภูมิภาคได้"
+					},
+					"background": "bg-transparent"
+				},
+
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": "ข้าว: ของขวัญจากธรรมชาติ",
+					"text": "มีธัญพืชหลายชนิดที่มนุษย์นำมาเป็น อาหารและนำมาพาะปลูกนับตั้งแต่มนุษย์เริ่มรู้จักการเพาะปลูก แล้วข้าวก็ค่อยๆทวีความ สำคัญและกลายมาเป็นอาหารหลักของคนในหลายภูมิภาค ในประเทศไทยพบหลักฐาน การเพาะปลูกข้าวอย่างน้อยเมื่อ 3,500 ปีที่แล้ว เหตุผลที่ข้าวได้รับนิยมและมาแทนที่ อาหารให้พลังงานชนิดอื่น เช่น เผือก มันสาคู และสาเกก็อาจเป็นเพราะข้าวเป็นพืชที่เติบโต ได้ง่ายในหลายสภาพพื้นที่ และเมล็ดข้าวเปลือก ก็สามารถเก็บไว้ได้นานโดยไม่เน่าเสีย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "ข้าวเป็นอาหารหลักของคนเอเชียมาช้านาน และเป็นที่รู้จักของชาวกรีกและ โรมันว่าเป็นอาหารที่มีคุณประโยชน์และช่วยรักษาอาการเจ็บป่วยได้ “Oryza, rice . Pliny and Dioscorides class it with the wheats; whereas Galen, on the contrary places it among vegetables. Rice was rather scarce in Greece at the time when Theophrastus lived; it has lately been brought from India, 286 years before Christ….Rice was also held in great esteem by them (Greek and Roman): they considered it as a food very beneficial to the chest; therefore it was recommended in cases of consumption, and to persons subject to spitting of blood.” (The Pantropeon or History of Food by Soyer 1853: 20, 43)."
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image33.jpg",
+						"imageDescription": "ภาพเขียนสีสมัยก่อนประวัติศาสตร์ที่ผาหมอนน้อย อ.โขงเจียม จ.อุบลราชธานี แสดงภาพมือคน และภาพคนเพาะปลูกและเลี้ยงสัตว์ ที่มาภาพ: www.vcharkarn.com/vblog/98004/37"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": "นา นา นา",
+					"text": "ข้าว เป็นพืชที่มีการปรับตัวได้ ดีและสามารถเจริญเติบโตได้ใน หลากหลายสภาพภูมิอากาศทั้งใน แถบกึ่งอบอุ่นไปจนถึงแถบมรสุม และในหลายสภาพภูมิประทศตั้ง แต่ที่ราบลุ่มไปจนถึงบนภูเขาสูง ปัจจุบันการเพาะปลูกข้าวได้ พัฒนาขึ้นเป็นการทำนาในแปลง ทดน้ำและมีการไถพรวน แต่ก่อน ที่จะมีระบบชลประทานมนุษย์ ปลูกข้าวในที่ลุ่มและบนที่ดอนโดย อาศัยน้ำฝนตามธรรมชาติ หรือปลูก ในพื้นที่น้ำท่วมตามริมฝั่งแม่น้ำ และรอบทะเลสาบนักโบราณคดีตั้งคำถามว่ามนุษย์รู้จักการปลูกข้าว ในแปลงนาน้ำขังที่มีคันดินกั้นตั้ง แต่เมื่อไรเพราะพัฒนาการด้านการเพาะปลูกนี้สะท้อนสภาพสังคมที่มีความซับซ้อนที่มีความต้องการ ผลผลิตมากขึ้น และต้องมีระบบ การจัดการน้ำ จัดการที่ดิน และมี การใช้แรงงานอย่างเข้มข้นด้วย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image34.jpg",
+						"imageDescription": "หลุมขุดค้นที่เจียงซู ประเทศจีน พบร่องรอยที่สันนิษฐานว่าเป็นการทำนาน้ำท่วม โดยมีหลุมลึกเอาไว้สำหรับให้น้ำที่ไม่ต้องให้แช่ขังในแปลงนาลงไปขังในหลุมแทน(ที่มาภาพ Fuller et al. 2011:46)"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image35.jpg",
+						"imageDescription": "นาขั้นบันไดที่ประเทศฟิลิปปินส์ ที่มาภาพ http://board.postjung.com/536782.html"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": "คนกับควาย",
+					"text": "ในวัฒนธรรมเอเชียตะวันออกเฉียงใต้ ควายเป็นสัญลักษณ์ของสังคมเกษตรกรรม มาช้านาน ควายถูกนำมาใช้เป็นสื่อสัญลักษณ์ ในเชิงพิธีกรรมมาตั้งแต่สมัยก่อนประวัติศาสตร์ โบราณวัตถุหลายชิ้นทำเป็นรูปควาย หรือมี ส่วนประดับที่เป็นเขาควาย หรือรูปพิธีกรรม ที่มีควายเป็นส่วนประกอบ เมื่อยุคสมัยเปลี่ยน วัฒนธรรมเปลี่ยน เพราะเหตุใดปัจจุบัน ‘ควาย’ จึงกลายเป็น คำอุปมาเปรียบเปรยถึงความโง่เขลาเบาปัญญา",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image36.jpg",
+						"imageDescription": "ภาชนะดินเผาพบที่แหล่งโบราณคดีสมัยหินใหม่ ที่หนองราชวัตร อ.หนองหญ้าไซ จ.สุพรรณบุรี"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image37.jpg",
+						"imageDescription": "กลองสำริดวัฒนธรรมดองเซิน ลวดลายด้านข้างกลองมีรูปการประกอบพิธีกรรม ที่คนกำลังถืออาวุธและควายถูกผูกไว้กับเสา (คอลเลคชันส่วนบุคคล)"
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "1col",
+					"contentType": "title and text with border devider",
+					"title": "‘ข้าว’ กับการเกิดเมือง",
+					"text": "ข้าว ชลประทาน การขนส่งและการเกิดเมือง ภายหลังสนธิสัญญาเบาว์ริง พ.ศ. 2398 ข้าวกลายเป็นพืชเศรษฐกิจที่สำคัญ ของไทยจากความต้องการในตลาดโลกที่เพิ่มมากขึ้น มาในสมัยรัชกาลที่ 5 ภายหลัง การเลิกทาส พ.ศ. 2415 เสรีชนจำนวนมากถูกผลักดันให้ไปตั้งถิ่นฐานนอกเขต กรุงเทพฯและจากพระราชดำริในเรื่องการพัฒนาทุ่งตะวันออกของแม่น้ำเจ้าพระยา จึงมีโครงการขุดคลองเข้าไปในทุ่งหลวงรังสิต โดยบริษัทขุดคลองและคูนาสยาม ได้รับสัมปทานในการขุดคลอง จากทุ่งป่ารกร้างมีแต่สัตว์ป่าอาศัยอยู่ก็กลาย เป็นพื้นที่เพาะปลูก และได้มีประชากรเพิ่มขึ้นเรื่อยๆ จนกระทั่งได้รับการสถาปนา เป็น ‘เมืองธัญญบูรี’ เมื่อ พ.ศ. 2445 ในขณะนั้นคลองรังสิตยังใช้ประโยชน์ด้าน ชลประทานได้ไม่เต็มที่เนื่องจากมีลักษณะเป็นคลองรับน้ำนองจากแม่น้ำที่ไหลล้นมาเท่านั้น บางปีก็เกิดน้ำท่วมหนัก ไร่นาเสียหายและเกิดโรคระบาด บางปีก็แห้งแล้งจัด จนเกิดทุพภิกขภัย",
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "3col",
+					"contentType": "images shower",
+					"images": ["image38.jpg", "image39.jpg", "image40.jpg"]
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": null,
+						"text": "  ต่อมาในสมัยรัชกาลที่ 6 จึงได้เกิด ‘โครงการป่าสักใต้’ ที่เป็นการพัฒนาระบบ ชลประทานเพื่อการปลูกข้าว โดยการสร้าง เขื่อนกั้นน้ำในพื้นที่เจ้าพระยาตอนล่าง ทำให้ การจัดการน้ำมีประสิทธิภาพมากขึ้น และ ผลผลิตข้าวของไทยสามารถตอบสนองความต้องการของตลาดโลกได้ ทุ่งรังสิตเกิดการเปลี่ยนแปลงครั้งใหญ่ อีกครั้งภายหลัง พ.ศ. 2500 จากแผน พัฒนาเศรษฐกิจฯ ฉบับที่ 1 ส่งผลให้มีการ ขยายเมืองไปตามเส้นทางถนนหลวงหมาย เลข 1 (ถนนพหลโยธิน) ซึ่งพื้นที่ทุงรังสิตก็ กลายเป็นเขตอุตสาหกรรม แหล่งที่อยู่อาศัย และที่ตั้งของสถาบันอุดมศึกษาหลายแห่งมา จนถึงปัจจุบัน"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image41.jpg",
+						"imageDescription": "ทุ่งรัตสิต พ.ศ. 2505 บริเวณที่กลายมาเป็นห้างสรรพสินค้าฟิวเจอร์ปาร์ครังสิตในปัจจุบัน ที่มา : http://www.bangkokbiznews.com/home/news/life-style/lifestyle/2009/02/03/news_12699.php"
+					},
+					"background": "bg-transparent"
+				}
+			]
+		},
+		{
+			"id": 11,
+			"exhibitionName": "Unplugged Coding คืออะไร - แนะนำสื่อการสอนโค้ดดิ้ง (Coding)",
+			"exhibitionDescription": "Coding คือ การเขียนคำสั่งให้คอมพิวเตอร์ทำงานด้วยภาษาหรือโค้ด หลายคนอาจเข้าใจว่าการเรียน Coding จำเป็นต้องใช้อุปกรณ์ เช่น คอมพิวเตอร์หรือแท็บเล็ต แต่วันนี้ Twinkl (ทวิงเคิล) จะพามาทำความรู้จักกับ Unplugged Coding หรือการเรียนโค้ดดิ้งแบบไม่ง้อคอมพิวเตอร์กัน",
+			"thumbnailImg": "image42.jpg",
+			"startDate": "11 Nov 2023",
+			"endDate": "12 Dec 2023",
+			"isPublic": true,
+			"exhibitionCategories": ["Acedemic"],
+			"exhibitionTags": ["unplugged coding", "coding", "game"],
+			"userId": {
+				"userId": 4,
+				"firstName": "Jai",
+				"lastName": "Jirakasem"
+			},
+			"layoutUsed": "blogLayout",
+			"exhibitiontionSections": [
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image42.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "Unplugged Coding คืออะไร",
+						"text": " Unplugged Coding คือ การเรียนคอนเซ็ปต์โค้ดดิ้งโดยไม่ใช้คอมพิวเตอร์ หรือการเรียนโค้ดดิ้งแบบ “ถอดปลั๊ก” นั่นเอง โดยจะเป็นการเรียนผ่านเกมหรือกิจกรรมที่เด็ก ๆ สามารถมีส่วนร่วมได้แบบออฟไลน์ ใช้อุปกรณ์ที่จับต้องได้ เช่น ดินสอหรือปากกา ร่วมกับสื่อการสอน Unplugged Coding กิจกรรม Unplugged Coding เหมาะสำหรับใช้แนะนำคอนเซ็ปต์หรือแนวคิดเกี่ยวกับโค้ดดิ้งที่มีความเป็นนามธรรม เพื่อให้นักเรียนเห็นภาพได้มากขึ้น"
+					},
+					"background": "bg-gray-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "ภารกิจโค้ดดิ้งด้วยบัตรคำสั่ง",
+						"text": "ฝึกทักษะการสร้างชุดคำสั่งหรืออัลกอริทึมด้วยการนำบัตรคำสั่งไปวางในตารางเพื่อทำภารกิจต่าง ๆ ให้สำเร็จ เด็ก ๆ จะได้เรียนรู้เกี่ยวกับแนวคิดพื้นฐานของวิทยาการคำนวณ เช่น Decomposition (การแยกส่วนประกอบของปัญหา) และการออกแบบ Algorithm หรือขั้นตอนในการแก้ไขปัญหาที่ชัดเจน"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image43.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image44.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "กิจกรรมเขียนโค้ดคำสั่งเพื่อน - Code a Classmate!",
+						"text": "กิจกรรมนี้จะพาเด็ก ๆ เรียงลำดับชุดคำสั่งเพื่อกำหนดแอ็คชั่นต่าง ๆ ของเพื่อนร่วมชั้น นอกจากจะเป็นกิจกรรมสนุกสนานที่ช่วยเพิ่มการมีส่วนร่วมในชั้นเรียนแล้ว นักเรียนจะได้เรียนรู้เกี่ยวกับการวางลำดับขั้นตอนการทำงานด้วยชุดคำสั่งง่าย ๆ เพื่อให้บรรลุเป้าหมายที่ต้องการ"
+					},
+					"background": "bg-gray-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "ใบงาน Coding ภารกิจตามล่าหาสมบัติ",
+						"text": "ฝึกทักษะดำเนินการตามชุดคำสั่งหรืออัลกอริทึมตามลำดับขั้นด้วยกิจกรรมสนุก ๆ ในใบงาน Coding เด็ก ๆ จะต้องทำตามขั้นตอนที่กำหนดในบัตรคำสั่ง แล้วตอบคำถามว่าสมบัติที่พบเมื่อเดินทางไปยังจุดหมายปลายทางคืออะไร"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image45.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "image with description",
+						"image": "image46.jpg",
+						"imageDescription": null
+					},
+					"rightCol": {
+						"contentType": "title and text",
+						"title": "กิจกรรมสร้างรูปนกฮูกตามแบบด้วย Decomposition",
+						"text": "เรียนรู้เกี่ยวกับแนวคิดการแยกส่วนประกอบของปัญหา (Decomposition) ซึ่งเป็นองค์ประกอบที่สำคัญของแนวคิดเชิงคำนวณผ่านกิจกรรมสนุก ๆ ให้นักเรียนสร้างรูปภาพนกฮูกตามแบบที่กำหนดด้วยรูปเรขาคณิต"
+					},
+					"background": "bg-gray-400"
+				},
+				{
+					"sectionType": "2col",
+					"leftCol": {
+						"contentType": "title and text",
+						"title": "ภารกิจแต่งหน้าเค้กช็อกโกแลตด้วยบัตรคำสั่ง",
+						"text": "ฝึกทักษะการสร้างชุดคำสั่งหรืออัลกอริทึมด้วยการนำบัตรคำสั่งไปวางในตารางเพื่อทำภารกิจให้สำเร็จ กำหนดให้เด็ก ๆ นำเอาครีมแสนอร่อยไปแต่งหน้าเค้กช็อกโกแลต แล้วนำไปวางเสิร์ฟบนโต๊ะ โดยต้องใช้บัตรคำสั่งทุกใบ และไม่สามารถไปยังช่องที่มีน้องหมาและแมวสุดหิวที่รอขโมยเค้กอยู่ได้"
+					},
+					"rightCol": {
+						"contentType": "image with description",
+						"image": "image47.jpg",
+						"imageDescription": null
+					},
+					"background": "bg-transparent"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"exhibitionName": "แผ่นเสียงในสยาม",
+			"exhibitionDescription": "วิวัฒนาการแผ่นเสียงในประเทศไทย",
+			"thumbnailImg": "image48.jpg",
 			"startDate": "11 Nov 2023",
 			"endDate": "12 Dec 2023",
 			"isPublic": true,
