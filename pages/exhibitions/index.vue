@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="w-full h-screen">
 		exhibition list
 		<nuxt-link
 			:to="`/exhibitions/${exhibition.id}`"

@@ -1,21 +1,16 @@
 <script setup>
 defineProps({
-  title: {
-    type: String,
-    require: true
-  }
+	title: {
+		type: String,
+		require: true
+	}
 })
 </script>
- 
+
 <template>
-  <header>
-    <h1>{{ title }}</h1>
-  </header>
+	<div>
+		<p class="text-2xl md:text-3xl font-bold text-darkBlue">{{ title }}</p>
+	</div>
 </template>
- 
-<style scoped>
-h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-</style>
+
+<style scoped></style>

@@ -16,7 +16,6 @@
 			:sectionInfo="section"
 		/>
 	</div>
-	<div></div>
 </template>
 <script setup>
 const route = useRoute()
