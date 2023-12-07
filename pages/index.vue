@@ -5,7 +5,9 @@ const currentVerticalCardsStep = ref(1)
 const verticalCards = ref([])
 
 const getExhibitions = async () => {
-	const res = await fetch('http://localhost:5000/exhibitions')
+	// const runtimeConfig = useRuntimeConfig()
+	// const API_URL = runtimeConfig.public.API_URL
+	const res = await fetch(`http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`)
 	exhibitionsData.value = await res.json()
 }
 await getExhibitions()

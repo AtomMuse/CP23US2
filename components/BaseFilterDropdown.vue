@@ -24,8 +24,8 @@ const toggleFilter = () => {
 <template>
 	<div>
 		<div
-			class="flex items-center justify-between pb-2 text-darkBlue"
-			:class="isOpen === true ? 'border-0' : 'border-b-2'"
+			class="flex items-center justify-between cursor-pointer text-darkBlue"
+			:class="isOpen === true ? 'border-0 pb-0' : 'border-b-2 pb-3'"
 			@click="toggleFilter"
 		>
 			<div class="flex items-center gap-3">
@@ -50,7 +50,7 @@ const toggleFilter = () => {
 				v-else
 			/>
 		</div>
-		<div class="flex flex-col gap-3 mt-3 text-darkBlue" v-show="isOpen">
+		<div class="flex flex-col gap-3 py-6 text-darkBlue" v-show="isOpen">
 			<div
 				v-for="(item, index) in items"
 				:key="index"

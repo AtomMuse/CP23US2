@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
 	devtools: { enabled: false },
 	modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+	runtimeConfig: {
+		public: {
+			API_URL: process.env.API_URL
+		}
+	},
 	app: {
 		head: {
 			title: 'CP23US2 | Online Exhibition Management System',

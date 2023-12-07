@@ -7,12 +7,18 @@
 			</p>
 		</div>
 		<div class="flex gap-12">
-			<div class="w-1/4">
+			<div class="flex flex-col w-1/4 gap-3">
 				<BaseFilterDropdown
 					icon="filter"
 					label="Filter by Category"
 					:items="categories"
 				/>
+				<BaseFilterDropdown
+					icon="status"
+					label="Filter by Status"
+					:items="status"
+				/>
+				<BaseFilterDropdown icon="sort" label="Sort" :items="sorts" />
 			</div>
 			<div class="w-full pt-8 border-t-2">
 				exhibition list
@@ -33,9 +39,17 @@
 <script setup>
 const exhibitionsData = ref([])
 const getExhibitions = async () => {
-	const res = await fetch('http://localhost:5000/exhibitions')
+	// const runtimeConfig = useRuntimeConfig()
+	// const API_URL = runtimeConfig.public.API_URL
+	const res = await fetch(`http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`)
 	exhibitionsData.value = await res.json()
 }
 await getExhibitions()
 const categories = ['Art', 'Acedemic']
+const status = [
+	'Currently Exhibition',
+	'Previously Exhibition',
+	'Upcoming Exhibition '
+]
+const sorts = ['Oldest to newest', 'Newest to Oldest']
 </script>
