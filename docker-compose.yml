@@ -12,18 +12,6 @@ services:
     networks:
       - atommuse-network
 
-  json-server:
-    container_name: json-server
-    image: jsonserver_img
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    ports:
-      - '5000:5000'
-    command: npm run backend
-    networks:
-      - atommuse-network
-
 networks:
   atommuse-network:
     driver: bridge
