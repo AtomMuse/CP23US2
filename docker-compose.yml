@@ -11,8 +11,18 @@ services:
       - '3000:3000'
     networks:
       - atommuse-network
-    environment:
-      - COMPOSE_DOCKER_CLI_BUILD=0
+
+  json-server:
+    container_name: json-server
+    image: jsonserver_img
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    command: npm run backend
+    networks:
+      - atommuse-network
 
 networks:
   atommuse-network:
