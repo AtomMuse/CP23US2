@@ -1,0 +1,10 @@
+diff a/layouts/default.vue b/layouts/default.vue	(rejected hunks)
+@@ -1,7 +1,7 @@
+ <template>
+ 	<div class="w-screen h-screen">
+ 		<BaseNavbar />
+-		<main>
++		<main class="min-h-screen">
+ 			<slot></slot>
+ 		</main>
+ 		<BaseFooter text="© 2023 ATOMMUSE, SIT KMUTT." />
