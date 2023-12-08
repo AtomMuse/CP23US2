@@ -7,8 +7,16 @@ const verticalCards = ref([])
 const getExhibitions = async () => {
 	// const runtimeConfig = useRuntimeConfig()
 	// const API_URL = runtimeConfig.public.API_URL
-	const res = await fetch(`http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`)
-	exhibitionsData.value = await res.json()
+	// const url = `${API_URL}exhibitions`
+	const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const res = await fetch(url, {
+		method: 'GET'
+	})
+	if (res.status === 200) {
+		exhibitionsData.value = await res.json()
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
 }
 await getExhibitions()
 

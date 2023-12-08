@@ -24,6 +24,7 @@
 			</div>
 			<div
 				class="grid w-full h-full gap-10 md:pt-8 md:border-t-2 lg:grid-cols-3 xl:grid-cols-4"
+				v-if="filteredExhibitions.length != 0"
 			>
 				<nuxt-link
 					:to="`/exhibitions/${exhibition.id}`"
@@ -39,6 +40,12 @@
 					/>
 				</nuxt-link>
 			</div>
+			<div v-else class="flex justify-center w-full min-h-screen md:border-t-2">
+				<p class="mt-10 text-lg text-center">
+					Ops sorry, no exhibition at this time.<br />Please check back later for
+					upcoming exhibition.
+				</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -51,9 +58,17 @@ const filteredExhibitions = ref([])
 const getExhibitions = async () => {
 	// const runtimeConfig = useRuntimeConfig()
 	// const API_URL = runtimeConfig.public.API_URL
-	const res = await fetch(`http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`)
-	exhibitionsData.value = await res.json()
-	filteredExhibitions.value = exhibitionsData.value
+	// const url = `${API_URL}exhibitions`
+	const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const res = await fetch(url, {
+		method: 'GET'
+	})
+	if (res.status === 200) {
+		exhibitionsData.value = await res.json()
+		filteredExhibitions.value = exhibitionsData.value
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
 }
 await getExhibitions()
 const categories = ['Art', 'Acedemic']
@@ -81,7 +96,6 @@ const filterByCate = (item) => {
 			exhibitionsData.value,
 			(exhibition) => exhibition.exhibitionCategories[0] === item
 		)
-		console.log(filteredExhibitions.value)
 	}
 }
 </script>
