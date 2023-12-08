@@ -102,14 +102,17 @@ checkVerticalCardsStep(1)
 			<div class="flex flex-col justify-items-start max-md:w-full max-md:ml-0">
 				<div class="flex flex-col gap-10 sm:items-center lg:grid lg:grid-cols-3">
 					<TextOverImage
+						class="w-full cursor-pointer sm:w-1/2 lg:w-full"
 						text="SCBX"
 						img="https://www.scbx.com/wp-content/uploads/2023/09/scbx-ai-first-organization-banner.jpg"
 					/>
 					<TextOverImage
+						class="w-full cursor-pointer sm:w-1/2 lg:w-full"
 						text="UDOMSAK KRISANAMIS"
 						img="https://seafocus.sg/wp-content/uploads/2021/01/IMG_7542.jpg"
 					/>
 					<TextOverImage
+						class="w-full cursor-pointer sm:w-1/2 lg:w-full"
 						text="MIWD"
 						img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAZSCXiMoy6E1dw5pp4o4CuVGnODgNga9vrp6Gcrc9B7j-Mal7dd6joL7-Y7uK9N-oFfY&usqp=CAU"
 					/>

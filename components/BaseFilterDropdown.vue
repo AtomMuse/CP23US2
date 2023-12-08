@@ -1,26 +1,3 @@
-<script setup>
-const props = defineProps({
-	icon: {
-		type: String,
-		require: true
-	},
-	label: {
-		type: String,
-		require: true
-	},
-	items: {
-		type: Array,
-		require: true
-	}
-})
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/24/outline'
-
-const isOpen = ref(false)
-const toggleFilter = () => {
-	isOpen.value = !isOpen.value
-}
-</script>
-
 <template>
 	<div>
 		<div
@@ -28,7 +5,7 @@ const toggleFilter = () => {
 			:class="isOpen === true ? 'border-0 pb-0' : 'border-b-2 pb-3'"
 			@click="toggleFilter"
 		>
-			<div class="flex items-center gap-3">
+			<div class="flex items-center w-full gap-3">
 				<img src="./filter.svg" class="w-5 h-5" v-show="icon === 'filter'" />
 				<img
 					src="./pajamas_status.svg"
@@ -54,7 +31,13 @@ const toggleFilter = () => {
 			<div
 				v-for="(item, index) in items"
 				:key="index"
-				class="flex justify-center py-1 font-medium border-2 border-gray-400 rounded-full"
+				class="flex justify-center py-1 font-medium border-2 rounded-full cursor-pointer"
+				:class="
+					currentActive === item
+						? ' text-white bg-darkBrown border-darkBrown'
+						: 'border-gray-400 hover:border-softOrange hover:text-softOrange'
+				"
+				@click="$emit('selectOption', item)"
 			>
 				{{ item }}
 			</div>
@@ -63,3 +46,31 @@ const toggleFilter = () => {
 </template>
 
 <style scoped></style>
+
+<script setup>
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/24/outline'
+const props = defineProps({
+	icon: {
+		type: String,
+		require: true
+	},
+	label: {
+		type: String,
+		require: true
+	},
+	items: {
+		type: Array,
+		require: true
+	},
+	currentActive: {
+		type: String,
+		default: ''
+	}
+})
+defineEmits(['selectOption'])
+const isOpen = ref(false)
+const isActive = ref(false)
+const toggleFilter = () => {
+	isOpen.value = !isOpen.value
+}
+</script>
