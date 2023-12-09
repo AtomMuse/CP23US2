@@ -18,7 +18,9 @@
 				</div>
 			</div>
 
-			<p class="mb-0 text-sm text-gray-400">{{ date }}</p>
+			<p class="mb-0 text-sm text-gray-400">
+				{{ startDateFormatted }} - {{ endDateFormatted }}
+			</p>
 		</div>
 	</div>
 </template>
@@ -35,7 +37,11 @@ const props = defineProps({
 		type: String,
 		require: true
 	},
-	date: {
+	startDate: {
+		type: String,
+		require: true
+	},
+	endDate: {
 		type: String,
 		require: true
 	},
@@ -53,4 +59,22 @@ const getPreviewText = () => {
 	}
 }
 getPreviewText()
+
+const startDateFormatted = ref('')
+const endDateFormatted = ref('')
+const getDateFormat = () => {
+	startDateFormatted.value =
+		new Date(props.startDate).getDate() +
+		' ' +
+		new Date(props.startDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.startDate).getFullYear()
+	endDateFormatted.value =
+		new Date(props.endDate).getDate() +
+		' ' +
+		new Date(props.endDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.endDate).getFullYear()
+}
+getDateFormat()
 </script>

@@ -9,9 +9,13 @@ const props = defineProps({
 		type: String,
 		required: true
 	},
-	date: {
+	startDate: {
 		type: String,
-		required: true
+		require: true
+	},
+	endDate: {
+		type: String,
+		require: true
 	},
 	img: {
 		type: String,
@@ -28,6 +32,24 @@ const getPreviewText = () => {
 	}
 }
 getPreviewText()
+
+const startDateFormatted = ref('')
+const endDateFormatted = ref('')
+const getDateFormat = () => {
+	startDateFormatted.value =
+		new Date(props.startDate).getDate() +
+		' ' +
+		new Date(props.startDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.startDate).getFullYear()
+	endDateFormatted.value =
+		new Date(props.endDate).getDate() +
+		' ' +
+		new Date(props.endDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.endDate).getFullYear()
+}
+getDateFormat()
 </script>
 
 <template>
@@ -47,27 +69,12 @@ getPreviewText()
 			<div class="flex flex-col gap-2 text-darkBlue">
 				<p class="text-base font-bold">{{ title }}</p>
 				<p class="text-sm font-medium leading-5">{{ previewText }}</p>
-				<p class="mt-2 text-sm text-gray-400">{{ date }}</p>
+				<p class="mt-2 text-sm text-gray-400">
+					{{ startDateFormatted }} - {{ endDateFormatted }}
+				</p>
 			</div>
 			<ArrowLongRightIcon class="invisible w-20 lg:visible" />
 		</div>
-
-		<!-- <div class="flex flex-col justify-between leading-normal">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="w-8 h-8"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-				/>
-			</svg>
-		</div> -->
 	</div>
 </template>
 

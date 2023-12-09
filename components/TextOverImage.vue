@@ -12,7 +12,11 @@ const props = defineProps({
 		type: String,
 		default: ''
 	},
-	date: {
+	startDate: {
+		type: String,
+		default: ''
+	},
+	endDate: {
 		type: String,
 		default: ''
 	}
@@ -27,6 +31,24 @@ const getPreviewName = () => {
 	}
 }
 getPreviewName()
+
+const startDateFormatted = ref('')
+const endDateFormatted = ref('')
+const getDateFormat = () => {
+	startDateFormatted.value =
+		new Date(props.startDate).getDate() +
+		' ' +
+		new Date(props.startDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.startDate).getFullYear()
+	endDateFormatted.value =
+		new Date(props.endDate).getDate() +
+		' ' +
+		new Date(props.endDate).toDateString().slice(4, 7) +
+		' ' +
+		new Date(props.endDate).getFullYear()
+}
+getDateFormat()
 </script>
 
 <template>
@@ -52,7 +74,12 @@ getPreviewName()
 					<div class="text-sm font-bold text-left text-white">
 						{{ previewName }}
 					</div>
-					<div class="text-sm text-left text-gray-300">{{ date }}</div>
+					<div
+						class="text-sm text-left text-gray-300"
+						v-show="startDate != '' && endDate != ''"
+					>
+						{{ startDateFormatted }} - {{ endDateFormatted }}
+					</div>
 				</div>
 			</div>
 		</div>

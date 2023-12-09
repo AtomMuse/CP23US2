@@ -56,7 +56,8 @@ checkVerticalCardsStep(1)
 						><BaseVerticalCard
 							:title="exhibition.exhibitionName"
 							:desc="exhibition.exhibitionDescription"
-							:date="exhibition.startDate + ' - ' + exhibition.endDate"
+							:startDate="exhibition.startDate"
+							:endDate="exhibition.endDate"
 							:img="exhibition.thumbnailImg"
 					/></NuxtLink>
 				</div>
@@ -75,13 +76,14 @@ checkVerticalCardsStep(1)
 				<p class="text-xl font-medium">Exhibitions ที่เกี่ยวข้องกับงานวิชาการ</p>
 			</div>
 			<div class="w-full pt-12 lg:w-3/5 lg:p-0">
-				<div v-for="(exhibition, index) in verticalCards" :key="index">
+				<div v-for="(exhibition, index) in exhibitionsData" :key="index">
 					<NuxtLink :to="`/exhibitions/${exhibition.id}`" v-if="index < 3"
 						><BaseHorizontalCard
 							:class="index === 2 ? 'border-0' : 'border-b-2'"
 							:title="exhibition.exhibitionName"
 							:desc="exhibition.exhibitionDescription"
-							:date="exhibition.startDate + ' - ' + exhibition.endDate"
+							:startDate="exhibition.startDate"
+							:endDate="exhibition.endDate"
 							:img="exhibition.thumbnailImg"
 					/></NuxtLink>
 				</div>
