@@ -23,10 +23,16 @@ const exhibition = ref([])
 const getExhibition = async () => {
 	// const runtimeConfig = useRuntimeConfig()
 	// const API_URL = runtimeConfig.public.API_URL
-	const res = await fetch(
-		`http://cp23us2.sit.kmutt.ac.th:5000/exhibitions/${route.params.id}`
-	)
-	exhibition.value = await res.json()
+	// const url = `${API_URL}exhibitions/${route.params.id}`
+	const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions/${route.params.id}`
+	const res = await fetch(url, {
+		method: 'GET'
+	})
+	if (res.status === 200) {
+		exhibition.value = await res.json()
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
 }
 await getExhibition()
 </script>

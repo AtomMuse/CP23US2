@@ -36,7 +36,8 @@
 						:text="exhibition.exhibitionCategories[0]"
 						:img="`/images/mockup/${exhibition.thumbnailImg}`"
 						:name="exhibition.exhibitionName"
-						:date="exhibition.startDate + ' - ' + exhibition.endDate"
+						:startDate="exhibition.startDate"
+						:endDate="exhibition.endDate"
 					/>
 				</nuxt-link>
 			</div>
@@ -65,7 +66,9 @@ const getExhibitions = async () => {
 	})
 	if (res.status === 200) {
 		exhibitionsData.value = await res.json()
-		filteredExhibitions.value = exhibitionsData.value
+		filteredExhibitions.value = exhibitionsData.value.sort(
+			(a, b) => Number(new Date(b.startDate)) - Number(new Date(a.startDate))
+		)
 	} else {
 		console.log(`Could not fetch data from ${url}`)
 	}
@@ -84,7 +87,9 @@ const currentActiveOption = ref('')
 const filterByCate = (item) => {
 	if (currentActiveOption.value === item) {
 		currentActiveOption.value = ''
-		filteredExhibitions.value = exhibitionsData.value
+		filteredExhibitions.value = exhibitionsData.value.sort(
+			(a, b) => Number(new Date(b.startDate)) - Number(new Date(a.startDate))
+		)
 	} else {
 		currentActiveOption.value = item
 		Object.filter = (obj, predicate) =>
