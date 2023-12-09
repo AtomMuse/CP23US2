@@ -163,18 +163,20 @@
 		<!-- mobile -->
 		<DisclosurePanel class="md:hidden">
 			<div class="pt-2 pb-3 space-y-1">
-				<DisclosureButton
-					as="a"
-					href="#"
-					class="block py-2 pl-3 pr-4 text-base font-medium text-indigo-700 border-l-4 border-indigo-500 bg-indigo-50 sm:pl-5 sm:pr-6"
-					>Home</DisclosureButton
+				<NuxtLink
+					to="/"
+					class="block w-full py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 sm:pl-5 sm:pr-6"
+					:activeClass="activeClassMobile"
 				>
-				<DisclosureButton
-					as="a"
-					href="#"
-					class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 border-transparent hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
-					>Exhibitions</DisclosureButton
+					Home
+				</NuxtLink>
+				<NuxtLink
+					to="/exhibitions"
+					class="block w-full py-2 pl-3 pr-4 text-base font-medium text-gray-500 border-l-4 sm:pl-5 sm:pr-6"
+					:activeClass="activeClassMobile"
 				>
+					Exhibitions
+				</NuxtLink>
 			</div>
 			<div class="pt-4 pb-3 border-t border-gray-200">
 				<div class="mt-3 space-y-1">
@@ -225,71 +227,9 @@ import {
 	MagnifyingGlassIcon
 } from '@heroicons/vue/24/outline'
 import { PlusIcon } from '@heroicons/vue/20/solid'
+const activeClassMobile = 'text-indigo-700 bg-indigo-50'
+// const activeClassMobile = 'text-softOrange border-b-2 border-b-softOrange'
 </script>
-<!-- <script setup></script>
-
-<template>
-	<div
-		class="top-0 left-0 flex items-center justify-between w-full gap-5 pr-12 bg-white shadow pl-14 max-md:flex-wrap max-md:px-5"
-		style="font-family: 'Inter', sans-serif"
-	>
-		<div
-			class="my-auto text-xl font-bold leading-5 text-orange-400 grow whitespace-nowrap"
-		>
-			<span class="text-gray-900">ATOM</span
-			><span class="text-orange-400">MUSE</span>
-		</div>
-		<div
-			class="flex items-start self-stretch justify-between gap-5 p-3 leading-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center whitespace-nowrap"
-		>
-			<div
-				class="self-center my-auto text-sm font-medium leading-5 text-center text-gray-900"
-			>
-				<NuxtLink to="/"> Home </NuxtLink>
-			</div>
-
-			<div
-				class="self-center my-auto text-sm font-medium leading-5 text-center text-gray-900"
-			>
-				<NuxtLink to="/exhibitions/"> Exhibitions </NuxtLink>
-			</div>
-
-			<div
-				class="items-stretch border border-[color:var(--gray-300,#D1D5DB)] shadow-sm bg-white self-center flex gap-2 my-auto pl-3.5 pr-20 py-2.5 rounded-md border-solid max-md:pr-5"
-			>
-				<img
-					loading="lazy"
-					src="https://cdn.builder.io/api/v1/image/assets/TEMP/049e5821e1deb5b32567a0f40de085353de0bdef0229718469bc8b20d857dfab?"
-					class="object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-				/>
-				<div class="text-sm leading-5 text-gray-500 grow whitespace-nowrap">
-					Search
-				</div>
-			</div>
-			<div
-				class="items-stretch border border-[color:var(--gray-300,#D1D5DB)] bg-white self-center flex gap-2 my-auto pl-3.5 pr-5 py-2.5 rounded-md border-solid"
-			>
-				<img
-					loading="lazy"
-					src="https://cdn.builder.io/api/v1/image/assets/TEMP/a71583ce66d992a920ce10db6c7f5144236f19086cfbe182405364473a1e3e06?"
-					class="object-contain object-center w-5 max-w-full overflow-hidden aspect-square shrink-0"
-				/>
-				<button
-					@click="handleButtonClick"
-					class="text-sm font-medium leading-5 text-gray-400 grow whitespace-nowrap"
-				>
-					New Exhibition
-				</button>
-			</div>
-			<img
-				loading="lazy"
-				src="https://cdn.builder.io/api/v1/image/assets/TEMP/93ff0f086972886f7a43ff62e8808a97e73f38822ff03534c83ea0bc9e4b3fb7?"
-				class="self-center object-contain object-center w-6 max-w-full my-auto overflow-hidden aspect-square shrink-0"
-			/>
-		</div>
-	</div>
-</template>-->
-
 <style scoped>
 .router-link-active {
 	border-bottom-color: #f47340;
