@@ -6,13 +6,13 @@
 			@click="toggleFilter"
 		>
 			<div class="flex items-center w-full gap-3">
-				<img src="./filter.svg" class="w-5 h-5" v-show="icon === 'filter'" />
+				<img src="./atoms/filter.svg" class="w-5 h-5" v-show="icon === 'filter'" />
 				<img
-					src="./pajamas_status.svg"
+					src="./atoms/pajamas_status.svg"
 					class="w-5 h-5"
 					v-show="icon === 'status'"
 				/>
-				<img src="./sort.svg" class="w-5 h-5" v-show="icon === 'sort'" />
+				<img src="./atoms/sort.svg" class="w-5 h-5" v-show="icon === 'sort'" />
 
 				<p>{{ label }}</p>
 			</div>

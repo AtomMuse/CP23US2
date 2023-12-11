@@ -16,12 +16,7 @@
 					</div>
 
 					<div class="flex items-center w-full">
-						<div
-							class="w-full my-auto text-xl font-bold leading-5 text-right whitespace-nowrap md:text-lef"
-						>
-							<span class="text-darkBlue">ATOM</span
-							><span class="text-softOrange">MUSE</span>
-						</div>
+						<AtomsLogo />
 					</div>
 				</div>
 
@@ -57,13 +52,7 @@
 										aria-hidden="true"
 									/>
 								</div>
-								<input
-									id="search"
-									name="search"
-									class="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-darkBlue ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:outline-0 sm:text-sm sm:leading-6"
-									placeholder="Search"
-									type="search"
-								/>
+								<AtomsSearchInput />
 							</div>
 						</div>
 					</div>
@@ -227,6 +216,7 @@ import {
 	MagnifyingGlassIcon
 } from '@heroicons/vue/24/outline'
 import { PlusIcon } from '@heroicons/vue/20/solid'
+
 const activeClassMobile = 'text-indigo-700 bg-indigo-50'
 // const activeClassMobile = 'text-softOrange border-b-2 border-b-softOrange'
 </script>

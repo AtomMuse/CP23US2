@@ -6,16 +6,21 @@ const props = defineProps({
 	},
 	title: {
 		type: String,
-		require: true
+		default: ''
 	}
 })
+console.log(props.title)
 </script>
 
 <template>
 	<div>
 		<div
-			class="w-full bg-center bg-cover h-52"
 			:style="`background-image:url(/images/mockup/${backgroundImg})`"
+			:class="
+				title != ''
+					? 'w-full bg-center bg-cover h-72 content-none'
+					: 'w-full bg-center bg-cover h-52'
+			"
 		>
 			<p
 				class="flex items-center justify-center w-full h-full text-3xl font-bold text-center text-white bg-opacity-50 bg-zinc-950"

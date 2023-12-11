@@ -71,9 +71,11 @@ const getExhibitions = async () => {
 		)
 	} else {
 		console.log(`Could not fetch data from ${url}`)
+		filteredExhibitions.value = []
 	}
 }
 await getExhibitions()
+
 const categories = ['Art', 'Acedemic']
 const status = [
 	'Currently Exhibition',

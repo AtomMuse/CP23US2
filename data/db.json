@@ -19,7 +19,7 @@
 			"exhibitiontionSections": [
 				{
 					"sectionType": "1col",
-					"contentType": "only background devider",
+					"contentType": "background with title devider",
 					"background": "image.jpg"
 				},
 				{
@@ -409,7 +409,7 @@
 			"exhibitiontionSections": [
 				{
 					"sectionType": "1col",
-					"contentType": "only background devider",
+					"contentType": "background with title devider",
 					"background": "image32.jpg"
 				},
 				{

@@ -1,21 +1,21 @@
 <template>
 	<div>
 		<div
-			class="h-2 w-60 content-none bg-gray-300 rounded-md flex justify-items-stretch"
+			class="flex h-2 bg-gray-300 rounded-md w-60 content-none justify-items-stretch"
 		>
 			<div
 				@click="$emit('selectStep', 1)"
-				class="h-2 content-none w-20 rounded-md justify-self-start hover:bg-darkBrown cursor-pointer"
+				class="w-20 h-2 rounded-md cursor-pointer content-none justify-self-start hover:bg-darkBrown"
 				:class="step === 1 ? 'bg-darkBrown' : 'bg-transparent'"
 			></div>
 			<div
 				@click="$emit('selectStep', 2)"
-				class="h-2 content-none w-20 rounded-md justify-self-center hover:bg-darkBrown cursor-pointer"
+				class="w-20 h-2 rounded-md cursor-pointer content-none justify-self-center hover:bg-darkBrown"
 				:class="step === 2 ? 'bg-darkBrown' : 'bg-transparent'"
 			></div>
 			<div
 				@click="$emit('selectStep', 3)"
-				class="h-2 content-none w-20 rounded-md justify-self-end hover:bg-darkBrown cursor-pointer"
+				class="w-20 h-2 rounded-md cursor-pointer content-none justify-self-end hover:bg-darkBrown"
 				:class="step === 3 ? 'bg-darkBrown' : 'bg-transparent'"
 			></div>
 		</div>
