@@ -52,7 +52,7 @@ checkVerticalCardsStep(1)
 				class="grid w-full grid-cols-1 gap-5 py-12 md:grid-cols-2 lg:gap-0 xl:grid-cols-4"
 			>
 				<div v-for="(exhibition, index) in verticalCards" :key="index">
-					<NuxtLink :to="`/exhibitions/${exhibition.id}`"
+					<NuxtLink :to="`/exhibitions/${exhibition._id}`"
 						><BaseVerticalCard
 							:title="exhibition.exhibitionName"
 							:desc="exhibition.exhibitionDescription"
@@ -77,7 +77,7 @@ checkVerticalCardsStep(1)
 			</div>
 			<div class="w-full pt-12 lg:w-3/5 lg:p-0">
 				<div v-for="(exhibition, index) in exhibitionsData" :key="index">
-					<NuxtLink :to="`/exhibitions/${exhibition.id}`" v-if="index < 3"
+					<NuxtLink :to="`/exhibitions/${exhibition._id}`" v-if="index < 3"
 						><BaseHorizontalCard
 							:class="index === 2 ? 'border-0' : 'border-b-2'"
 							:title="exhibition.exhibitionName"

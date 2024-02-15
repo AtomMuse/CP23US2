@@ -98,8 +98,16 @@
 											v-if="data.previewType === 'text'"
 											class="flex flex-col gap-4 pr-6"
 										>
-											<p class="text-lg font-bold">{{ data.details.contents.title }}</p>
-											<p>{{ data.details.contents.text }}</p>
+											<div
+												class="flex flex-col gap-4"
+												v-for="(content, index) in data.details.contents"
+												:key="index"
+											>
+												<p class="text-lg font-bold">{{ content.title }}</p>
+												<div v-for="(text, index) in content.text" :key="index">
+													<p v-for="(detail, index) in text" :key="index">{{ detail }}</p>
+												</div>
+											</div>
 										</div>
 										<!-- <div>
 											<div

@@ -26,7 +26,7 @@
 		<!-- 2col start -->
 		<div
 			v-if="sectionInfo.sectionType === '2col'"
-			class="w-full p-8 lg:grid lg:grid-cols-12 lg:py-12 gap-6 flex flex-col lg:flex-row"
+			class="flex flex-col w-full gap-6 p-8 lg:grid lg:grid-cols-12 lg:py-12 lg:flex-row"
 			:class="sectionInfo.background"
 		>
 			<!-- LeftCol -->
@@ -47,7 +47,7 @@
 				<TitleAndTextContent
 					:title="sectionInfo.leftCol.title"
 					:text="sectionInfo.leftCol.text"
-					class="col-start-2 col-span-4"
+					class="col-span-4 col-start-2"
 					textRight
 				/>
 			</div>
@@ -80,11 +80,11 @@
 		<!-- 3col start -->
 		<div
 			v-if="sectionInfo.sectionType === '3col'"
-			class="lg:grid lg:grid-cols-12 lg:gap-6 py-12"
+			class="py-12 lg:grid lg:grid-cols-12 lg:gap-6"
 		>
 			<ImagesShowerSection
 				:images="sectionInfo.images"
-				class="lg:col-span-10 lg:col-start-2 flex justify-between"
+				class="flex justify-between lg:col-span-10 lg:col-start-2"
 			/>
 		</div>
 		<!-- 3col end -->
