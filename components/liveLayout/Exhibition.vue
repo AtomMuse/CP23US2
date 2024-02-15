@@ -1,6 +1,6 @@
 <template>
 	<div class="h-screen overflow-hidden bg-[#cecece]">
-		<div class="container">
+		<div class="containerx">
 			<div class="-mt-16 scroller">
 				<div class="room room--current">
 					<div class="gap-12 room__side room__side--back">
@@ -140,7 +140,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.container {
+.containerx {
 	position: absolute;
 	overflow: hidden;
 	width: 100vw;
