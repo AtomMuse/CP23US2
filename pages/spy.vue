@@ -1,200 +1,253 @@
 <template>
-	<div class="w-full h-full">
-		<div class="grid grid-cols-12 gap-5">
-			<BlogHeaderSection
-				:startDate="exhibition.startDate"
-				:endDate="exhibition.endDate"
-				:exhibitionName="exhibition.exhibitionName"
-				:exhibitionDescription="exhibition.exhibitionDescription"
-				class="col-start-4 col-span-6 py-16"
-			/>
+	<div class="h-screen overflow-hidden bg-[#cecece]">
+		<div class="container">
+			<div class="scroller">
+				<div class="room room--current">
+					<div class="gap-12 room__side room__side--back">
+						<div v-for="(center, index) in mockData.rooms[0].center" :key="index">
+							<iframe
+								width="600"
+								height="315"
+								:src="center.src"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								v-if="center.previewType === 'video'"
+							></iframe>
+							<div
+								class="w-[500px] cursor-pointer"
+								v-if="center.previewType === 'text'"
+								@click="showModal(center)"
+							>
+								<p class="text-lg font-bold">{{ center.details.contents.title }}</p>
+								<p class="text-sm">
+									{{ center.details.contents.text }}
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="room__side room__side--left">
+						<div v-for="(left, index) in mockData.rooms[0].left" :key="index">
+							<img
+								class="cursor-pointer room__img"
+								:src="left.src"
+								alt="Some image"
+								@click="showModal(left)"
+								v-if="left.previewType === 'img'"
+							/>
+						</div>
+					</div>
+					<div class="room__side room__side--right">
+						<div v-for="(right, index) in mockData.rooms[0].right" :key="index">
+							<img
+								class="cursor-pointer room__img"
+								:src="right.src"
+								alt="Some image"
+								@click="showModal(right)"
+								v-if="right.previewType === 'img'"
+							/>
+						</div>
+					</div>
+					<div class="room__side room__side--bottom"></div>
+				</div>
+				<!-- /room -->
+			</div>
 		</div>
-
-		<BlogSections
-			v-for="(section, index) in exhibition.exhibitiontionSections"
-			:key="index"
-			:sectionInfo="section"
-		/>
+		<BaseModal :open="isShowModal" @close="isShowModal = false" :data="data" />
+		<div
+			class="absolute px-4 py-1 mt-6 bg-[#626262] rounded-3xl right-6 text-white text-sm"
+		>
+			<BadgeNumber :number="mockData.visitNumber" isNumberOfVisit />
+		</div>
+		<div class="absolute px-6 py-1 mt-6 left-6">
+			<p class="text-lg font-semibold">{{ mockData.exhibitionName }}</p>
+			<p class="mt-1 text-sm">Room 1/{{ mockData.rooms.length }}</p>
+		</div>
+		<div class="absolute bottom-[-35px] flex justify-center w-full">
+			<MenuInLiveLayout />
+		</div>
 	</div>
 </template>
-
-<style scoped></style>
 <script setup>
-const exhibition = {
-	exhibitionName: 'Hung Liu: Making History',
-	exhibitionDescription:
-		'Adapting motifs and symbols from Chinese visual and cultural traditions, as wel as antique photographs of Chinese society by Western observers, Liu transformed documentary-style photography into paonterly, personal reflections on canvas and paper.',
-	startDate: '11 Nov 2023',
-	endDate: '12 Dec 2023',
-	isPublic: true,
-	exhibitionCategories: ['Art'],
-	exhibitionTags: ['woman art', 'life'],
-	userId: {
-		userId: 1,
-		firstName: 'Somchai',
-		lastName: 'Jaidee'
-	},
-	layoutUsed: 'blogLayout',
-	exhibitiontionSections: [
+const isShowModal = ref(false)
+const data = ref()
+const mockData = ref({
+	id: 1,
+	exhibitionName: 'SIT D-Day 2023',
+	exhibitionDescription: '',
+	visitNumber: 500,
+	rooms: [
 		{
-			sectionType: '1col',
-			contentType: 'only background devider',
-			background: 'image.jpg'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'image with description',
-				image: 'image2.jpg',
-				imageDescription:
-					'Photograph of Hung Liu, ca. 1970 to 72; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			rightCol: {
-				contentType: 'title and text',
-				title: 'Hung Liu (1948 to 2021)',
-				text:
-					'Coming of age during Mao Zedong’s Cultural Revolution, Hung Liu (1948 to 2021) was profoundly affected by the plights         of the poor and oppressed. Photography played a critical role in the artist’s life and career, from candid shots that she took of villagers in the countryside to the 19th-century portraits of women that became source imagery for her works. She was even inspired by Dorothea Lange’s images of the American Dust Bowl. Liu’s own poetic imagery stirs a collective memory of her country while re-centering the narrative on the most vulnerable in society.'
-			},
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '1col',
-			contentType: 'background with title devider',
-			background: 'image3.jpg',
-			title: 'Portraits of Women'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'title and text',
-				title: null,
-				text:
-					'Liu’s art has always focused on the human condition, particularly that of women under male-dominated regimes. Her archives of source materials include photographic portraits of empresses, mistresses, laborers, and migrant women. Many of these photographs were hidden in the Beijing Film Studio during the Cultural Revolution. Liu took snapshots of the photographs to bring the images back to the United States, where she had moved in 1984 to continue her art training.'
-			},
-			rightCol: {
-				contentType: 'image with description',
-				image: 'image4.jpg',
-				imageDescription:
-					'Unidentified photographer, Group of women, ca. 1900; Artist’s photograph of archival image, Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '3col',
-			contentType: 'images shower',
-			images: ['image5.jpg', 'image6.jpg', 'image7.jpg']
-		},
-		{
-			sectionType: '1col',
-			contentType: 'title and text with border devider',
-			title: null,
-			text:
-				'For many of her portrayals of sex workers and courtesans, Liu worked from photographs of Chinese women posed in Western costumes and on stage sets that were dated around 1900. She discovered these photographs on a return visit to China in the 1990s. The attire, props, and backdrops indicate that the archival photographs were intended for Western and upper-class Chinese clientele, while Japanese captions on some of the photographs suggest that they were also meant for Japanese tourists in China.'
-		},
-		{
-			sectionType: '1col',
-			contentType: 'title and text with bg devider',
-			title: 'Anonymous Faces',
-			text: null,
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'image with description',
-				image: 'image8.jpg',
-				imageDescription:
-					'Unidentified photographer, Woman seated on prop balustrade (inspiration for Shui-Water), ca. 1900; Artist’s photograph of archival image, Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			rightCol: {
-				contentType: 'image with description',
-				image: 'image9.jpg',
-				imageDescription:
-					'Hung Liu, Shui-Water, 2012; Color aquatint etching with gold leaf on paper, 47 x 36 in.; National Museum of Women in the Arts, Gift of Steven Scott, Baltimore, in memory of the artist and in honor of the thirty-fifth anniversary of the National Museum of Women in the Arts; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York; Photo by Lee Stalsworth'
-			},
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '1col',
-			contentType: 'title and text with bg devider',
-			title: null,
-			text:
-				'Shui Water is adapted from a historical photograph of a woman sitting on a railing and surrounded by flowerpots. Liu isolates the figure, placing her in front of a backdrop that evokes Chinese landscape paintings. Her body, layered under streaks of brown earth, may refer to the exploitation endured by working-class women.',
-			background: 'bg-gray-300'
-		},
-		{
-			sectionType: '1col',
-			contentType: 'background with title devider',
-			background: 'image10.jpg',
-			title: 'People of the Cultural Revolution'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'image with description',
-				image: 'image11.jpg',
-				imageDescription:
-					'Photograph of Hung Liu, ca. 1970 to 72; Collection of Hung Liu and Jeff Kelley; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			rightCol: {
-				contentType: 'title and text',
-				title: null,
-				text:
-					'In 1968, Liu was one of ten million urban youths sent to re-education camps in the countryside during Mao Zedong’s Cultural Revolution. She toiled in rice and wheat fields in Dadu Lianghe, a village approximately 50 miles outside of Beijing. She bonded with the other villagers and photographed them using a friend’s Karl Zeiss camera, despite restrictions on the use of the medium by the Chinese government.'
-			},
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'title and text',
-				title: 'A Closer Look: Bird Imagery',
-				text:
-					'Liu frequently includes birds in her works with various cultural connotations. Cranes were signs of good luck, serenity, and blessings while Mandarin ducks were considered symbols of love and devotion. Images of sparrows allude to Mao Zedong’s infamous 1958 Four Pests Campaign, which aimed to eradicate mosquitoes, flies, rats, and sparrows. One of the first actions of China’s Great Leap Forward, Chairman Mao’s plan for national economic reconstruction, the campaign led to ecological disasters and mass starvation.'
-			},
-			rightCol: {
-				contentType: 'image with description',
-				image: 'image12.jpg',
-				imageDescription:
-					'Hung Liu, Corn Carrier (detail), 1999; Oil on canvas, 80 x 70 in.; National Museum of Women in the Arts, Promised gift of Patti and Jerry Sowalsky; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '2col',
-			leftCol: {
-				contentType: 'image with description',
-				image: 'image13.jpg',
-				imageDescription:
-					'Hung Liu, Corn Carrier (detail), 1999; Oil on canvas, 80 x 70 in.; National Museum of Women in the Arts, Promised gift of Patti and Jerry Sowalsky; © 2023 Hung Liu Estate/Artists Rights Society (ARS), New York'
-			},
-			rightCol: {
-				contentType: 'title and text',
-				title: 'A Closer Look: Religious Symbols',
-				text:
-					'Other religious motifs in Liu’s compositions include Bodhisattva figures, lotus blossoms, as well as the recurrent use of circles, which refers to the Zen Buddhist philosophy of wholeness, emptiness, and the cycles of life. Liu incorporates these symbols as a way to accompany, guide, and protect the men, women, and children in her works.'
-			},
-			background: 'bg-gray-300'
-		},
-		{
-			sectionType: '1col',
-			contentType: 'title and text with bg devider',
-			title: 'Village Photographs',
-			text: null,
-			background: 'bg-transparent'
-		},
-		{
-			sectionType: '3col',
-			contentType: 'images shower',
-			images: ['image14.jpg', 'image15.jpg', 'image16.jpg']
-		},
-		{
-			sectionType: '1col',
-			contentType: 'title and text with border devider',
-			title: 'Special Thanks',
-			text:
-				'This online resource was developed in collaboration with Dorothy Moss and the Hung Liu Estate.'
+			left: [
+				{
+					previewType: 'img',
+					src: 'imgs/groupPicIT62-BU11.png',
+					details: {
+						img: 'imgs/groupPicIT62-BU11.png',
+						contents: [
+							{
+								title: 'AUTHOR',
+								text: [
+									[
+										'Ms.Noparat Prasongdee',
+										'รหัสนักศึกษา 62130500126',
+										'noparat.saimai@mail.kmutt.ac.th'
+									],
+									[
+										'Ms.Praepanwa Tedprasit',
+										'รหัสนักศึกษา 62130500069',
+										'praepanwa.phaeng@mail.kmutt.ac.th'
+									],
+									[
+										'Mr.Similan Klinsmith',
+										'รหัสนักศึกษา 62130500096',
+										'similan.klinsmith@mail.kmutt.ac.th'
+									]
+								]
+							},
+							{
+								title: 'ADVISOR',
+								text: [['Tuul Triyason']]
+							}
+						]
+					}
+				},
+				{
+					previewType: 'img',
+					src: 'imgs/screenshot1.IT62-BU11.png',
+					details: {
+						img: 'imgs/screenshot1.IT62-BU11.png'
+					}
+				},
+				{
+					previewType: 'img',
+					src: 'imgs/screenshot2.IT62-BU11.png',
+					details: { img: 'imgs/screenshot2.IT62-BU11.png' }
+				},
+				{}
+			],
+			center: [
+				{
+					previewType: 'video',
+					src: 'https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&amp;controls=0'
+				},
+				{
+					previewType: 'text',
+					details: {
+						img: 'imgs/groupPicIT62-BU11.png',
+						contents: {
+							title: 'Detail',
+							text:
+								'เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี'
+						}
+					}
+				}
+			],
+			right: [
+				{
+					previewType: 'img',
+					src: 'imgs/screenshot3.IT62-BU11.png',
+					details: {
+						img: 'imgs/screenshot3.IT62-BU11.png'
+					}
+				},
+				{
+					previewType: 'img',
+					src: 'imgs/screenshot4.IT62-BU11.png',
+					details: {
+						img: 'imgs/screenshot4.IT62-BU11.png'
+					}
+				}
+			]
 		}
 	]
-}
+})
 </script>
+
+<style scoped>
+.container {
+	position: absolute;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	perspective: 2000px;
+}
+.scroller {
+	height: 100%;
+	transform-style: preserve-3d;
+}
+.room {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100vw;
+	height: 100vh;
+	margin: -50vh 0 0 -50vw;
+	pointer-events: none;
+	opacity: 0;
+	transform-style: preserve-3d;
+}
+
+.room--current {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.room__side {
+	position: absolute;
+	/* position: relative; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.room__side--left,
+.room__side--right {
+	width: 4000px; /* depth */
+	height: 100vh;
+	background: #dbdbdb;
+}
+
+.room__side--back {
+	width: 100vw;
+	height: 100vh;
+	background: #e9e9e9;
+	box-shadow: 0 0 0 2px #e9e9e9;
+	transform: translate3d(0, 0, -4000px) rotate3d(1, 0, 0, 0.1deg)
+		rotate3d(1, 0, 0, 0deg);
+	/* Rotation due to rendering bug in Chrome when loader slides up (images seem cut off) */
+}
+
+.room__side--right {
+	right: 0;
+	justify-content: flex-end;
+	transform: rotate3d(0, 1, 0, -90.03deg);
+	transform-origin: 100% 50%;
+}
+
+.room__side--left {
+	justify-content: flex-start;
+	transform: rotate3d(0, 1, 0, 90deg);
+	transform-origin: 0 50%;
+}
+
+.room__side--bottom {
+	width: 100vw; /* depth */
+	height: 4000px;
+	background: #d0d0d0;
+	transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -4000px, 0);
+	transform-origin: 50% 0%;
+	top: 100%;
+}
+/* Inner elements */
+.room__img {
+	flex: none;
+	max-width: 50%;
+	max-height: 60%;
+	margin: 0 5%;
+	transform: translate3d(0, 0, 10px);
+	backface-visibility: hidden;
+}
+</style>

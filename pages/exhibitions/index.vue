@@ -57,10 +57,9 @@
 const exhibitionsData = ref([])
 const filteredExhibitions = ref([])
 const getExhibitions = async () => {
-	// const runtimeConfig = useRuntimeConfig()
-	// const API_URL = runtimeConfig.public.API_URL
-	// const url = `${API_URL}exhibitions`
-	const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const runtimeConfig = useRuntimeConfig()
+	const API_URL = runtimeConfig.public.API_URL
+	const url = `${API_URL}exhibitions`
 	const res = await fetch(url, {
 		method: 'GET'
 	})

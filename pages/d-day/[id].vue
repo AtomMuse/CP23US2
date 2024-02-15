@@ -3,6 +3,7 @@ const route = useRoute()
 const isShowAuthor = ref(false)
 const isShowLeft = ref(false)
 const isShowRight = ref(false)
+
 const authorDetail = [
 	{
 		id: 1,
@@ -60,7 +61,7 @@ const rightDetail = [
 	<div class="w-full h-screen bg-gray-300">
 		<!-- {{ route.params.id }} -->
 		<div class="h-[85%] flex justify-center">
-			<div class="w-full grid grid-cols-12 gap-6 mx-6 my-50">
+			<div class="grid w-full grid-cols-12 gap-6 mx-6 my-50">
 				<div class="col-start-2 col-span-2 mb-[-50px] flex items-end">
 					<div
 						class="h-4/6 bg-[url('~/assets/imgs/left.png')] w-full bg-no-repeat cursor-pointer"
@@ -71,19 +72,19 @@ const rightDetail = [
 				</div>
 				<!-- center -->
 				<div
-					class="col-start-5 col-span-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 flex flex-col justify-center items-center gap-7"
+					class="flex flex-col items-center justify-center col-span-4 col-start-5 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 gap-7"
 				>
 					<div class="shadow-xl">
 						<img src="~/assets/imgs/posterIT62-BU10.png" class="" />
 					</div>
 
 					<p
-						class="bg-white text-center px-5 text-xs cursor-pointer"
+						class="px-5 text-xs text-center bg-white cursor-pointer"
 						@click="isShowAuthor = true"
 					>
 						Author & Advisor
 					</p>
-					<!-- <p class="bg-white text-center">Slide</p> -->
+					<!-- <p class="text-center bg-white">Slide</p> -->
 				</div>
 
 				<div class="col-start-10 col-span-2 mb-[-50px] flex items-end">

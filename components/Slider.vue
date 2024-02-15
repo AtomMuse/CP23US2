@@ -1,21 +1,26 @@
-<script setup></script>
-
 <template>
 	<div class="gallery" @mousemove="move">
-		<span style="--i: 1"
-			><NuxtLink to="/d-day/cookify"
-				><img src="~/assets/imgs/posterIT62-BU10.png" /></NuxtLink
-		></span>
-		<span style="--i: 2"><img src="~/assets/imgs/posterIT62-BU11.gif" /></span>
-		<span style="--i: 3"><img src="~/assets/imgs/posterIT62-BU12.jpg" /></span>
-		<span style="--i: 4"><img src="~/assets/imgs/posterIT62-BU13.jpg" /></span>
-		<span style="--i: 5"><img src="~/assets/imgs/posterIT62-BU14.png" /></span>
-		<span style="--i: 6"><img src="~/assets/imgs/posterIT62-BU15.jpg" /></span>
-		<span style="--i: 7"><img src="~/assets/imgs/posterIT62-BU17.png" /></span>
-		<span style="--i: 8"><img src="~/assets/imgs/posterIT62-BU19.gif" /></span>
+		<span
+			v-for="(image, index) in imageList"
+			:key="index"
+			:style="`--i: ${index + 1}`"
+		>
+			<img :src="image" />
+		</span>
 	</div>
 </template>
-
+<script setup>
+const imageList = ref([
+	'/imgs/posterIT62-BU10.png',
+	'/imgs/posterIT62-BU11.gif',
+	'/imgs/posterIT62-BU12.jpg',
+	'/imgs/posterIT62-BU13.jpg',
+	'/imgs/posterIT62-BU14.png',
+	'/imgs/posterIT62-BU15.jpg',
+	'/imgs/posterIT62-BU17.png',
+	'/imgs/posterIT62-BU19.gif'
+])
+</script>
 <style scoped>
 .gallery {
 	position: relative;
@@ -60,7 +65,7 @@ span img {
 	height: 100%;
 	/* border-radius: 10px; */
 	object-fit: contain;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 </style>
 

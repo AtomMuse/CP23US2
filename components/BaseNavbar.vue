@@ -57,15 +57,19 @@
 						</div>
 					</div>
 					<!-- button -->
-					<div class="flex-shrink-0 hidden lg:flex">
-						<button
-							type="button"
-							class="hover:border-softOrange hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
-						>
-							<PlusIcon class="-ml-0.5 h-5 w-5" aria-hidden="true" />
-							New Exhibition
-						</button>
-					</div>
+
+					<NuxtLink to="/create" activeClass="none">
+						<div class="flex-shrink-0 hidden lg:flex">
+							<button
+								type="button"
+								class="hover:border-softOrange hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
+							>
+								<PlusIcon class="-ml-0.5 h-5 w-5" aria-hidden="true" />
+								New Exhibition
+							</button>
+						</div>
+					</NuxtLink>
+
 					<!-- ham -->
 					<div class="hidden md:flex md:flex-shrink-0 md:items-center">
 						<!-- Profile dropdown -->
@@ -169,12 +173,13 @@
 			</div>
 			<div class="pt-4 pb-3 border-t border-gray-200">
 				<div class="mt-3 space-y-1">
-					<DisclosureButton
-						as="a"
-						href="#"
-						class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
-						>New Exhibition</DisclosureButton
-					>
+					<NuxtLink to="/create" :activeClass="none">
+						<DisclosureButton
+							class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
+							>New Exhibition</DisclosureButton
+						>
+					</NuxtLink>
+
 					<DisclosureButton
 						as="a"
 						href="#"

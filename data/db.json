@@ -16,7 +16,7 @@
 				"lastName": "Jaidee"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "background with title devider",
@@ -179,7 +179,7 @@
 				"lastName": "Maka"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "background with title devider",
@@ -274,7 +274,7 @@
 				"lastName": "Jairak"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "2col",
 					"leftCol": {
@@ -406,7 +406,7 @@
 				"lastName": "Jairak"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "background with title devider",
@@ -534,7 +534,7 @@
 				"lastName": "Jirakasem"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "2col",
 					"leftCol": {
@@ -637,7 +637,7 @@
 				"lastName": "Library"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "title and text with bg devider",
@@ -1139,7 +1139,7 @@
 				"lastName": "Jaidee"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "only background devider",
@@ -1302,7 +1302,7 @@
 				"lastName": "Maka"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "background with title devider",
@@ -1397,7 +1397,7 @@
 				"lastName": "Jairak"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "2col",
 					"leftCol": {
@@ -1529,7 +1529,7 @@
 				"lastName": "Jairak"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "only background devider",
@@ -1657,7 +1657,7 @@
 				"lastName": "Jirakasem"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "2col",
 					"leftCol": {
@@ -1760,7 +1760,7 @@
 				"lastName": "Library"
 			},
 			"layoutUsed": "blogLayout",
-			"exhibitiontionSections": [
+			"exhibitionSections": [
 				{
 					"sectionType": "1col",
 					"contentType": "title and text with bg devider",
@@ -2243,6 +2243,674 @@
 					"title": null,
 					"text": "(จาก 'ทำไมแผ่นเสียงถึงเป็นไอเทมขายดีในยุคดิจิทัล' และ 'ทำไมเครื่องเล่นแผ่นเสียงจึงกลับมาเป็นที่นิยมอีกครั้งในยุคดิจิตอล?'",
 					"background": "bg-transparent"
+				}
+			]
+		},
+		{
+			"id": 13,
+			"exhibitionName": "SIT D-DAY 2022",
+			"exhibitionDescription": "D-Day Exhibition 2022 งานนิทรรศการแสดงผลงานด้านเทคโนโลยีจากนักศึกษา ชั้นปีที่ 4  คณะเทคโนโลยีสารสนเทศ มจธ. จาก 2 สาขาวิชา ได้แก่สาขาวิชา เทคโนโลยีสารสนเทศ (IT)  และสาขาวิชา วิทยาการคอมพิวเตอร์นักศึกษา (CS)",
+			"thumbnailImg": "d-day.jpg",
+			"startDate": "2023-11-11T00:00:00.000Z",
+			"endDate": "2024-01-01T00:00:00.000Z",
+			"isPublic": true,
+			"exhibitionCategories": ["Acedemic"],
+			"exhibitionTags": ["Senior Project"],
+			"userId": {
+				"userId": 6,
+				"firstName": "SIT",
+				"lastName": "KMUTT"
+			},
+			"layoutUsed": "liveLayout",
+			"visitedNumber": 500,
+			"rooms": [
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU11.gif",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU10.png",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU10.jpg",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU10.jpg",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Pathinya Thonguam",
+												"รหัสนักศึกษา 62130500048",
+												"pathinya.gift@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Napat Wattanasuttiwong",
+												"รหัสนักศึกษา 62130500023",
+												"napat.watt@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Kritsanapon Rakkiatngam",
+												"รหัสนักศึกษา 62130500008",
+												"kritsanapon.melo@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Sunisa Sathapornvajana"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU10.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU10.png" }
+						}
+					],
+					"center": [
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU10.jpg",
+								"contents": {
+									"title": "Detail",
+									"text": "Cookify เป็นระบบค้นหาสูตรอาหารแบบ One Stop Service ที่ผู้ใช้สามารถค้นหาสูตรอาหารได้ทั้งจากการค้นหาด้วยวัตถุดิบและการค้นหาด้วยชื่อของสูตรอาหาร การค้นหาสูตรอาหารตามวัตถุดิบนั้นจะช่วยให้ผู้ใช้งานได้เห็นสูตรอาหารหลากหลายรูปแบบที่สามารถนำวัตถุดิบนั้น ๆ ไปประกอบอาหารได้ ส่งผลให้การประกอบอาหารในแต่ละครั้ง ถึงแม้จะใช้วัตถุดิบเดียวกันจะสามารถประกอบอาหารในสูตรอาหารที่ต่างกันได้ ช่วยให้การประกอบอาหารแต่ละมื้อมีความหลากหลายและไม่น่าเบื่อ ส่งเสริมให้เกิดการเรียนรู้และการพัฒนาทักษะในการทำอาหาร โดยในแต่ละสูตรอาหารจะมีการแสดงส่วนประกอบ และวิธีทำอย่างครบถ้วน รวมไปถึงมีการบอกข้อมูลทางโภชนาการของอาหารนั้น ๆ ตามวัตถุดิบของอาหารที่ได้ใส่ไปอีกด้วย นอกจากนี้ สำหรับผู้ที่ต้องการตัวช่วยในการคิดพิจารณาหาสูตรอาหารในแต่ละมื้อ ระบบของเราสามารถสุ่มหาสูตรอาหารที่ผู้ใช้อาจสนใจพร้อมบอกสูตรอาหารเพื่อใช้ในการประกอบอาหารได้ตลอดเวลาอีกด้วย"
+								}
+							}
+						},
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/tpLilUfr0fU?si=uIEHaax5SDTLfYpn"
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU10.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU10.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU10.png",
+							"details": {
+								"img": "/imgs/screenshot2.IT62-BU10.png",
+								"contents": [
+									{
+										"title": "Front-End",
+										"text": [
+											[
+												"Language: JavaScript with TypeScript",
+												"Framework: Next.js",
+												"Library: Tailwind CSS, MobX, AXIOS",
+												"Testing: Cypress"
+											]
+										]
+									},
+									{
+										"title": "Back-End",
+										"text": [
+											[
+												"Language: JavaScript with TypeScript",
+												"Framework: Express.js",
+												"ODM: Mongoose",
+												"Testing: Jest",
+												"Utility: Nodemailer, Celebrate",
+												"Third-Party API: Edaman"
+											]
+										]
+									},
+									{
+										"title": "Database",
+										"text": [
+											["Database Management System: MongoDB", "Storage: Firebase Storage"]
+										]
+									},
+									{
+										"title": "Infrastructure",
+										"text": [
+											[
+												"Hosting: SIT VM (ubuntu)",
+												"Web Server: Nginx",
+												"Serverless: Cloudflare Worker",
+												"Container Management: Docker",
+												"CI/CD: GitHub Actions"
+											]
+										]
+									},
+									{
+										"title": "Project Management",
+										"text": [
+											[
+												"API Testing: Thunder Client",
+												"Design: Figma",
+												"Code Editor: Visual Studio Code",
+												"Version Control System: GitHub",
+												"Project Management: Jira , Miro"
+											]
+										]
+									}
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU10.jpg",
+							"details": { "img": "/imgs/screenshot4.IT62-BU10.jpg" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU12.jpg",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU13.jpg",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU14.png",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU15.jpg",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU17.png",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
+				},
+				{
+					"mapThumbnail": "/imgs/posterIT62-BU19.gif",
+					"left": [
+						{
+							"previewType": "img",
+							"src": "/imgs/groupPicIT62-BU11.png",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": [
+									{
+										"title": "AUTHOR",
+										"text": [
+											[
+												"Ms.Noparat Prasongdee",
+												"รหัสนักศึกษา 62130500126",
+												"noparat.saimai@mail.kmutt.ac.th"
+											],
+											[
+												"Ms.Praepanwa Tedprasit",
+												"รหัสนักศึกษา 62130500069",
+												"praepanwa.phaeng@mail.kmutt.ac.th"
+											],
+											[
+												"Mr.Similan Klinsmith",
+												"รหัสนักศึกษา 62130500096",
+												"similan.klinsmith@mail.kmutt.ac.th"
+											]
+										]
+									},
+									{ "title": "ADVISOR", "text": [["Tuul Triyason"]] }
+								]
+							}
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot1.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot1.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot2.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot2.IT62-BU11.png" }
+						},
+						{}
+					],
+					"center": [
+						{
+							"previewType": "video",
+							"src": "https://www.youtube.com/embed/z9RIAUsh0-U?si=HzytPN6w3g8Legd1&controls=0"
+						},
+						{
+							"previewType": "text",
+							"details": {
+								"img": "/imgs/groupPicIT62-BU11.png",
+								"contents": {
+									"title": "Detail",
+									"text": "เนื่องด้วยปัญหาสำหรับเลขานุการที่ประสบพบเจอกับการจัดตารางเวลาสำหรับผู้บริหารเพื่อทำการนัดหมายการประชุมหรือทำกิจกรรมต่าง ๆ ที่ต้องมีการนัดหมายกัน ตั้งแต่ 2 ท่านเป็นต้นไปนั้น ทำให้การนัดหมายสำหรับเลขานุการเป็นไปได้อย่างยากลำบาก เนื่องจากการหาเวลาที่คณะผู้บริหารตรงกันนั้นแต่ละบุคคลจะใช้การติดต่อทางช่องทางที่แตกต่างกันไป ทำให้จัดสรรได้อย่างไม่มีประสิทธิภาพมาก และหาข้อสรุปได้ยาก ทั้งนี้ในการจัดการเวลาในการนัดหมายต่าง ๆ ไม่ว่าจะเป็นการประชุมหรือการจัดกิจกรรม ที่มีความยุ่งยากในการนัดหมายและการจัดการ เนื่องด้วยเหตุนี้จึงเกิดเเนวคิดที่พัฒนา Web Application ที่จะช่วยจัดสรรตารางเวลาที่ เหล่าผู้บริหารมีเวลาว่างสอดคล้องกันรวมไปถึงการนัดหมายการประชุมให้มีความสะดวกสบายมากยิ่งขึ้นลดเวลาและขั้นตอนในการจัดการ และเพิ่มประสิทธิภาพในการทำงานมากขึ้นโดยกลุ่มเป้าหมายหลักในการ พัฒนา Web Applicationนี้ คือคณะเลขานุการภายในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"
+								}
+							}
+						}
+					],
+					"right": [
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot3.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot3.IT62-BU11.png" }
+						},
+						{
+							"previewType": "img",
+							"src": "/imgs/screenshot4.IT62-BU11.png",
+							"details": { "img": "/imgs/screenshot4.IT62-BU11.png" }
+						}
+					]
 				}
 			]
 		}
