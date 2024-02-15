@@ -21,6 +21,13 @@
 					:items="status"
 				/>
 				<BaseFilterDropdown icon="sort" label="Sort" :items="sorts" />
+				<button
+					@click="clearFilter"
+					type="button"
+					class="hover:border-softOrange hover:text-softOrange hover:text-softOramge flex items-center justify-center gap-x-1.5 rounded-md border mt-4 border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
+				>
+					Clear Filter
+				</button>
 			</div>
 			<div
 				class="grid w-full h-full gap-10 md:pt-8 md:border-t-2 lg:grid-cols-3 xl:grid-cols-4"
@@ -103,5 +110,11 @@ const filterByCate = (item) => {
 			(exhibition) => exhibition.exhibitionCategories[0] === item
 		)
 	}
+}
+const clearFilter = () => {
+	currentActiveOption.value = ''
+	filteredExhibitions.value = exhibitionsData.value.sort(
+		(a, b) => Number(new Date(b.startDate)) - Number(new Date(a.startDate))
+	)
 }
 </script>
