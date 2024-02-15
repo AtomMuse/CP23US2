@@ -34,7 +34,7 @@
 				v-if="filteredExhibitions.length != 0"
 			>
 				<nuxt-link
-					:to="`/exhibitions/${exhibition.id}`"
+					:to="`/exhibitions/${exhibition._id}`"
 					v-for="(exhibition, index) in filteredExhibitions"
 					:key="index"
 				>

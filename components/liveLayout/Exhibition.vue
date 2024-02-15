@@ -20,10 +20,16 @@
 								v-if="center.previewType === 'text'"
 								@click="showSlideOvers(center)"
 							>
-								<p class="text-lg font-bold">{{ center.details.contents.title }}</p>
-								<p class="text-sm">
-									{{ center.details.contents.text }}
-								</p>
+								<div
+									class="flex flex-col gap-4"
+									v-for="(content, index) in center.details.contents"
+									:key="index"
+								>
+									<p class="text-lg font-bold">{{ content.title }}</p>
+									<div v-for="(text, index) in content.text" :key="index">
+										<p v-for="(detail, index) in text" :key="index">{{ detail }}</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -108,7 +114,7 @@ defineEmits(['gotoLanding', 'goToMap', 'nextRoom', 'prevRoom'])
 import { InformationCircleIcon } from '@heroicons/vue/24/outline'
 const isShowModal = ref(false)
 const data = ref()
-const isShowSlideOvers = ref()
+const isShowSlideOvers = ref(false)
 const showModal = (detail) => {
 	isShowModal.value = true
 	data.value = detail
