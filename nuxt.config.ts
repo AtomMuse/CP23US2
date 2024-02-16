@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 			API_URL: process.env.API_URL
 		}
 	},
+	ssr: false,
 	app: {
 		head: {
 			title: 'CP23US2 | Online Exhibition Management System',
