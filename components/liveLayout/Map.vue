@@ -18,7 +18,7 @@
 					@click="$emit('goToExhibition', index)"
 					class="cursor-pointer"
 				>
-					<img :src="room.mapThumbnail" class="h-[136px]" />
+					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
 			</div>
 			<div class="flex items-center justify-center gap-6">
@@ -28,7 +28,7 @@
 					v-show="index >= 3 && index < 7"
 					class="cursor-pointer"
 				>
-					<img :src="room.mapThumbnail" class="h-[136px]" />
+					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
 			</div>
 			<div class="flex items-center justify-center gap-6">
@@ -38,7 +38,7 @@
 					v-show="index >= 7 && index < 10"
 					class="cursor-pointer"
 				>
-					<img :src="room.mapThumbnail" class="h-[136px]" />
+					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
 			</div>
 		</div>

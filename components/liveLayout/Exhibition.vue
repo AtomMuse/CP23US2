@@ -91,17 +91,17 @@
 			<p class="mt-1 text-sm">Room 1/{{ exhibition.rooms.length }}</p>
 		</div>
 	-->
-		<div class="absolute flex justify-center w-full bottom-16">
+		<div class="absolute flex justify-center w-full bottom-28">
 			<MenuInLiveLayout @home="$emit('gotoLanding')" @map="$emit('goToMap')" />
 		</div>
 		<span
-			class="absolute left-12 bottom-16"
+			class="absolute left-12 bottom-28"
 			@click="$emit('prevRoom')"
 			:class="selectedRoom + 1 === 1 ? 'invisible' : ''"
 			><ArrowBtn leftArrow
 		/></span>
 		<span
-			class="absolute right-12 bottom-16"
+			class="absolute right-12 bottom-28"
 			@click="$emit('nextRoom')"
 			:class="selectedRoom + 1 === rooms.length ? 'invisible' : ''"
 			><ArrowBtn rightArrow

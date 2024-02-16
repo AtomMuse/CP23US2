@@ -63,8 +63,8 @@
 				:class="[isChangePage ? fadeOutClass : fadeInClass]"
 			/>
 			<div
-				class="absolute flex justify-between w-full px-12 top-6"
-				:class="!isExhibitionState ? 'text-white' : ''"
+				class="flex justify-between w-full px-12 fixed top-[88px]"
+				:class="!isExhibitionState ? 'text-white ' : ''"
 			>
 				<div
 					:class="
