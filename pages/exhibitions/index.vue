@@ -45,6 +45,7 @@
 						:name="exhibition.exhibitionName"
 						:startDate="exhibition.startDate"
 						:endDate="exhibition.endDate"
+						v-if="exhibition.exhibitionCategories != undefined"
 					/>
 				</nuxt-link>
 			</div>

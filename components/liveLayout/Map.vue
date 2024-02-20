@@ -16,7 +16,7 @@
 					:key="index"
 					v-show="index < 3"
 					@click="$emit('goToExhibition', index)"
-					class="cursor-pointer"
+					class="transition duration-500 ease-out cursor-pointer hover:transform hover:scale-110"
 				>
 					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
@@ -26,7 +26,8 @@
 					v-for="(room, index) in mapItems"
 					:key="index"
 					v-show="index >= 3 && index < 7"
-					class="cursor-pointer"
+					class="transition duration-500 ease-out cursor-pointer hover:transform hover:scale-110"
+					@click="$emit('goToExhibition', index)"
 				>
 					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
@@ -36,7 +37,8 @@
 					v-for="(room, index) in mapItems"
 					:key="index"
 					v-show="index >= 7 && index < 10"
-					class="cursor-pointer"
+					class="transition duration-500 ease-out cursor-pointer hover:transform hover:scale-110"
+					@click="$emit('goToExhibition', index)"
 				>
 					<img :src="room.mapThumbnail" class="h-28" />
 				</div>
