@@ -5,6 +5,7 @@
 				<div class="room room--current">
 					<div class="gap-12 room__side room__side--back">
 						<div v-for="(center, index) in rooms[selectedRoom].center" :key="index">
+							<!-- video -->
 							<iframe
 								width="600"
 								height="315"
@@ -14,9 +15,12 @@
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								allowfullscreen
 								v-if="center.previewType === 'video'"
+								class="-mt-12"
 							></iframe>
+							<!-- video end -->
+							<!-- text -->
 							<div
-								class="w-[500px] cursor-pointer"
+								class="w-[500px] cursor-pointer -mt-12"
 								v-if="center.previewType === 'text'"
 								@click="showSlideOvers(center)"
 							>
@@ -31,42 +35,96 @@
 									</div>
 								</div>
 							</div>
+							<!-- text end -->
+							<!-- img -->
+							<div
+								class="flex flex-col items-center justify-center w-full gap-4"
+								v-if="center.previewType === 'img'"
+							>
+								<img class="h-[315px]" :src="center.src" alt="Some image" />
+								<InformationCircleIcon
+									@click="showSlideOvers(center)"
+									class="h-12 cursor-pointer w-14 animate__pulse-logo text-darkOrange"
+								/>
+							</div>
+							<!-- img end -->
 						</div>
 					</div>
 					<div class="gap-40 pr-40 room__side room__side--left">
 						<div
 							v-for="(left, index) in rooms[selectedRoom].left"
 							:key="index"
-							class="flex flex-col items-center justify-center w-full gap-4"
+							class="w-full"
 						>
-							<img
-								class="room__img"
-								:src="left.src"
-								alt="Some image"
+							<div
+								class="flex flex-col items-center justify-center w-full gap-4"
 								v-if="left.previewType === 'img'"
-							/>
-							<InformationCircleIcon
+							>
+								<img class="room__img" :src="left.src" alt="Some image" />
+								<InformationCircleIcon
+									@click="showSlideOvers(left)"
+									class="h-12 cursor-pointer w-14 animate__pulse-logo text-darkOrange"
+								/>
+							</div>
+							<div
+								class="cursor-pointer"
+								v-if="left.previewType === 'text'"
 								@click="showSlideOvers(left)"
-								class="h-12 cursor-pointer w-14 animate__pulse-logo text-darkOrange"
-							/>
+							>
+								<div
+									class="flex flex-col w-2/3 gap-4"
+									v-for="(content, index) in left.details.contents"
+									:key="index"
+								>
+									<p class="text-lg font-bold">{{ content.title }}</p>
+									<div v-for="(text, index) in content.text" :key="index">
+										<p v-for="(detail, index) in text" :key="index">{{ detail }}</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="gap-40 pr-40 room__side room__side--right">
 						<div
 							v-for="(right, index) in rooms[selectedRoom].right"
 							:key="index"
-							class="flex flex-col items-center justify-center w-full gap-4"
+							class="w-full"
 						>
-							<img
-								class="room__img"
-								:src="right.src"
-								alt="Some image"
+							<div
+								class="flex flex-col items-center justify-center w-full gap-4"
 								v-if="right.previewType === 'img'"
-							/>
-							<InformationCircleIcon
+							>
+								<img class="room__img" :src="right.src" alt="Some image" />
+								<InformationCircleIcon
+									@click="showSlideOvers(right)"
+									class="h-12 cursor-pointer w-14 animate__pulse-logo text-darkOrange"
+								/>
+							</div>
+							<div
+								class="cursor-pointer"
+								v-if="right.previewType === 'text'"
 								@click="showSlideOvers(right)"
-								class="h-12 cursor-pointer w-14 animate__pulse-logo text-darkOrange"
-							/>
+							>
+								<div
+									class="flex flex-col w-2/3 gap-4"
+									v-for="(content, index) in right.details.contents"
+									:key="index"
+								>
+									<p class="text-lg font-bold">{{ content.title }}</p>
+									<div v-for="(text, index) in content.text" :key="index">
+										<p v-for="(detail, index) in text" :key="index">{{ detail }}</p>
+									</div>
+								</div>
+							</div>
+							<iframe
+								:src="right.src"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								v-if="right.previewType === 'video'"
+								class="w-full h-[338px]"
+							></iframe>
 						</div>
 					</div>
 					<div class="room__side room__side--bottom"></div>
