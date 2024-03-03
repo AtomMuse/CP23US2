@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
+	basePath: '/us2/',
 	devtools: { enabled: false },
 	modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 	runtimeConfig: {
