@@ -5,7 +5,11 @@
 				class="relative hidden w-full bg-center bg-cover shadow-xl md:block bg-black/50"
 			>
 				<img
-					:src="isSigninMode ? '/images/image27.png' : '/images/image28.png'"
+					:src="
+						isSigninMode
+							? 'https://firebasestorage.googleapis.com/v0/b/atommuse-storage.appspot.com/o/images%2Fimage27.png?alt=media&token=0c96287a-adec-4b23-b273-fc060f975038'
+							: 'https://firebasestorage.googleapis.com/v0/b/atommuse-storage.appspot.com/o/images%2Fimage28.png?alt=media&token=4304b2e1-087c-46e4-9d02-84345fb9d49a'
+					"
 					class="absolute object-cover w-full h-full mix-blend-overlay"
 				/>
 			</div>
