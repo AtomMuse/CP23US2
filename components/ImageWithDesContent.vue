@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
 	<div>
 		<div class="flex flex-col items-center justify-center h-full">
-			<img :src="`/images/mockup/${image}`" class="w-10/12" />
+			<img :src="image" class="w-10/12" />
 			<p class="mt-5 text-sm leading-5 text-center" v-if="description != null">
 				{{ description }}
 			</p>

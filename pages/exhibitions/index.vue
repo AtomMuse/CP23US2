@@ -33,21 +33,23 @@
 				class="grid w-full h-full gap-10 md:pt-8 md:border-t-2 lg:grid-cols-3 xl:grid-cols-4"
 				v-if="filteredExhibitions.length != 0"
 			>
-				<nuxt-link
-					:to="`/exhibitions/${exhibition._id}`"
-					v-for="(exhibition, index) in filteredExhibitions"
-					:key="index"
-				>
+				<div v-for="(exhibition, index) in filteredExhibitions" :key="index">
 					<TextOverImage
+						isExhibition
 						class="w-full bg-green-500"
 						:text="exhibition.exhibitionCategories[0]"
-						:img="`/images/mockup/${exhibition.thumbnailImg}`"
+						:img="exhibition.thumbnailImg"
 						:name="exhibition.exhibitionName"
 						:startDate="exhibition.startDate"
 						:endDate="exhibition.endDate"
 						v-if="exhibition.exhibitionCategories != undefined"
+						@delete="
+							cornfirmDeleteExhibition(exhibition._id, exhibition.exhibitionName)
+						"
+						@visitExhibition="visitExhibition(exhibition._id)"
+						@edit="goToEditPage(exhibition._id)"
 					/>
-				</nuxt-link>
+				</div>
 			</div>
 			<div v-else class="flex justify-center w-full min-h-screen md:border-t-2">
 				<p class="mt-10 text-lg text-center">
@@ -62,6 +64,7 @@
 <style scoped></style>
 
 <script setup>
+import Swal from 'sweetalert2'
 const exhibitionsData = ref([])
 const filteredExhibitions = ref([])
 const getExhibitions = async () => {
@@ -72,6 +75,7 @@ const getExhibitions = async () => {
 		method: 'GET'
 	})
 	if (res.status === 200) {
+		filteredExhibitions.value = []
 		exhibitionsData.value = await res.json()
 		filteredExhibitions.value = exhibitionsData.value.sort(
 			(a, b) => Number(new Date(b.startDate)) - Number(new Date(a.startDate))
@@ -117,5 +121,49 @@ const clearFilter = () => {
 	filteredExhibitions.value = exhibitionsData.value.sort(
 		(a, b) => Number(new Date(b.startDate)) - Number(new Date(a.startDate))
 	)
+}
+
+const cornfirmDeleteExhibition = (exhibitionID, exhibitionName) => {
+	Swal.fire({
+		title: 'Delete Exhibition',
+		text: `ต้องการลบ ${exhibitionName}`,
+		icon: 'warning',
+		showCancelButton: true,
+		confirmButtonText: 'Confirm',
+		reverseButtons: true
+	}).then((result) => {
+		if (result.isConfirmed) {
+			fetchDeleteExhibition(exhibitionID, exhibitionName)
+		}
+	})
+}
+
+const fetchDeleteExhibition = async (exhibitionID, exhibitionName) => {
+	const runtimeConfig = useRuntimeConfig()
+	const API_URL = runtimeConfig.public.API_URL
+	const url = `${API_URL}exhibitions/${exhibitionID}`
+	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const res = await fetch(url, {
+		method: 'DELETE'
+	})
+	if (res.status === 200) {
+		Swal.fire({
+			title: 'Deleted !',
+			text: `ลบ ${exhibitionName} สำเร็จ`,
+			icon: 'success'
+		})
+		await getExhibitions()
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
+}
+
+const visitExhibition = (exhibitionId) => {
+	const router = useRouter()
+	router.push(`/exhibitions/${exhibitionId}`)
+}
+const goToEditPage = (exhibitionId) => {
+	const router = useRouter()
+	router.push(`/edit/${exhibitionId}`)
 }
 </script>

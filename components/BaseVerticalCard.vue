@@ -6,7 +6,7 @@
 			<div class="flex flex-col h-full gap-6">
 				<img
 					loading="lazy"
-					:srcSet="`/images/mockup/${img}`"
+					:src="img"
 					class="aspect-[1.6] rounded-md md:rounded-3xl"
 					alt="Exhibition"
 				/>

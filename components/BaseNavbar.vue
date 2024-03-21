@@ -1,7 +1,7 @@
 <template>
 	<Disclosure as="nav" class="bg-white shadow" v-slot="{ open }">
-		<div class="px-8 lg:px-12">
-			<div class="flex justify-between h-16">
+		<div class="flex justify-center px-8 lg:px-12">
+			<div class="flex justify-between w-full h-16">
 				<div class="flex w-full md:w-fit">
 					<div class="flex items-center mr-2 -ml-2 md:hidden">
 						<!-- Mobile menu button -->
@@ -25,12 +25,14 @@
 					<div class="hidden h-full mr-5 md:flex gap-9 text-darkBlue">
 						<!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
 						<NuxtLink
+							:active-class="activeClass"
 							to="/"
 							class="inline-flex items-center text-sm font-medium hover:text-softOrange"
 						>
 							Home
 						</NuxtLink>
 						<NuxtLink
+							:active-class="activeClass"
 							to="/exhibitions"
 							class="inline-flex items-center text-sm font-medium hover:text-softOrange"
 						>
@@ -58,7 +60,7 @@
 					</div>
 					<!-- button -->
 
-					<NuxtLink to="/create" activeClass="none">
+					<NuxtLink to="/create">
 						<div class="flex-shrink-0 hidden lg:flex">
 							<button
 								type="button"
@@ -115,14 +117,20 @@
 											>New Exhibition</a
 										>
 									</MenuItem>
-									<MenuItem v-slot="{ active }">
-										<a
-											href="#"
-											:class="[
-												active ? 'bg-gray-100' : '',
-												'block px-4 py-2 text-sm text-gray-700'
-											]"
-											>Your Profile</a
+									<MenuItem>
+										<NuxtLink
+											to="/profile"
+											class="block px-4 py-2 text-sm text-gray-700"
+											:activeClass="activeClassHam"
+											>Your Profile</NuxtLink
+										>
+									</MenuItem>
+									<MenuItem>
+										<NuxtLink
+											to="/signInUp"
+											class="block px-4 py-2 text-sm text-gray-700"
+											:activeClass="activeClassHam"
+											>Log In</NuxtLink
 										>
 									</MenuItem>
 									<MenuItem v-slot="{ active }">
@@ -173,19 +181,25 @@
 			</div>
 			<div class="pt-4 pb-3 border-t border-gray-200">
 				<div class="mt-3 space-y-1">
-					<NuxtLink to="/create" :activeClass="none">
+					<NuxtLink to="/create">
 						<DisclosureButton
 							class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
 							>New Exhibition</DisclosureButton
 						>
 					</NuxtLink>
+					<NuxtLink to="/profile">
+						<DisclosureButton
+							class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
+							>Your Profile</DisclosureButton
+						>
+					</NuxtLink>
+					<NuxtLink to="/SignInUp">
+						<DisclosureButton
+							class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
+							>Log In</DisclosureButton
+						>
+					</NuxtLink>
 
-					<DisclosureButton
-						as="a"
-						href="#"
-						class="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800 sm:px-6"
-						>Your Profile</DisclosureButton
-					>
 					<DisclosureButton
 						as="a"
 						href="#"
@@ -223,12 +237,17 @@ import {
 import { PlusIcon } from '@heroicons/vue/20/solid'
 
 const activeClassMobile = 'text-indigo-700 bg-indigo-50'
+const activeClassHam = 'block px-4 py-2 text-sm text-gray-700'
+const activeNewExhibitionBtn =
+	'hover:border-softOrange border-transparent hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm'
+
+const activeClass = 'border-b-2 border-softOrange text-softOrange'
 // const activeClassMobile = 'text-softOrange border-b-2 border-b-softOrange'
 </script>
 <style scoped>
-.router-link-active {
+/* .router-link-active {
 	border-bottom-color: #f47340;
 	border-bottom-width: 2px;
 	color: #f47340;
-}
+} */
 </style>

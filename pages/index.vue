@@ -34,8 +34,10 @@ checkVerticalCardsStep(1)
 </script>
 
 <template>
-	<div class="w-full h-full">
-		<BaseHeader img="/imgs/header-image.png" />
+	<div class="flex flex-col w-full h-full">
+		<BaseHeader
+			img="https://firebasestorage.googleapis.com/v0/b/atommuse-storage.appspot.com/o/images%2Fheader-image.png?alt=media&token=3c7caa27-4434-436c-a1cc-275294ee24b8"
+		/>
 		<div class="p-8 lg:p-12">
 			<div class="flex justify-between border-b-2">
 				<SectionTitle title="Exhibitions" class="mb-7" />

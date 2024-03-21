@@ -1,101 +1,24 @@
 <template>
 	<div class="w-full h-full">
 		<CreateModal
-			@next="selectedLayout"
+			@next="addBaseInfo"
 			:open="isShowModal"
 			v-if="isShowModal"
-			:currentLayout="layoutSelected"
+			:info="exhibitionForm"
+			:isEditMode="isEditMode"
+			@edit="fetchEditBaseInfo"
 		/>
-		<div>
-			<div v-if="layoutSelected === 'blogLayout'" class="px-12">
-				BLOG LAYOUT
-				<button
-					@click="changeLayout('blogLayout')"
-					type="button"
-					class="hover:border-softOrange hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
-				>
-					Change Layout
-				</button>
-				<div class="w-full h-full">
-					<div
-						@click="addSection"
-						v-if="addSectionState === ''"
-						class="bg-gray-500 h-[180px] rounded-lg flex justify-center items-center cursor-pointer"
-					>
-						+
-					</div>
-					<div
-						v-if="addSectionState === 'sectionType'"
-						class="p-6 bg-gray-500 h-[180px] rounded-lg flex flex-col cursor-pointer"
-					>
-						<div class="flex items-center justify-center w-full h-full gap-6">
-							<div class="w-full h-full bg-red-500" @click="selectType('1col')">
-								1col
-							</div>
-							<div class="w-full h-full bg-red-500" @click="selectType('2col')">
-								2col
-							</div>
-							<div class="w-full h-full bg-red-500" @click="selectType('3col')">
-								3col
-							</div>
-						</div>
-						<div class="h-6 mt-5 bg-pink-400" @click="prevState">back</div>
-					</div>
-					<div
-						v-if="addSectionState === 'contentType'"
-						class="p-6 bg-gray-500 h-[180px] rounded-lg flex justify-center items-center cursor-pointer"
-					>
-						<div
-							class="flex flex-col w-full h-full"
-							v-if="inputData.exhibitiontionSections[0].sectionType === '1col'"
-						>
-							<div class="flex h-full gap-6">
-								<div
-									@click="selectContent('background with title devider')"
-									class="w-full h-full bg-green-500"
-								>
-									background with title devider
-								</div>
-								<div
-									@click="selectContent('title and text with border devider')"
-									class="w-full h-full bg-green-500"
-								>
-									title and text with border devider
-								</div>
-								<div
-									@click="selectContent('title and text with bg devider')"
-									class="w-full h-full bg-green-500"
-								>
-									title and text with bg devider
-								</div>
-							</div>
 
-							<div class="h-6 mt-5 bg-pink-400" @click="prevState">back</div>
-						</div>
-						<!-- <div class="w-full h-full bg-red-500" @click="selectContent('1col')">
-							2col
-						</div>
-						<div class="w-full h-full bg-red-500" @click="selectContent('2col')">
-							3col
-						</div> -->
-					</div>
-					<div
-						v-if="addSectionState === 'addContent'"
-						class="gap-6 p-6 bg-gray-500 h-[180px] rounded-lg flex justify-center items-center cursor-pointer"
-					>
-						<div class="w-full h-full bg-red-500" @click="selectContent('1col')">
-							1col
-						</div>
-						<div class="w-full h-full bg-red-500" @click="selectContent('1col')">
-							2col
-						</div>
-						<div class="w-full h-full bg-red-500" @click="selectContent('2col')">
-							3col
-						</div>
-					</div>
-				</div>
-			</div>
-			<div v-if="layoutSelected === 'liveLayout'">
+		<div class="flex justify-center">
+			<CreateBlog
+				v-if="isAddBaseInfo"
+				:baseInfo="exhibitionForm"
+				@editBaseInfo="editBaseInfo"
+				:exhibitionId="exhibitionId"
+				@updateExhibition="saveExhibition"
+			/>
+
+			<div v-if="exhibitionForm.layoutUsed === 'liveLayout'">
 				LIVE LAYOUT
 				<button
 					@click="changeLayout('liveLayout')"
@@ -109,56 +32,405 @@
 	</div>
 </template>
 <script setup>
-const isShowModal = ref()
-const layoutSelected = ref()
+import Swal from 'sweetalert2'
+import VueDatePicker from '@vuepic/vue-datepicker'
+import '@vuepic/vue-datepicker/dist/main.css'
 
-const selectedLayout = (layout) => {
-	layoutSelected.value = layout
-	isShowModal.value = false
+const date = ref()
+const exhibitionForm = ref({
+	exhibitionName: '',
+	exhibitionDescription: '',
+	startDate: '',
+	endDate: '',
+	isPublic: false,
+	exhibitionCategories: [],
+	exhibitionTags: [],
+	layoutUsed: '',
+	thumbnailImg: ''
+})
+// const contentTypes1col = [
+// 	'background with title devider',
+// 	'title and text with border devider',
+// 	'title and text with bg devider'
+// ]
+// const contentTypes2col = ['image with description', 'title and text']
+// const contentTypes3col = ['images shower']
+const isShowModal = ref(true)
+const layoutSelected = ref()
+const baseInfoForm = ref()
+const isAddBaseInfo = ref(false)
+const isEditMode = ref(false)
+const addBaseInfo = (baseInfoForm) => {
+	// layoutSelected.value = layout
+	// isShowModal.value = false
+	// isEditMode.value = false
+	// selectedLayout.value = layout
+
+	exhibitionForm.value = {
+		...baseInfoForm,
+		exhibitionSections: [{ sectionState: '', sectionType: '' }],
+		status: 'darft',
+		userId: {
+			_id: '000000000000000000000000',
+			userId: 6,
+			firstName: 'SIT',
+			lastName: 'KMUTT'
+		}
+	}
+	// isAddBaseInfo.value = true
+	saveBase()
 }
 
 onMounted(() => {
 	isShowModal.value = true // <div>
 })
-
-const inputData = ref({
-	exhibitionName: '',
-	exhibitionDescription: '',
-	thumbnailImg: '',
-	startDate: '',
-	endDate: '',
-	isPublic: true,
-	exhibitionCategories: [],
-	exhibitionTags: [],
-	layoutUsed: layoutSelected.value,
-	exhibitiontionSections: []
-})
-
-const changeLayout = (currentLayOut) => {
-	layoutSelected.value = currentLayOut
+const exhibitionId = ref('')
+const editBaseInfo = (sectionIdList) => {
+	console.log(sectionIdList)
 	isShowModal.value = true
-}
-const addSectionState = ref('')
-const addSection = () => {
-	addSectionState.value = 'sectionType'
-	inputData.value.exhibitiontionSections.push({})
-}
-const selectType = (type) => {
-	addSectionState.value = 'contentType'
-	inputData.value.exhibitiontionSections[0].sectionType = type
-	console.log(inputData.value.exhibitiontionSections[0])
-}
-const selectContent = (content) => {
-	addSectionState.value = 'addContent'
-	inputData.value.exhibitiontionSections[0].contentType = content
-	console.log(inputData.value.exhibitiontionSections[0])
-}
-const prevState = () => {
-	if (addSectionState.value === 'sectionType') {
-		addSectionState.value = ''
-	} else if (addSectionState.value === 'contentType') {
-		addSectionState.value = 'sectionType'
+	isEditMode.value = true
+	isAddBaseInfo.value = false
+	if (sectionIdList.length != 0) {
+		exhibitionForm.value.exhibitionSectionsID = sectionIdList
+	} else {
+		exhibitionForm.value.exhibitionSectionsID = ['']
 	}
 }
+
+const saveBase = async () => {
+	// console.log(exhibitionForm.value.thumbnailImg[0])
+	if (!exhibitionForm.value.thumbnailImg.length) return
+	const { snapshot, dowloadUrl, metadata } = await uploadFile(
+		exhibitionForm.value.thumbnailImg[0]
+	)
+	exhibitionForm.value.thumbnailImg = dowloadUrl
+
+	const runtimeConfig = useRuntimeConfig()
+	const API_URL = runtimeConfig.public.API_URL
+	const url = `${API_URL}exhibitions`
+	const res = await fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(exhibitionForm.value)
+	})
+	if (res.status === 201) {
+		// exhibitionsData.value = await res.json()
+		let returnData = await res.json()
+		exhibitionId.value = returnData._id
+
+		Swal.fire({
+			title: 'Base Information Saved !',
+			text: 'You are currently in draft mode',
+			icon: 'success'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				isShowModal.value = false
+				isEditMode.value = false
+				isAddBaseInfo.value = true
+			}
+		})
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
+}
+
+const fetchEditBaseInfo = async () => {
+	if (exhibitionForm.value.thumbnailImg != '') {
+		console.log('have image')
+	} else {
+		const { snapshot, dowloadUrl, metadata } = await uploadFile(
+			exhibitionForm.value.thumbnailImg[0]
+		)
+		exhibitionForm.value.thumbnailImg = dowloadUrl
+	}
+	console.log(exhibitionForm.value)
+	const runtimeConfig = useRuntimeConfig()
+	const API_URL = runtimeConfig.public.API_URL
+	const url = `${API_URL}exhibitions/${exhibitionId.value}`
+	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+
+	const res = await fetch(url, {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(exhibitionForm.value)
+	})
+	if (res.status === 200) {
+		Swal.fire({
+			title: 'Base Information Updated !',
+
+			icon: 'success'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				isShowModal.value = false
+				isEditMode.value = false
+				isAddBaseInfo.value = true
+			}
+		})
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
+}
+
+const saveExhibition = async (sectionIdList) => {
+	if (sectionIdList.length != 0) {
+		exhibitionForm.value.exhibitionSectionsID = sectionIdList
+	} else {
+		exhibitionForm.value.exhibitionSectionsID = ['']
+	}
+
+	const runtimeConfig = useRuntimeConfig()
+	const API_URL = runtimeConfig.public.API_URL
+	const url = `${API_URL}exhibitions/${exhibitionId.value}`
+	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+
+	const res = await fetch(url, {
+		method: 'PUT',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(exhibitionForm.value)
+	})
+	if (res.status === 200) {
+		Swal.fire({
+			title: 'Create Exhibition Success !',
+
+			icon: 'success'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				// isShowModal.value = false
+				// isEditMode.value = false
+				// isAddBaseInfo.value = true
+			}
+		})
+	} else {
+		console.log(`Could not fetch data from ${url}`)
+	}
+}
+// const changeLayout = (currentLayOut) => {
+// 	layoutSelected.value = currentLayOut
+// 	isShowModal.value = true
+// }
+const addSectionState = ref('')
+// const currentSectionIndex = ref(0)
+// const addSection = (index) => {
+// 	if (index != 0) {
+// 		exhibitionForm.value.exhibitiontionSections.push({})
+// 	}
+// 	exhibitionForm.value.exhibitiontionSections[index].sectionState = 'sectionType'
+// 	currentSectionIndex.value = index
+// }
+
+// const selectType = (index, type) => {
+// 	exhibitionForm.value.exhibitiontionSections[index].sectionState = 'contentType'
+// 	exhibitionForm.value.exhibitiontionSections[index].sectionType = type
+// }
+
+// const selectContent = (content) => {
+// 	exhibitionForm.value.exhibitiontionSections[
+// 		currentSectionIndex.value
+// 	].sectionState = 'addContent'
+// 	exhibitionForm.value.exhibitiontionSections[
+// 		currentSectionIndex.value
+// 	].contentType = content
+// 	if (
+// 		exhibitionForm.value.exhibitiontionSections[currentSectionIndex.value]
+// 			.sectionType === '3col'
+// 	) {
+// 		exhibitionForm.value.exhibitiontionSections[
+// 			currentSectionIndex.value
+// 		].images = ['', '', '']
+// 	}
+// }
+// const prevState = (index) => {
+// 	if (
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState ===
+// 		'sectionType'
+// 	) {
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState = ''
+// 		delete exhibitionForm.value.exhibitiontionSections[index].sectionType
+// 	} else if (
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState ===
+// 		'contentType'
+// 	) {
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState =
+// 			'sectionType'
+// 		delete exhibitionForm.value.exhibitiontionSections[index].sectionType
+// 	} else if (
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState ===
+// 		'addContent'
+// 	) {
+// 		exhibitionForm.value.exhibitiontionSections[index].sectionState =
+// 			'contentType'
+// 	}
+// }
+
+// const selectedCategory = ref('')
+// const selectCategory = () => {
+// 	exhibitionForm.value.exhibitionCategories[0] = selectedCategory.value
+// }
+
+// -- preview image in BaseUploadPhoto --
+const file = ref()
+const imagePreview = ref()
+// imagePreview.value = editCpairs.value.cpairImage
+// const selectPhoto = (e) => {
+// 	if (e.target.files[0]) {
+// 		file.value = e.target.files[0]
+// 		if (file.value) {
+// 			imagePreview.value = URL.createObjectURL(file.value)
+// 		}
+// 	}
+// 	console.log(file.value)
+// }
+// const base64String = ref('')
+// const upLoadImg = (e, index, col) => {
+// 	let file = e.target.files[0]
+// 	let reader = new FileReader()
+// 	reader.onload = function () {
+// 		base64String.value = reader.result.replace('data:', '').replace(/^.+,/, '')
+// 		if (col === undefined) {
+// 			exhibitionForm.value.exhibitiontionSections[index].background =
+// 				base64String.value
+// 		} else if (
+// 			exhibitionForm.value.exhibitiontionSections[index].sectionType === '2col'
+// 		) {
+// 			if (col === 'left') {
+// 				exhibitionForm.value.exhibitiontionSections[index].leftCol.image =
+// 					base64String.value
+// 			} else {
+// 				exhibitionForm.value.exhibitiontionSections[index].rightCol.image =
+// 					base64String.value
+// 			}
+// 		} else if (
+// 			exhibitionForm.value.exhibitiontionSections[index].sectionType === '3col'
+// 		) {
+// 			if (col === 'left') {
+// 				exhibitionForm.value.exhibitiontionSections[index].images[0] =
+// 					base64String.value
+// 			} else if (col === 'center') {
+// 				exhibitionForm.value.exhibitiontionSections[index].images[1] =
+// 					base64String.value
+// 			} else if (col === 'right') {
+// 				exhibitionForm.value.exhibitiontionSections[index].images[2] =
+// 					base64String.value
+// 			}
+// 		}
+// 	}
+
+// 	reader.readAsDataURL(file)
+// }
+
+// const selectContentType2col = (col, type) => {
+// 	if (col === 'left') {
+// 		exhibitionForm.value.exhibitiontionSections[
+// 			currentSectionIndex.value
+// 		].leftCol = {
+// 			contentType: type
+// 		}
+// 	} else {
+// 		exhibitionForm.value.exhibitiontionSections[
+// 			currentSectionIndex.value
+// 		].rightCol = {
+// 			contentType: type
+// 		}
+// 	}
+// }
+// const tagInput = ref('')
+// const addTag = () => {
+// 	tagInput.value = tagInput.value.trimStart()
+// 	tagInput.value = tagInput.value.trimEnd()
+// 	if (tagInput.value != '') {
+// 		exhibitionForm.value.exhibitionTags.push(tagInput.value)
+// 	}
+// 	tagInput.value = ''
+// }
+// const removeTag = (index) => {
+// 	exhibitionForm.value.exhibitionTags.splice(index)
+// }
+
+// const save = async () => {
+// 	await createSection(
+// 		exhibitionForm.value.exhibitiontionSections[currentSectionIndex.value]
+// 	)
+// 	exhibitionForm.value.exhibitiontionSections.push({ sectionState: '' })
+// }
+// const createSection = async (section) => {
+// 	const runtimeConfig = useRuntimeConfig()
+// 	const API_URL = runtimeConfig.public.API_URL
+// 	const url = `${API_URL}exhibitionSections`
+// 	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+// 	const res = await fetch(url, {
+// 		method: 'POST',
+// 		headers: {
+// 			'Content-Type': 'application/json'
+// 		},
+// 		body: JSON.stringify(section)
+// 	})
+// 	if (res.status === 201) {
+// 		// exhibitionsData.value = await res.json()
+// 		let returnData = await res.json()
+// 		sectionIdList.value.push(returnData.id)
+// 	} else {
+// 		console.log(`Could not fetch data from ${url}`)
+// 	}
+// }
+// const exhibitionId = ref()
+// const sectionIdList = ref([])
+// const createExhibition = async () => {
+// 	if (
+// 		exhibitionForm.value.exhibitiontionSections[currentSectionIndex.value] === {}
+// 	) {
+// 		exhibitionForm.value.exhibitiontionSections[
+// 			currentSectionIndex.value
+// 		].splice()
+// 	}
+
+// 	exhibitionForm.value.exhibitiontionSections = sectionIdList.value
+// 	const runtimeConfig = useRuntimeConfig()
+// 	const API_URL = runtimeConfig.public.API_URL
+// 	const url = `${API_URL}exhibitions/${exhibitionId.value}`
+// 	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+// 	const res = await fetch(url, {
+// 		method: 'PUT',
+// 		headers: {
+// 			'Content-Type': 'application/json'
+// 		},
+// 		body: JSON.stringify(exhibitionForm.value)
+// 	})
+// 	if (res.status === 200) {
+// 		// exhibitionsData.value = await res.json()
+// 		isSaveBase.value = false
+// 	} else {
+// 		console.log(`Could not fetch data from ${url}`)
+// 	}
+// }
+
+// const isSaveBase = ref(false)
+
+// const saveBase = async () => {
+// 	const runtimeConfig = useRuntimeConfig()
+// 	const API_URL = runtimeConfig.public.API_URL
+// 	const url = `${API_URL}exhibitions`
+// 	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+// 	const res = await fetch(url, {
+// 		method: 'POST',
+// 		headers: {
+// 			'Content-Type': 'application/json'
+// 		},
+// 		body: JSON.stringify(exhibitionForm.value)
+// 	})
+// 	if (res.status === 201) {
+// 		// exhibitionsData.value = await res.json()
+// 		let returnData = await res.json()
+// 		exhibitionId.value = returnData.id
+// 		isSaveBase.value = true
+// 	} else {
+// 		console.log(`Could not fetch data from ${url}`)
+// 	}
+// }
 </script>
 <style scoped></style>
