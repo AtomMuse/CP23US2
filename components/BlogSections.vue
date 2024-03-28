@@ -20,14 +20,15 @@
 			:title="sectionInfo.title"
 			:text="sectionInfo.text"
 			:background="sectionInfo.background"
+			:data="sectionInfo"
 		/>
 		<!-- 1col end -->
 
 		<!-- 2col start -->
 		<div
 			v-if="sectionInfo.sectionType === '2col'"
-			class="flex flex-col w-full gap-6 p-8 lg:grid lg:grid-cols-12 lg:py-12 lg:flex-row"
-			:class="sectionInfo.background"
+			class="`flex flex-col w-full gap-6 p-8 lg:grid lg:grid-cols-12 lg:py-12 lg:flex-row`"
+			:style="[bgColor]"
 		>
 			<!-- LeftCol -->
 			<div
@@ -119,4 +120,6 @@ const checkDevider = () => {
 	}
 }
 checkDevider()
+
+const bgColor = ref(`background-color: ${props.sectionInfo.background}`)
 </script>

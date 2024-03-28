@@ -1,7 +1,9 @@
 <template>
 	<div class="flex flex-col w-full gap-5">
-		<div class="flex flex-col items-center justify-center px-8 lg:px-12">
-			<p>BLOG LAYOUT</p>
+		<div
+			class="flex flex-col items-center justify-center px-8 py-8 lg:py-16 lg:px-12"
+		>
+			<!-- <p>BLOG LAYOUT</p> -->
 			<div>
 				<div class="flex flex-col items-center gap-3 text-center">
 					<p class="text-4xl font-bold">{{ baseInfo.exhibitionName }}</p>
@@ -9,15 +11,15 @@
 					<p class="text-blue-500">
 						{{ startDateFormatted }} - {{ endDateFormatted }}
 					</p>
+					<button
+						@click="$emit('editBaseInfo', sectionIdList)"
+						type="button"
+						class="hover:border-softOrange hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
+					>
+						Edit Base Information
+					</button>
 				</div>
 			</div>
-			<button
-				@click="$emit('editBaseInfo', sectionIdList)"
-				type="button"
-				class="hover:border-softOrange hover:text-softOrange hover:text-softOramge relative inline-flex items-center gap-x-1.5 rounded-md border border-gray-300 text-gray-400 px-3 py-2 text-sm font-medium shadow-sm"
-			>
-				Edit Base Information
-			</button>
 		</div>
 		<div class="flex flex-col gap-4">
 			<div
@@ -463,8 +465,16 @@
 										>Background Color :
 									</label>
 
+									<!-- <input
+										type="color"
+										v-model="section.background"
+										:disabled="!selectedColor"
+									/> -->
 									<input
 										type="color"
+										class="block h-10 p-1 bg-white border border-gray-200 rounded-lg cursor-pointer w-14 disabled:opacity-50 disabled:pointer-events-none"
+										id="hs-color-input"
+										title="Choose your color"
 										v-model="section.background"
 										:disabled="!selectedColor"
 									/>
@@ -790,12 +800,12 @@ const save = async () => {
 			exhibitionForm.value.exhibitionSections[currentSectionIndex.value]
 				.contentType === 'title and text with bg devider'
 		) {
-			exhibitionForm.value.exhibitionSections[
-				currentSectionIndex.value
-			].background = `bg-[${
-				exhibitionForm.value.exhibitionSections[currentSectionIndex.value]
-					.background
-			}]`
+			// exhibitionForm.value.exhibitionSections[
+			// 	currentSectionIndex.value
+			// ].background = `bg-[${
+			// 	exhibitionForm.value.exhibitionSections[currentSectionIndex.value]
+			// 		.background
+			// }]`
 		} else {
 			exhibitionForm.value.exhibitionSections[
 				currentSectionIndex.value

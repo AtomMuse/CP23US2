@@ -11,7 +11,7 @@ const props = defineProps({
 	},
 	background: {
 		type: String,
-		default: 'transparent'
+		default: ''
 	},
 	isOwner: {
 		type: Boolean,
@@ -26,14 +26,34 @@ const props = defineProps({
 		default: false
 	}
 })
+const emit = defineEmits(['updateSection'])
 const dataForm = ref(props.data)
 const isEditMode = ref(false)
-const selectedColor = ref('')
+const selectedColor = ref(props.data.background)
+// const isSelectedColor = computed(() => {
+// 	// if (selectedColor.value != '') {
+// 	// 	return true
+// 	// }
+// })
+const isSelectedColor = ref(false)
+if (props.data.background != '') {
+	isSelectedColor.value = true
+}
+
+const save = () => {
+	isEditMode.value = false
+	if (isSelectedColor.value === false) {
+		dataForm.value.background = ''
+	}
+	emit('updateSection', dataForm.value)
+}
+
+const bgColor = computed(() => `background-color:${props.data.background}`)
 </script>
 
 <template>
 	<div>
-		<div v-if="isEditMode">
+		<div v-if="isEditMode" :style="[bgColor]">
 			<div
 				class="mx-8 lg:mx-12 p-6 border-2 border-dashed border-gray-400 min-h-[180px] rounded-lg flex items-center flex-col"
 			>
@@ -56,9 +76,10 @@ const selectedColor = ref('')
 									name="candidates"
 									type="checkbox"
 									class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-600"
-									v-model="selectedColor"
+									v-model="isSelectedColor"
 								/>
 							</div>
+
 							<label
 								for="website"
 								class="text-sm font-medium leading-6"
@@ -66,8 +87,16 @@ const selectedColor = ref('')
 								>Background Color :
 							</label>
 
+							<!-- <input
+								type="color"
+								v-model="dataForm.background"
+								:disabled="!selectedColor"
+							/> -->
 							<input
 								type="color"
+								class="block h-10 p-1 bg-white border border-gray-200 rounded-lg cursor-pointer w-14 disabled:opacity-50 disabled:pointer-events-none"
+								id="hs-color-input"
+								title="Choose your color"
 								v-model="dataForm.background"
 								:disabled="!selectedColor"
 							/>
@@ -88,7 +117,7 @@ const selectedColor = ref('')
 					Back
 				</button>
 				<button
-					@click="$emit('updateSection', dataForm, (isEditMode = false))"
+					@click="save"
 					type="button"
 					class="rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 					:class="
@@ -104,7 +133,7 @@ const selectedColor = ref('')
 		<div
 			v-else
 			class="flex flex-col items-center justify-center w-full"
-			:class="`${background}`"
+			:style="[bgColor]"
 		>
 			<div class="gap-5 py-6 lg:py-12">
 				<p class="text-3xl font-bold text-center" v-if="title != null">

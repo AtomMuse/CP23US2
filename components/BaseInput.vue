@@ -16,11 +16,12 @@
 				<input
 					:type="type"
 					name="website"
-					id="website"
+					:id="id"
 					class="focus:outline-none flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
 					:placeholder="placeholder"
 					:value="props.modelValue"
 					@input="emit('update:modelValue', $event.target.value)"
+					autocomplete="off"
 				/>
 			</div>
 			<p class="invisible text-sm text-softOrange">errrrrrrrrr</p>
@@ -48,6 +49,10 @@ const props = defineProps({
 	type: {
 		type: String,
 		default: 'text'
+	},
+	id: {
+		type: String,
+		default: ''
 	}
 })
 const emit = defineEmits(['update:modelValue'])

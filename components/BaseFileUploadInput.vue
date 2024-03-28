@@ -68,10 +68,10 @@ const props = defineProps({
 })
 
 const computedId = computed(() => `fileInput_${props.inputId}`)
-console.log(computedId.value)
+// console.log(computedId.value)
 const files = ref()
 const fileUrl = ref(props.file)
-console.log(props.file)
+// console.log(props.file)
 const upLoad = async (e) => {
 	files.value = e.target.files || e.dataTransfer.files
 	// if (!files.value.length) return

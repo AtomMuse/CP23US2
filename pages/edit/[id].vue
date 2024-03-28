@@ -42,7 +42,7 @@
 							:title="section.title"
 							:data="section"
 							isOwner
-							@updateSection="updateSection"
+							@updateSection="updateSection(section, index)"
 							@deleteSection="deleteSection(section._id)"
 						/>
 						<TextWithBorderSection
@@ -52,7 +52,7 @@
 							isOwner
 							:data="section"
 							@deleteSection="deleteSection(section._id)"
-							@updateSection="updateSection"
+							@updateSection="updateSection(section, index)"
 						/>
 						<TitleAndTextSection
 							v-if="section.contentType === 'title and text with bg devider'"
@@ -62,9 +62,17 @@
 							isOwner
 							:data="section"
 							@deleteSection="deleteSection(section._id)"
+							@updateSection="updateSection(section, index)"
 						/>
 					</div>
-					<div v-if="section.sectionType === '2col'">
+					<div
+						v-if="section.sectionType === '2col'"
+						:style="
+							section.background === undefined
+								? ''
+								: `background-color:${section.background}`
+						"
+					>
 						<div v-if="section.isEditMode">
 							<div
 								class="mx-8 lg:mx-12 p-6 border-2 border-dashed border-gray-400 min-h-[180px] rounded-lg flex items-center flex-col"
@@ -105,8 +113,9 @@
 																<BaseFileUploadInput
 																	require
 																	label="Image"
-																	@selectFile="upLoad($event, index, 'left')"
+																	@selectFile="getFile($event, index, 'left')"
 																	inputId="left"
+																	:file="section.leftCol.image"
 																/>
 
 																<BaseInput
@@ -137,13 +146,13 @@
 															</div>
 														</div>
 
-														<button
+														<!-- <button
 															@click="changeContentTypeLeftCol(index)"
 															type="button"
 															class="w-full rounded-md text-gray-900 ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 														>
 															Change Content Type
-														</button>
+														</button> -->
 													</div>
 												</div>
 											</div>
@@ -180,8 +189,9 @@
 															<BaseFileUploadInput
 																require
 																label="Image"
-																@selectFile="upLoad($event, index, 'right')"
+																@selectFile="getFile($event, index, 'right')"
 																inputId="right"
+																:file="section.rightCol.image"
 															/>
 															<BaseInput
 																v-model="section.rightCol.imageDescription"
@@ -210,14 +220,14 @@
 															/>
 														</div>
 													</div>
-
+													<!-- 
 													<button
 														@click="changeContentTypeRightCol(index)"
 														type="button"
 														class="w-full rounded-md text-gray-900 ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 													>
 														Change Content Type
-													</button>
+													</button> -->
 												</div>
 											</div>
 										</div>
@@ -230,9 +240,10 @@
 												name="candidates"
 												type="checkbox"
 												class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-600"
-												v-model="selectedColor"
+												v-model="isSelectedColor"
 											/>
 										</div>
+
 										<label
 											for="website"
 											class="text-sm font-medium leading-6"
@@ -240,10 +251,19 @@
 											>Background Color :
 										</label>
 
-										<input
+										<!-- <input
 											type="color"
 											v-model="section.background"
 											:disabled="!selectedColor"
+										/> -->
+
+										<input
+											type="color"
+											class="block h-10 p-1 bg-white border border-gray-200 rounded-lg cursor-pointer w-14 disabled:opacity-50 disabled:pointer-events-none"
+											id="hs-color-input"
+											title="Choose your color"
+											v-model="section.background"
+											:disabled="!isSelectedColor"
 										/>
 									</div>
 									<!-- <div class="flex items-center justify-center w-full">
@@ -255,16 +275,12 @@
 							<div class="flex justify-end gap-4 mx-8 mt-4 lg:mx-12">
 								<button
 									type="button"
-									class="rounded-md ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-									:class="
-										disabledBtn
-											? 'cursor-default  text-gray-400    '
-											: 'cursor-pointer text-gray-900 '
-									"
+									class="cursor-default text-gray-400 rounded-md ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 								>
 									Back
 								</button>
 								<button
+									@click="updateSection(section, index)"
 									type="button"
 									class="cursor-pointer bg-darkOrange text-white rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 								>
@@ -276,7 +292,6 @@
 						<div
 							v-else
 							class="flex flex-col w-full gap-6 p-8 lg:grid lg:grid-cols-12 lg:py-12 lg:flex-row"
-							:class="section.background"
 						>
 							<!-- left -->
 							<div
@@ -364,8 +379,9 @@
 											:key="index"
 											require
 											:label="`Image ${index + 1}`"
-											@selectFile="upLoad($event, currentSectionIndex, index)"
+											@selectFile="getFile3Col($event, index)"
 											:inputId="index.toString()"
+											:file="image"
 										/>
 									</div>
 								</div>
@@ -373,16 +389,12 @@
 							<div class="flex justify-end gap-4 mx-8 mt-4 lg:mx-12">
 								<button
 									type="button"
-									class="rounded-md ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-									:class="
-										disabledBtn
-											? 'cursor-default  text-gray-400    '
-											: 'cursor-pointer text-gray-900 '
-									"
+									class="cursor-default text-gray-400 rounded-md ring-1 ring-inset ring-gray-400 px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 								>
 									Back
 								</button>
 								<button
+									@click="updateSection(section, index)"
 									type="button"
 									class="cursor-pointer bg-darkOrange text-white rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 								>
@@ -437,23 +449,19 @@ const errorMessage = ref('')
 const exhibitionId = ref(route.params.id)
 const isEditSection2Col = ref(false)
 const selectedColor = ref('')
-const getExhibition = async () => {
-	const runtimeConfig = useRuntimeConfig()
-	const API_URL = runtimeConfig.public.API_URL
-	const url = `${API_URL}exhibitions/${route.params.id}`
 
-	const res = await fetch(url, {
-		method: 'GET'
-	})
-	if (res.status === 200) {
-		exhibitionForm.value = await res.json()
+const getExhibition = async () => {
+	const res = await getExhibitonById(route.params.id)
+	if (res.status.value === 'success') {
+		exhibitionForm.value = res.data.value
 		for (let i = 0; i < exhibitionForm.value.exhibitionSections.length; i++) {
 			exhibitionForm.value.exhibitionSections[i].isEditMode = false
 		}
-		console.log(exhibitionForm.value)
-	} else if (res.status === 404) {
-		errorMessage.value = `Exhibition ID ${route.params.id} Not Found`
+		// console.log(exhibitionForm.value)
 	}
+	// else if (res.error.value === 404) {
+	// 	errorMessage.value = `Exhibition ID ${route.params.id} Not Found`
+	// }
 }
 await getExhibition()
 const editBaseInfo = () => {
@@ -541,15 +549,205 @@ const fetchEditBaseInfo = async () => {
 	}
 }
 
+const isSameData1Col = () => {
+	if (sectionForm.value.contentType === 'title and text with border devider') {
+		if (oldSectionData.value.title === undefined) {
+			oldSectionData.value.title = ''
+		}
+		if (oldSectionData.value.text === undefined) {
+			oldSectionData.value.text = ''
+		}
+		if (sectionForm.value.text === undefined) {
+			sectionForm.value.text = ''
+		}
+		if (sectionForm.value.title === undefined) {
+			sectionForm.value.title = ''
+		}
+
+		if (
+			sectionForm.value.title === oldSectionData.value.title &&
+			sectionForm.value.text === oldSectionData.value.text
+		) {
+			return true
+		}
+	} else if (sectionForm.value.contentType === 'background with title devider') {
+		// console.log(sectionForm.value.background)
+		// console.log(oldSectionData.value.background)
+		// console.log(sectionForm.value.title)
+		// console.log(oldSectionData.value.title)
+		if (oldSectionData.value.title === undefined) {
+			oldSectionData.value.title = ''
+		}
+		if (oldSectionData.value.background === undefined) {
+			oldSectionData.value.background = ''
+		}
+		if (sectionForm.value.title === undefined) {
+			sectionForm.value.title = ''
+		}
+		if (sectionForm.value.background === undefined) {
+			sectionForm.value.background = ''
+		}
+		if (
+			sectionForm.value.background === oldSectionData.value.background &&
+			sectionForm.value.title === oldSectionData.value.title
+		) {
+			return true
+		}
+	} else if (
+		sectionForm.value.contentType === 'title and text with bg devider'
+	) {
+		if (oldSectionData.value.title === undefined) {
+			oldSectionData.value.title = ''
+		}
+		if (oldSectionData.value.background === undefined) {
+			oldSectionData.value.background = ''
+		}
+		if (sectionForm.value.title === undefined) {
+			sectionForm.value.title = ''
+		}
+		if (sectionForm.value.background === undefined) {
+			sectionForm.value.background = ''
+		}
+		if (oldSectionData.value.text === undefined) {
+			oldSectionData.value.text = ''
+		}
+		if (sectionForm.value.text === undefined) {
+			sectionForm.value.text = ''
+		}
+		if (
+			sectionForm.value.background === oldSectionData.value.background &&
+			sectionForm.value.title === oldSectionData.value.title &&
+			sectionForm.value.text === oldSectionData.value.text
+		) {
+			return true
+		}
+	}
+}
+
+const isSameData2Col = () => {
+	if (oldSectionData.value.background === undefined) {
+		oldSectionData.value.background = ''
+	}
+	const isSameLeft = () => {
+		if (sectionForm.value.leftCol.contentType === 'image with description') {
+			if (
+				sectionForm.value.leftCol.image === oldSectionData.value.leftCol.image &&
+				sectionForm.value.leftCol.imageDescription ===
+					oldSectionData.value.leftCol.imageDescription &&
+				sectionForm.value.background === oldSectionData.value.background
+			) {
+				return true
+			} else {
+				return false
+			}
+		} else if (sectionForm.value.leftCol.contentType === 'title and text') {
+			if (
+				sectionForm.value.leftCol.title === oldSectionData.value.leftCol.title &&
+				sectionForm.value.leftCol.text === oldSectionData.value.leftCol.text &&
+				sectionForm.value.background === oldSectionData.value.background
+			) {
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+	const isSameRight = () => {
+		if (sectionForm.value.rightCol.contentType === 'image with description') {
+			if (
+				sectionForm.value.rightCol.image === oldSectionData.value.rightCol.image &&
+				sectionForm.value.rightCol.imageDescription ===
+					oldSectionData.value.rightCol.imageDescription &&
+				sectionForm.value.background === oldSectionData.value.background
+			) {
+				return true
+			} else {
+				return false
+			}
+		} else if (sectionForm.value.rightCol.contentType === 'title and text') {
+			if (
+				sectionForm.value.rightCol.title === oldSectionData.value.rightCol.title &&
+				sectionForm.value.rightCol.text === oldSectionData.value.rightCol.text &&
+				sectionForm.value.background === oldSectionData.value.background
+			) {
+				return true
+			} else {
+				return false
+			}
+		}
+	}
+	if (isSameLeft() && isSameRight()) {
+		return true
+	} else {
+		return false
+	}
+}
+
+const isSameData3Col = () => {
+	if (
+		sectionForm.value.images[0] === oldSectionData.value.images[0] &&
+		sectionForm.value.images[1] === oldSectionData.value.images[1] &&
+		sectionForm.value.images[2] === oldSectionData.value.images[2]
+	) {
+		return true
+	} else {
+		return false
+	}
+}
 const sectionForm = ref({})
-const updateSection = async (section) => {
+const updateSection = async (section, index) => {
 	sectionForm.value = section
 	sectionForm.value.exhibitionID = exhibitionId.value
+	delete sectionForm.value.exhibitionId
+	delete sectionForm.value.isEditMode
+
 	if (section.sectionType === '1col') {
 		if (section.contentType === 'background with title devider') {
-			const { snapshot, dowloadUrl, metadata } = await uploadFile(section.file)
-			sectionForm.value.background = dowloadUrl
+			await getSection(section._id)
+			if (section.file != undefined) {
+				const { snapshot, dowloadUrl, metadata } = await uploadFile(section.file)
+				sectionForm.value.background = dowloadUrl
+			}
+			if (isSameData1Col()) return
+		} else {
+			await getSection(section._id)
+			if (isSameData1Col()) return
 		}
+	} else if (section.sectionType === '2col') {
+		await getSection(section._id)
+		if (section.leftCol.contentType === 'image with description') {
+			if (section.leftCol.file != undefined) {
+				const { snapshot, dowloadUrl, metadata } = await uploadFile(
+					imageLeftCol.value
+				)
+				sectionForm.value.leftCol.image = dowloadUrl
+			}
+		}
+		if (section.rightCol.contentType === 'image with description') {
+			if (section.leftCol.file != undefined) {
+				const { snapshot, dowloadUrl, metadata } = await uploadFile(
+					imageRightCol.value
+				)
+				sectionForm.value.rightCol.image = dowloadUrl
+			}
+		}
+		if (isSelectedColor.value === false) {
+			sectionForm.value.background = ''
+		}
+		exhibitionForm.value.exhibitionSections[index].isEditMode = false
+		if (isSameData2Col()) return
+	} else if (section.sectionType === '3col') {
+		await getSection(section._id)
+		for (let i = 0; i < image3Col.value.length; i++) {
+			if (image3Col.value[i] != '') {
+				const { snapshot, dowloadUrl, metadata } = await uploadFile(
+					image3Col.value[i]
+				)
+				sectionForm.value.images[i] = dowloadUrl
+			}
+		}
+
+		if (isSameData3Col()) return
 	}
 
 	const runtimeConfig = useRuntimeConfig()
@@ -569,6 +767,7 @@ const updateSection = async (section) => {
 			icon: 'success'
 		}).then((result) => {
 			if (result.isConfirmed) {
+				// exhibitionForm.value.exhibitionSections[index].isEditMode = false
 				// isShowModal.value = false
 				// isEditMode.value = false
 				// isAddBaseInfo.value = true
@@ -579,8 +778,18 @@ const updateSection = async (section) => {
 	}
 }
 
+const isSelectedColor = ref(false)
 const goToEditMode2Col = (index) => {
 	exhibitionForm.value.exhibitionSections[index].isEditMode = true
+
+	if (
+		exhibitionForm.value.exhibitionSections[index].background != '' &&
+		exhibitionForm.value.exhibitionSections[index].background != undefined
+	) {
+		isSelectedColor.value = true
+	} else {
+		isSelectedColor.value = false
+	}
 }
 
 const deleteSection = (sectionId) => {
@@ -644,5 +853,32 @@ const getDateFormat = () => {
 	let date = new Date()
 }
 getDateFormat()
+
+const imageLeftCol = ref()
+const imageRightCol = ref()
+const getFile = (file, index, col) => {
+	if (col === 'left') {
+		imageLeftCol.value = file
+	} else if (col === 'right') {
+		imageRightCol.value = file
+	}
+}
+
+const image3Col = ref(['', '', ''])
+const getFile3Col = (file, imageIndex) => {
+	if (imageIndex === 0) {
+		image3Col.value[0] = file
+	} else if (imageIndex === 1) {
+		image3Col.value[1] = file
+	} else if (imageIndex === 2) {
+		image3Col.value[2] = file
+	}
+}
+
+const oldSectionData = ref({})
+const getSection = async (sectionId, exhibitionId) => {
+	const res = await getSectionById(sectionId)
+	oldSectionData.value = await res.data.value
+}
 </script>
 <style scoped></style>

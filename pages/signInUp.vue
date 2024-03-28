@@ -27,70 +27,96 @@
 						</p>
 					</div>
 					<!-- Input SignIn Mode -->
-					<div class="flex flex-col gap-2" v-if="isSigninMode">
-						<BaseInput
-							require
-							v-model="loginForm.username"
-							label="Username or Email"
-							placeholder="Username or Email"
-						/>
-						<BaseInput
-							v-model="loginForm.password"
-							label="Password"
-							require
-							placeholder="Password"
-							type="password"
-						/>
-						<div class="flex flex-col">
-							<button
-								type="button"
-								class="uppercase mt-2 cursor-pointer bg-softOrange text-white rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-							>
-								LOG IN
-							</button>
+					<form v-if="isSigninMode">
+						<div class="flex flex-col gap-2">
+							<BaseInput
+								require
+								v-model="loginForm.email"
+								label="Email"
+								placeholder="Email"
+								type="email"
+								id="email-login"
+							/>
+							<BaseInput
+								v-model="loginForm.password"
+								label="Password"
+								require
+								placeholder="Password"
+								type="password"
+								id="password-login"
+							/>
+							<div class="flex flex-col">
+								<button
+									@click="login"
+									:disable="loginForm.email === '' || loginForm.password === ''"
+									type="button"
+									class="uppercase mt-2 rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+									:class="
+										loginForm.email === '' || loginForm.password === ''
+											? 'cursor-default bg-gray-400 text-gray-200 '
+											: 'cursor-pointer bg-softOrange text-white'
+									"
+								>
+									LOG IN
+								</button>
 
-							<p class="invisible text-sm text-right text-softOrange">errrrrrrrrr</p>
+								<p
+									class="text-sm text-right text-softOrange"
+									v-show="errorMessage != ''"
+								>
+									{{ errorMessage }}
+								</p>
+							</div>
 						</div>
-					</div>
+					</form>
+
 					<!-- Input SignIn Mode End -->
 					<!-- Input SignUp Mode -->
-					<div class="flex flex-col gap-2" v-else>
-						<BaseInput
-							require
-							v-model="signUpForm.username"
-							label="Username"
-							placeholder="Username"
-						/>
-						<BaseInput
-							require
-							v-model="signUpForm.email"
-							label="Email"
-							placeholder="Email"
-						/>
-						<BaseInput
-							v-model="signUpForm.password"
-							label="Password"
-							require
-							placeholder="Password"
-							type="password"
-						/>
-						<BaseInput
-							v-model="confirmPassword"
-							label="Confirm Password"
-							require
-							placeholder="confirm Password"
-							type="password"
-						/>
-						<div class="flex flex-col">
-							<button
-								type="button"
-								class="uppercase mt-2 cursor-pointer bg-softOrange text-white rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-							>
-								SIGN UP
-							</button>
-							<p class="invisible text-sm text-right text-softOrange">errrrrrrrrr</p>
+					<form v-else>
+						<div class="flex flex-col gap-2">
+							<BaseInput
+								require
+								v-model="signUpForm.username"
+								label="Username"
+								placeholder="Username"
+								id="username"
+							/>
+							<BaseInput
+								require
+								v-model="signUpForm.email"
+								label="Email"
+								placeholder="Email"
+								id="email"
+							/>
+							<BaseInput
+								v-model="signUpForm.password"
+								label="Password"
+								require
+								placeholder="Password"
+								type="password"
+								id="password"
+							/>
+							<BaseInput
+								v-model="confirmPassword"
+								label="Confirm Password"
+								require
+								placeholder="confirm Password"
+								type="password"
+								id="confirm-password"
+							/>
+							<div class="flex flex-col">
+								<button
+									@click="register"
+									type="button"
+									class="uppercase mt-2 cursor-pointer bg-softOrange text-white rounded-md px-6 py-1.5 text-sm font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+								>
+									SIGN UP
+								</button>
+								<p class="invisible text-sm text-right text-softOrange">errrrrrrrrr</p>
+							</div>
 						</div>
-					</div>
+					</form>
+
 					<!-- Input SignUp Mode End -->
 					<p class="text-center text-gray-400 mt-7" v-if="isSigninMode">
 						Don’t have an account?
@@ -116,8 +142,9 @@
 	</div>
 </template>
 <script setup>
+import Swal from 'sweetalert2'
 const loginForm = ref({
-	username: '',
+	email: '',
 	password: ''
 })
 
@@ -126,12 +153,67 @@ const confirmPassword = ref('')
 const signUpForm = ref({
 	username: '',
 	email: '',
-	password: ''
+	password: '',
+	profile: 'test fetchhhh'
 })
 
 const isSigninMode = ref(true)
 const changeMode = () => {
 	isSigninMode.value ? (isSigninMode.value = false) : (isSigninMode.value = true)
+}
+const errorMessage = ref('')
+const login = async () => {
+	// const runtimeConfig = useRuntimeConfig()
+	// const AUTH_API_URL = runtimeConfig.public
+	const url = `http://10.4.56.17/auth/login`
+	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const res = await fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(loginForm.value)
+	})
+	if (res.status === 200) {
+		// exhibitionsData.value = await res.json()
+		Swal.fire({
+			position: 'top-end',
+			icon: 'success',
+			title: 'Login Success !',
+			showConfirmButton: false,
+			timer: 2000
+		}).then((result) => {
+			const router = useRouter()
+			router.push('/')
+			errorMessage.value = ''
+		})
+	} else if (res.status === 401) {
+		errorMessage.value = 'Email or Password Mismatch'
+		// console.log(`Could not fetch data from ${url}`)
+	}
+}
+
+const register = async () => {
+	// const runtimeConfig = useRuntimeConfig()
+	// const AUTH_API_URL = runtimeConfig.public.AUTH_API_URL
+	const url = `http://10.4.56.17/auth/register`
+	// const url = `http://10.4.56.45/auth/register`
+	// const url = `http://cp23us2.sit.kmutt.ac.th:5000/exhibitions`
+	const res = await fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(signUpForm.value)
+	})
+	if (res.status === 200) {
+		// exhibitionsData.value = await res.json()
+		const router = useRouter()
+		router.push('/')
+		console.log(res)
+	} else {
+		// console.log(`Could not fetch data from ${url}`)
+	}
 }
 </script>
 <style scoped></style>

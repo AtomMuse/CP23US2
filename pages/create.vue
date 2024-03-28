@@ -18,7 +18,7 @@
 				@updateExhibition="saveExhibition"
 			/>
 
-			<div v-if="exhibitionForm.layoutUsed === 'liveLayout'">
+			<!-- <div v-if="exhibitionForm.layoutUsed === 'liveLayout'">
 				LIVE LAYOUT
 				<button
 					@click="changeLayout('liveLayout')"
@@ -27,7 +27,7 @@
 				>
 					Change Layout
 				</button>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>

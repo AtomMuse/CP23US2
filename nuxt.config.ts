@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 	basePath: '/us2/',
 	devtools: { enabled: false },
 	modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
+	plugins: ['~/plugins/preline.client.ts'],
 	runtimeConfig: {
 		public: {
 			API_URL: process.env.API_URL
